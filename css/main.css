@@ -819,7 +819,8 @@ th {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .page-loader, .fake-select, #wrapper, .submit-query, .inquiry-email-form .input-holder {
+.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .page-loader, .customCheckbox .searchByID,
+.customRadio .searchByID, .fake-select, #wrapper, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
 
@@ -3197,11 +3198,12 @@ h1 {
 .customCheckbox input[type="checkbox"], .customCheckbox input[type="radio"],
 .customRadio input[type="checkbox"],
 .customRadio input[type="radio"] {
-  position: fixed;
-  top: -999px;
-  left: -999px;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
+  z-index: 0;
 }
 
 .customCheckbox input[type="checkbox"]:checked ~ .fake-checkbox:after,
@@ -3212,6 +3214,269 @@ h1 {
 .customRadio input[type="radio"]:checked ~ .fake-checkbox:after,
 .customRadio input[type="radio"]:checked ~ .fake-radio:after {
   bottom: 0;
+}
+
+.customCheckbox .searchByID,
+.customRadio .searchByID {
+  width: 200px;
+  height: 37px;
+}
+
+@media (max-width: 1023px) {
+  .customCheckbox .searchByID,
+  .customRadio .searchByID {
+    width: 150px;
+    height: 37px;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"], .customCheckbox .searchByID input[type="search"],
+.customRadio .searchByID input[type="text"],
+.customRadio .searchByID input[type="search"] {
+  width: 100%;
+  height: 37px;
+  display: block;
+  color: #6c6d70;
+  background: transparent;
+  padding: 8px 35px 8px 8px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  border: 1px solid #6c6d70;
+}
+
+@media (max-width: 1199px) {
+  .customCheckbox .searchByID input[type="text"], .customCheckbox .searchByID input[type="search"],
+  .customRadio .searchByID input[type="text"],
+  .customRadio .searchByID input[type="search"] {
+    width: 100%;
+    height: 37px;
+    padding: 8px 35px 8px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"], .customCheckbox .searchByID input[type="search"],
+  .customRadio .searchByID input[type="text"],
+  .customRadio .searchByID input[type="search"] {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus, .customCheckbox .searchByID input[type="search"]:focus,
+.customRadio .searchByID input[type="text"]:focus,
+.customRadio .searchByID input[type="search"]:focus {
+  border-color: #2092d0;
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus, .customCheckbox .searchByID input[type="search"]:focus,
+  .customRadio .searchByID input[type="text"]:focus,
+  .customRadio .searchByID input[type="search"]:focus {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus ~ button, .customCheckbox .searchByID input[type="search"]:focus ~ button,
+.customRadio .searchByID input[type="text"]:focus ~ button,
+.customRadio .searchByID input[type="search"]:focus ~ button {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus ~ button, .customCheckbox .searchByID input[type="search"]:focus ~ button,
+  .customRadio .searchByID input[type="text"]:focus ~ button,
+  .customRadio .searchByID input[type="search"]:focus ~ button {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-webkit-input-placeholder,
+.customRadio .searchByID input[type="text"]:focus::-webkit-input-placeholder,
+.customRadio .searchByID input[type="search"]:focus::-webkit-input-placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-webkit-input-placeholder,
+  .customRadio .searchByID input[type="text"]:focus::-webkit-input-placeholder,
+  .customRadio .searchByID input[type="search"]:focus::-webkit-input-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus::-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-moz-placeholder,
+.customRadio .searchByID input[type="text"]:focus::-moz-placeholder,
+.customRadio .searchByID input[type="search"]:focus::-moz-placeholder {
+  opacity: 1;
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus::-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-moz-placeholder,
+  .customRadio .searchByID input[type="text"]:focus::-moz-placeholder,
+  .customRadio .searchByID input[type="search"]:focus::-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-moz-placeholder,
+.customRadio .searchByID input[type="text"]:focus:-moz-placeholder,
+.customRadio .searchByID input[type="search"]:focus:-moz-placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-moz-placeholder,
+  .customRadio .searchByID input[type="text"]:focus:-moz-placeholder,
+  .customRadio .searchByID input[type="search"]:focus:-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-ms-input-placeholder,
+.customRadio .searchByID input[type="text"]:focus:-ms-input-placeholder,
+.customRadio .searchByID input[type="search"]:focus:-ms-input-placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-ms-input-placeholder,
+  .customRadio .searchByID input[type="text"]:focus:-ms-input-placeholder,
+  .customRadio .searchByID input[type="search"]:focus:-ms-input-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:focus.placeholder, .customCheckbox .searchByID input[type="search"]:focus.placeholder,
+.customRadio .searchByID input[type="text"]:focus.placeholder,
+.customRadio .searchByID input[type="search"]:focus.placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:focus.placeholder, .customCheckbox .searchByID input[type="search"]:focus.placeholder,
+  .customRadio .searchByID input[type="text"]:focus.placeholder,
+  .customRadio .searchByID input[type="search"]:focus.placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]::-webkit-input-placeholder,
+.customRadio .searchByID input[type="text"]::-webkit-input-placeholder,
+.customRadio .searchByID input[type="search"]::-webkit-input-placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]::-webkit-input-placeholder,
+  .customRadio .searchByID input[type="text"]::-webkit-input-placeholder,
+  .customRadio .searchByID input[type="search"]::-webkit-input-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]::-moz-placeholder, .customCheckbox .searchByID input[type="search"]::-moz-placeholder,
+.customRadio .searchByID input[type="text"]::-moz-placeholder,
+.customRadio .searchByID input[type="search"]::-moz-placeholder {
+  opacity: 1;
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]::-moz-placeholder, .customCheckbox .searchByID input[type="search"]::-moz-placeholder,
+  .customRadio .searchByID input[type="text"]::-moz-placeholder,
+  .customRadio .searchByID input[type="search"]::-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:-moz-placeholder,
+.customRadio .searchByID input[type="text"]:-moz-placeholder,
+.customRadio .searchByID input[type="search"]:-moz-placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:-moz-placeholder,
+  .customRadio .searchByID input[type="text"]:-moz-placeholder,
+  .customRadio .searchByID input[type="search"]:-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"]:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:-ms-input-placeholder,
+.customRadio .searchByID input[type="text"]:-ms-input-placeholder,
+.customRadio .searchByID input[type="search"]:-ms-input-placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"]:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:-ms-input-placeholder,
+  .customRadio .searchByID input[type="text"]:-ms-input-placeholder,
+  .customRadio .searchByID input[type="search"]:-ms-input-placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID input[type="text"].placeholder, .customCheckbox .searchByID input[type="search"].placeholder,
+.customRadio .searchByID input[type="text"].placeholder,
+.customRadio .searchByID input[type="search"].placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID input[type="text"].placeholder, .customCheckbox .searchByID input[type="search"].placeholder,
+  .customRadio .searchByID input[type="text"].placeholder,
+  .customRadio .searchByID input[type="search"].placeholder {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID button,
+.customRadio .searchByID button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  border: 0;
+  background: transparent;
+  color: #6c6d70;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .customCheckbox .searchByID button,
+  .customRadio .searchByID button {
+    color: #fff;
+  }
+}
+
+.customCheckbox .searchByID button span[class^="icon-"], .customCheckbox .searchByID button span[class*="icon-"],
+.customRadio .searchByID button span[class^="icon-"],
+.customRadio .searchByID button span[class*="icon-"] {
+  font-size: 20px;
+  line-height: 37px;
+}
+
+@media (max-width: 1199px) {
+  .customCheckbox .searchByID button span[class^="icon-"], .customCheckbox .searchByID button span[class*="icon-"],
+  .customRadio .searchByID button span[class^="icon-"],
+  .customRadio .searchByID button span[class*="icon-"] {
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .customCheckbox .searchByID button span[class^="icon-"], .customCheckbox .searchByID button span[class*="icon-"],
+  .customRadio .searchByID button span[class^="icon-"],
+  .customRadio .searchByID button span[class*="icon-"] {
+    line-height: 37px;
+  }
 }
 
 .customCheckbox .fake-checkbox,
@@ -3276,9 +3541,9 @@ h1 {
 }
 
 .custom-withouChecks input[type="radio"], .custom-withouChecks input[type="checkbox"] {
-  position: fixed;
-  top: -999px;
-  left: -999px;
+  position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
 }
