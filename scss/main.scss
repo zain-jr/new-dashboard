@@ -221,16 +221,52 @@ h1 {
       }
     }
   }
+.fake-checkbox,
+.fake-radio {
+    @include squar(22px, 22px);
+    border: 3px solid $p42-color;
+    position: relative;
+    color: $dark-grey;
+    @include align(top);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      background: $p42-color;
+      pointer-events: none;
+      content: '';
+      transition: bottom 0.5s ease;
+      -webkit-transition: bottom 0.5s ease;
+      -moz-transition: bottom 0.5s ease;
+      -ms-transition: bottom 0.5s ease;
+    }
+  }
+  .fake-label {
+    padding: 0 0 0 10px;
+    color: $dark-grey;
+    @include align(top);
+    pointer-events: none;
+  }
+}
 .searchByID {
-  @include squar(200px, 37px);
+  @include squar(200px, 45px);
   @extend %layout;
+  position: relative;
 
   @include media('<desktop'){
     @include squar(150px, 37px);
   }
 
   input[type="text"],input[type="search"]{
-    @include squar(100%, 37px);
+    @include squar(100%, 45px);
     display: block;
     color: $p42-default-grey;
     background: transparent;
@@ -294,7 +330,7 @@ h1 {
 
     span[class^="icon-"],span[class*="icon-"]{
       font-size: 20px;
-      line-height: 37px;
+      line-height: 45px;
 
       @include media('<widescreen'){
         line-height: 15px;
@@ -303,41 +339,6 @@ h1 {
         line-height: 37px;
       }
     }
-  }
-}
-  .fake-checkbox,
-  .fake-radio {
-    @include squar(22px, 22px);
-    border: 3px solid $p42-color;
-    position: relative;
-    color: $dark-grey;
-    @include align(top);
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-
-    &:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 100%;
-      background: $p42-color;
-      pointer-events: none;
-      content: '';
-      transition: bottom 0.5s ease;
-      -webkit-transition: bottom 0.5s ease;
-      -moz-transition: bottom 0.5s ease;
-      -ms-transition: bottom 0.5s ease;
-    }
-  }
-  .fake-label {
-    padding: 0 0 0 10px;
-    color: $dark-grey;
-    @include align(top);
-    pointer-events: none;
   }
 }
 .custom-withouChecks {
@@ -429,7 +430,108 @@ h1 {
     height: 28px;
   }
 }
+.mail {
+  @include align(top);
+  color: $p42-default-grey;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  margin: 0 20px 10px 0;
 
+  @include media('<tablet'){
+    display: none;
+  }
+
+  &:hover {
+    color: $p42-color;
+  }
+}
+.logout-list {
+  @extend %listreset;
+  @include align-reset(top,14,17);
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  margin: 0 -3px;
+
+  @include media('<tvscreen'){
+    @include align-reset(top,12,15);
+    font-weight: 600;
+  }
+
+  li {
+    width: 50%;
+    padding: 0 3px;
+    margin: 0 0 5px;
+    @extend %text-center;
+    position: relative;
+
+    &:hover {
+      .dropDown { display: block;}
+    }
+
+    &:first-child {
+      a{
+        background: $p42-default-grey;
+        padding: 10px;
+
+        @include media('<tablet'){ padding: 5px;}
+
+        .hidden{
+          @include media('<tablet'){
+            display: inline-block !important;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 10px 25px 10px 5px;
+      color: $white;
+      background: $p42-color;
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.5s ease;
+      -webkit-transition: background 0.5s ease;
+      -moz-transition: background 0.5s ease;
+      -ms-transition: background 0.5s ease;
+
+      @include media('<tvscreen'){
+        padding: 10px 20px 10px 5px;
+      }
+
+      @include media('<tablet'){
+        padding:5px;
+        min-height: 40px;
+      }
+
+      span[class^="icon-"],span[class*="icon-"]{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-size: 14px;
+        line-height: 1;
+        margin: -7px 0 0;
+
+        @include media('<tablet'){
+          position: static;
+          @include font(25,30);
+          margin: 0;
+        }
+      }
+      &:hover {
+        background: $orange;
+      }
+    }
+  }
+}
 h1 {
   display: block;
   @extend %text-center;
@@ -457,6 +559,81 @@ h1 {
     -ms-filter: blur(15px);
   }
 }
+
+#header {
+  @extend %clearfix;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: block;
+  background: $p42-background;
+  padding: 5px;
+  box-shadow: 0 0 15px 0 rgba($black,0.25);
+
+  .left-header {
+    width: 25%;
+    margin: 17px 0 0;
+    position: relative;
+    @extend .pull-left;
+
+    .home {
+      @extend .pull-left;
+      background: $p42-default-grey;
+      @include squar(45px, 45px);
+      color: $p42-background;
+      @extend %text-center;
+      text-decoration: none;
+      font-size: 30px;
+      line-height: 1;
+      border-radius: 2px;
+      
+      &:hover {
+        background: $orange;
+        color: $white;
+      }
+
+      span{
+        @include align(top);
+        margin: 6px 0 0;
+      }
+    }
+    .searchByID {
+      @extend .pull-left;
+      margin: 0 0 0 5px;
+    }
+  }
+  .right-header {
+    width: 25%;
+    @extend .pull-right;
+    @extend %text-right;
+  }
+}
+.logo {
+  width: 100%;
+  max-width: 215px;
+  margin: 0 auto;
+  
+  a { display: block;}
+  img { @extend %img-res;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .submit-query {
   @extend %layout;

@@ -4,7 +4,6 @@ jQuery(window).load(function(){
 });
 
 $(document).ready(function() {
-  $(".js-example-basic-single").select2();
   if (screen.width < 768){
 		$('.call-agent-btn').each(function(){
 			var mobileNumber = $(this).attr('data-tel');
@@ -140,18 +139,6 @@ function initCarousel() {
 		animSpeed: 600
 	});
 }
-
-// initialize fixed blocks on scroll
-function initFixedScrollBlock() {
-	jQuery('#wrapper').fixedScrollBlock({
-		slideBlock: '#header, #nav'
-	});
-	jQuery('#main').fixedScrollBlock({
-		slideBlock: '#fixed-block',
-		extraTop: 100
-	});
-}
-
 // accordion init
 function initAccordion() {
 	jQuery('.accordion').slideAccordion({
@@ -240,10 +227,6 @@ $(document).on('click', '.propertyImage-slider-btn-next, .propertyImage-slider-b
 	 }
 });
 
-$(document).on('click', '.navigation-toggler', function(){
-	$('html').toggleClass('nav-active');
-});
-
 $(document).on('click', '.filters-links-opener', function(){
 	$(this).closest('li').toggleClass('active');
 
@@ -254,6 +237,7 @@ $(document).on('click', '.filters-links-opener', function(){
 		$(this).closest('li').find('.slide').slideUp();
 	}
 });
+
 $(document).on('click', '.aside-opener-filters', function(){
 	$('#aside').slideToggle('active');
 });
@@ -412,8 +396,4 @@ $(document).on('click', '.packetData>.delete', function(){
 	var targetId = $(this).attr('data-target');
 	$("#"+targetId).prop("checked", false);
 	$(this).closest('li').remove();
-});
-
-$(document).on('click', '.btn-close-working', function(){
-	$('.weAreWorking').addClass('hide');
 });

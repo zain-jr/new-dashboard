@@ -752,19 +752,19 @@ th {
 }
 
 .addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .registerNow .packetData-list,
-.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .pager, .quick-links, .public-ui-features, .sumery-list {
+.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .logout-list, .pager, .quick-links, .public-ui-features, .sumery-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.clearfix:after {
+.clearfix:after, #header:after {
   content: '';
   display: block;
   clear: both;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder img, .page-loader .page-loader-holder img {
+.registerNow .company-logo .logo-holder .picture-holder img, .page-loader .page-loader-holder img, .logo img {
   width: 100%;
   height: auto;
   display: block;
@@ -786,7 +786,7 @@ th {
 }
 
 .text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .registerNow .role-opener, .page-loader, .global-error,
-.global-success, .custom-withouChecks .fake-label, h1, .public-ui-features li strong, .generic-lightbox {
+.global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, .public-ui-features li strong, .generic-lightbox {
   text-align: center;
 }
 
@@ -794,7 +794,7 @@ th {
   text-align: left;
 }
 
-.text-right, .sumery-list li .quantity {
+.text-right, #header .right-header, .sumery-list li .quantity {
   text-align: right;
 }
 
@@ -811,16 +811,15 @@ th {
   text-transform: capitalize;
 }
 
-.pull-left, .addProperty-form .tips {
+.pull-left, .addProperty-form .tips, #header .left-header, #header .left-header .home, #header .left-header .searchByID {
   float: left !important;
 }
 
-.pull-right {
+.pull-right, #header .right-header {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .page-loader, .customCheckbox .searchByID,
-.customRadio .searchByID, .fake-select, #wrapper, .submit-query, .inquiry-email-form .input-holder {
+.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .page-loader, .searchByID, .fake-select, #wrapper, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
 
@@ -3216,269 +3215,6 @@ h1 {
   bottom: 0;
 }
 
-.customCheckbox .searchByID,
-.customRadio .searchByID {
-  width: 200px;
-  height: 37px;
-}
-
-@media (max-width: 1023px) {
-  .customCheckbox .searchByID,
-  .customRadio .searchByID {
-    width: 150px;
-    height: 37px;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"], .customCheckbox .searchByID input[type="search"],
-.customRadio .searchByID input[type="text"],
-.customRadio .searchByID input[type="search"] {
-  width: 100%;
-  height: 37px;
-  display: block;
-  color: #6c6d70;
-  background: transparent;
-  padding: 8px 35px 8px 8px;
-  border-radius: 2px;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 700;
-  border: 1px solid #6c6d70;
-}
-
-@media (max-width: 1199px) {
-  .customCheckbox .searchByID input[type="text"], .customCheckbox .searchByID input[type="search"],
-  .customRadio .searchByID input[type="text"],
-  .customRadio .searchByID input[type="search"] {
-    width: 100%;
-    height: 37px;
-    padding: 8px 35px 8px 8px;
-  }
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"], .customCheckbox .searchByID input[type="search"],
-  .customRadio .searchByID input[type="text"],
-  .customRadio .searchByID input[type="search"] {
-    color: #fff;
-    border: 1px solid #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus, .customCheckbox .searchByID input[type="search"]:focus,
-.customRadio .searchByID input[type="text"]:focus,
-.customRadio .searchByID input[type="search"]:focus {
-  border-color: #2092d0;
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus, .customCheckbox .searchByID input[type="search"]:focus,
-  .customRadio .searchByID input[type="text"]:focus,
-  .customRadio .searchByID input[type="search"]:focus {
-    border-color: #fff;
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus ~ button, .customCheckbox .searchByID input[type="search"]:focus ~ button,
-.customRadio .searchByID input[type="text"]:focus ~ button,
-.customRadio .searchByID input[type="search"]:focus ~ button {
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus ~ button, .customCheckbox .searchByID input[type="search"]:focus ~ button,
-  .customRadio .searchByID input[type="text"]:focus ~ button,
-  .customRadio .searchByID input[type="search"]:focus ~ button {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-webkit-input-placeholder,
-.customRadio .searchByID input[type="text"]:focus::-webkit-input-placeholder,
-.customRadio .searchByID input[type="search"]:focus::-webkit-input-placeholder {
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-webkit-input-placeholder,
-  .customRadio .searchByID input[type="text"]:focus::-webkit-input-placeholder,
-  .customRadio .searchByID input[type="search"]:focus::-webkit-input-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus::-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-moz-placeholder,
-.customRadio .searchByID input[type="text"]:focus::-moz-placeholder,
-.customRadio .searchByID input[type="search"]:focus::-moz-placeholder {
-  opacity: 1;
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus::-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus::-moz-placeholder,
-  .customRadio .searchByID input[type="text"]:focus::-moz-placeholder,
-  .customRadio .searchByID input[type="search"]:focus::-moz-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-moz-placeholder,
-.customRadio .searchByID input[type="text"]:focus:-moz-placeholder,
-.customRadio .searchByID input[type="search"]:focus:-moz-placeholder {
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-moz-placeholder,
-  .customRadio .searchByID input[type="text"]:focus:-moz-placeholder,
-  .customRadio .searchByID input[type="search"]:focus:-moz-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-ms-input-placeholder,
-.customRadio .searchByID input[type="text"]:focus:-ms-input-placeholder,
-.customRadio .searchByID input[type="search"]:focus:-ms-input-placeholder {
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:focus:-ms-input-placeholder,
-  .customRadio .searchByID input[type="text"]:focus:-ms-input-placeholder,
-  .customRadio .searchByID input[type="search"]:focus:-ms-input-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:focus.placeholder, .customCheckbox .searchByID input[type="search"]:focus.placeholder,
-.customRadio .searchByID input[type="text"]:focus.placeholder,
-.customRadio .searchByID input[type="search"]:focus.placeholder {
-  color: #2092d0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:focus.placeholder, .customCheckbox .searchByID input[type="search"]:focus.placeholder,
-  .customRadio .searchByID input[type="text"]:focus.placeholder,
-  .customRadio .searchByID input[type="search"]:focus.placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]::-webkit-input-placeholder,
-.customRadio .searchByID input[type="text"]::-webkit-input-placeholder,
-.customRadio .searchByID input[type="search"]::-webkit-input-placeholder {
-  color: #6c6d70;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]::-webkit-input-placeholder, .customCheckbox .searchByID input[type="search"]::-webkit-input-placeholder,
-  .customRadio .searchByID input[type="text"]::-webkit-input-placeholder,
-  .customRadio .searchByID input[type="search"]::-webkit-input-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]::-moz-placeholder, .customCheckbox .searchByID input[type="search"]::-moz-placeholder,
-.customRadio .searchByID input[type="text"]::-moz-placeholder,
-.customRadio .searchByID input[type="search"]::-moz-placeholder {
-  opacity: 1;
-  color: #6c6d70;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]::-moz-placeholder, .customCheckbox .searchByID input[type="search"]::-moz-placeholder,
-  .customRadio .searchByID input[type="text"]::-moz-placeholder,
-  .customRadio .searchByID input[type="search"]::-moz-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:-moz-placeholder,
-.customRadio .searchByID input[type="text"]:-moz-placeholder,
-.customRadio .searchByID input[type="search"]:-moz-placeholder {
-  color: #6c6d70;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:-moz-placeholder, .customCheckbox .searchByID input[type="search"]:-moz-placeholder,
-  .customRadio .searchByID input[type="text"]:-moz-placeholder,
-  .customRadio .searchByID input[type="search"]:-moz-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"]:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:-ms-input-placeholder,
-.customRadio .searchByID input[type="text"]:-ms-input-placeholder,
-.customRadio .searchByID input[type="search"]:-ms-input-placeholder {
-  color: #6c6d70;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"]:-ms-input-placeholder, .customCheckbox .searchByID input[type="search"]:-ms-input-placeholder,
-  .customRadio .searchByID input[type="text"]:-ms-input-placeholder,
-  .customRadio .searchByID input[type="search"]:-ms-input-placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID input[type="text"].placeholder, .customCheckbox .searchByID input[type="search"].placeholder,
-.customRadio .searchByID input[type="text"].placeholder,
-.customRadio .searchByID input[type="search"].placeholder {
-  color: #6c6d70;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID input[type="text"].placeholder, .customCheckbox .searchByID input[type="search"].placeholder,
-  .customRadio .searchByID input[type="text"].placeholder,
-  .customRadio .searchByID input[type="search"].placeholder {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID button,
-.customRadio .searchByID button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 10px;
-  border: 0;
-  background: transparent;
-  color: #6c6d70;
-  padding: 0;
-}
-
-@media (max-width: 767px) {
-  .customCheckbox .searchByID button,
-  .customRadio .searchByID button {
-    color: #fff;
-  }
-}
-
-.customCheckbox .searchByID button span[class^="icon-"], .customCheckbox .searchByID button span[class*="icon-"],
-.customRadio .searchByID button span[class^="icon-"],
-.customRadio .searchByID button span[class*="icon-"] {
-  font-size: 20px;
-  line-height: 37px;
-}
-
-@media (max-width: 1199px) {
-  .customCheckbox .searchByID button span[class^="icon-"], .customCheckbox .searchByID button span[class*="icon-"],
-  .customRadio .searchByID button span[class^="icon-"],
-  .customRadio .searchByID button span[class*="icon-"] {
-    line-height: 15px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .customCheckbox .searchByID button span[class^="icon-"], .customCheckbox .searchByID button span[class*="icon-"],
-  .customRadio .searchByID button span[class^="icon-"],
-  .customRadio .searchByID button span[class*="icon-"] {
-    line-height: 37px;
-  }
-}
-
 .customCheckbox .fake-checkbox,
 .customCheckbox .fake-radio,
 .customRadio .fake-checkbox,
@@ -3522,6 +3258,206 @@ h1 {
   display: inline-block;
   vertical-align: top;
   pointer-events: none;
+}
+
+.searchByID {
+  width: 200px;
+  height: 45px;
+  position: relative;
+}
+
+@media (max-width: 1023px) {
+  .searchByID {
+    width: 150px;
+    height: 37px;
+  }
+}
+
+.searchByID input[type="text"], .searchByID input[type="search"] {
+  width: 100%;
+  height: 45px;
+  display: block;
+  color: #6c6d70;
+  background: transparent;
+  padding: 8px 35px 8px 8px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  border: 1px solid #6c6d70;
+}
+
+@media (max-width: 1199px) {
+  .searchByID input[type="text"], .searchByID input[type="search"] {
+    width: 100%;
+    height: 37px;
+    padding: 8px 35px 8px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"], .searchByID input[type="search"] {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus, .searchByID input[type="search"]:focus {
+  border-color: #2092d0;
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus, .searchByID input[type="search"]:focus {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus ~ button, .searchByID input[type="search"]:focus ~ button {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus ~ button, .searchByID input[type="search"]:focus ~ button {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus::-webkit-input-placeholder, .searchByID input[type="search"]:focus::-webkit-input-placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus::-webkit-input-placeholder, .searchByID input[type="search"]:focus::-webkit-input-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus::-moz-placeholder, .searchByID input[type="search"]:focus::-moz-placeholder {
+  opacity: 1;
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus::-moz-placeholder, .searchByID input[type="search"]:focus::-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus:-moz-placeholder, .searchByID input[type="search"]:focus:-moz-placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus:-moz-placeholder, .searchByID input[type="search"]:focus:-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus:-ms-input-placeholder, .searchByID input[type="search"]:focus:-ms-input-placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus:-ms-input-placeholder, .searchByID input[type="search"]:focus:-ms-input-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:focus.placeholder, .searchByID input[type="search"]:focus.placeholder {
+  color: #2092d0;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:focus.placeholder, .searchByID input[type="search"]:focus.placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]::-webkit-input-placeholder, .searchByID input[type="search"]::-webkit-input-placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]::-webkit-input-placeholder, .searchByID input[type="search"]::-webkit-input-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]::-moz-placeholder, .searchByID input[type="search"]::-moz-placeholder {
+  opacity: 1;
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]::-moz-placeholder, .searchByID input[type="search"]::-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:-moz-placeholder, .searchByID input[type="search"]:-moz-placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:-moz-placeholder, .searchByID input[type="search"]:-moz-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"]:-ms-input-placeholder, .searchByID input[type="search"]:-ms-input-placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"]:-ms-input-placeholder, .searchByID input[type="search"]:-ms-input-placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID input[type="text"].placeholder, .searchByID input[type="search"].placeholder {
+  color: #6c6d70;
+}
+
+@media (max-width: 767px) {
+  .searchByID input[type="text"].placeholder, .searchByID input[type="search"].placeholder {
+    color: #fff;
+  }
+}
+
+.searchByID button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  border: 0;
+  background: transparent;
+  color: #6c6d70;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .searchByID button {
+    color: #fff;
+  }
+}
+
+.searchByID button span[class^="icon-"], .searchByID button span[class*="icon-"] {
+  font-size: 20px;
+  line-height: 45px;
+}
+
+@media (max-width: 1199px) {
+  .searchByID button span[class^="icon-"], .searchByID button span[class*="icon-"] {
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .searchByID button span[class^="icon-"], .searchByID button span[class*="icon-"] {
+    line-height: 37px;
+  }
 }
 
 .custom-withouChecks {
@@ -3607,6 +3543,143 @@ h1 {
   height: 28px;
 }
 
+.mail {
+  display: inline-block;
+  vertical-align: top;
+  color: #6c6d70;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  margin: 0 20px 10px 0;
+}
+
+@media (max-width: 767px) {
+  .mail {
+    display: none;
+  }
+}
+
+.mail:hover {
+  color: #2092d0;
+}
+
+.logout-list {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  margin: 0 -3px;
+}
+
+.logout-list > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1539px) {
+  .logout-list {
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -4px;
+    font-weight: 600;
+  }
+  .logout-list > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+}
+
+.logout-list li {
+  width: 50%;
+  padding: 0 3px;
+  margin: 0 0 5px;
+  position: relative;
+}
+
+.logout-list li:hover .dropDown {
+  display: block;
+}
+
+.logout-list li:first-child a {
+  background: #6c6d70;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .logout-list li:first-child a {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logout-list li:first-child a .hidden, .logout-list li:first-child a .paginationCurrent-num-1, .logout-list li:first-child a
+  .current-num {
+    display: inline-block !important;
+    vertical-align: top;
+  }
+}
+
+.logout-list li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px 10px 5px;
+  color: #fff;
+  background: #2092d0;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+}
+
+@media (max-width: 1539px) {
+  .logout-list li a {
+    padding: 10px 20px 10px 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logout-list li a {
+    padding: 5px;
+    min-height: 40px;
+  }
+}
+
+.logout-list li a span[class^="icon-"], .logout-list li a span[class*="icon-"] {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 14px;
+  line-height: 1;
+  margin: -7px 0 0;
+}
+
+@media (max-width: 767px) {
+  .logout-list li a span[class^="icon-"], .logout-list li a span[class*="icon-"] {
+    position: static;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+.logout-list li a:hover {
+  background: #d89429;
+}
+
 h1 {
   display: block;
   color: #6c6d70;
@@ -3632,6 +3705,64 @@ h1 span {
   -webkit-filter: blur(15px);
   -moz-filter: blur(15px);
   -ms-filter: blur(15px);
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: block;
+  background: #dee1e3;
+  padding: 5px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+#header .left-header {
+  width: 25%;
+  margin: 17px 0 0;
+  position: relative;
+}
+
+#header .left-header .home {
+  background: #6c6d70;
+  width: 45px;
+  height: 45px;
+  color: #dee1e3;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 1;
+  border-radius: 2px;
+}
+
+#header .left-header .home:hover {
+  background: #d89429;
+  color: #fff;
+}
+
+#header .left-header .home span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 0 0;
+}
+
+#header .left-header .searchByID {
+  margin: 0 0 0 5px;
+}
+
+#header .right-header {
+  width: 25%;
+}
+
+.logo {
+  width: 100%;
+  max-width: 215px;
+  margin: 0 auto;
+}
+
+.logo a {
+  display: block;
 }
 
 @media (max-width: 767px) {
