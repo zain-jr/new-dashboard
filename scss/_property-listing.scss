@@ -1,0 +1,213 @@
+.property-listing-page {
+    @extend %layout;
+    background: $p42-background;
+
+    .property-status-links {
+        @extend %listreset;
+        @include align-reset(top,18,22);
+        @extend %text-upparcase;
+        @extend %text-center;
+        font-family: $open-sans;
+        font-weight: 700;
+
+        li {
+            width: 20%;
+
+            a {
+                display: block;
+                text-decoration: none;
+                cursor: pointer;
+                position: relative;
+                color: #6d6e71;
+                padding: 15px;
+
+                &:before {
+                    font-family: 'icomoon';
+                    @include align(middle);
+                    font-weight: normal;
+                    padding: 0 5px;
+                    margin: -4px 0 0;
+                }
+
+                &.active {
+                    background: #dde0e2;
+
+                    &:before { content: "\e936";}
+                }
+                &.pending {
+                    background: #d2d6d8;
+
+                    &:before { content: "\e93b";}
+                }
+                &.rejected {
+                    background: #c9cdd0;
+
+                    &:before { content: "\e939";}
+                }
+                &.expired {
+                    background: #c0c4c7;
+                    
+                    &:before { content: "\e92e";}
+                }
+                &.deleted {
+                    background: #b7bcbe;
+
+                    &:before { content: "\e937";}
+                }
+
+                &:hover{ color: $p42-color;}
+
+                .number {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    @include font(14,17);
+                    margin: -8px 0 0 ;
+                }
+            }
+        }
+    }
+    .sorting-filtering {
+        @extend %listreset;
+        @include align-reset(top, 13,16);
+        font-family: $open-sans;
+        margin: 0 -10px;
+        @extend %text-center;
+        padding: 20px 0 0;
+
+        li {
+            color: $dark-grey;
+            width: 25%;
+            padding: 0 10px 15px;
+            @extend %layout;
+            @include align-reset(top, 13,16);
+        }
+        label {
+            width: 100px;
+        }
+        .input-holder {
+            width: calc(60% - 100px);
+        }
+    }
+    .property-for {
+        display: block;
+        @extend %text-center;
+        color: $white;
+        font-family: $open-sans;
+        @extend %text-upparcase;
+        @include font(21,25);
+        background: $p42-default-grey;
+        padding: 5px;
+    }
+    .listing-pro {
+        @extend %listreset;
+
+        li {
+            display: block;
+            @include align-reset(top, 14,17);
+            font-weight: 700;
+            font-family: $open-sans;
+            color: $p42-default-grey;
+            @extend %layout;
+
+            &:nth-child(2n){
+                background: $white;
+            }
+
+            &.t-h{
+                background: $p42-color;
+                color: $white;  
+                
+                .customCheckbox {
+                    font-size: 14px !important;
+                    line-height: 14px !important;
+                }
+
+                .fake-label { color: $white;}
+                .fake-checkbox{
+                    border-color: $white;
+
+                    &:after { background: $white;}    
+                }
+                label { padding: 4px 20px 0 30px;}
+            }
+            p{ margin: 0;}
+            .border {
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    top: -999px;
+                    left: 0;
+                    bottom: -999px;
+                    background: rgba($p42-default-grey, 0.35);
+                    width: 1px;
+                    content: '';
+                }
+            }
+            .pro-id {
+                width: 15%;
+                padding: 11px 15px 11px;
+                @extend %text-left;
+
+                &.border {
+                    &:after { display: none;}
+                }
+            }
+            .pro-type {
+                width: 20%;
+                padding: 15px 15px 13px;
+            }
+            .pro-location {
+                width: 20%;
+                padding: 15px 15px 13px;
+            }
+            .pro-price {
+                width: 10%;
+                padding: 15px 15px 13px;
+            }
+            .pro-size {
+                width: 5%;
+                padding: 15px 15px 13px;
+            }
+            .pro-date {
+                width: 10%;
+                padding: 15px 15px 13px;
+            }
+            .pro-view {
+                width: 10%;
+                padding: 15px 15px 13px;
+            }
+            .pro-controls {
+                width: 10%;
+                padding: 15px 15px 13px;
+            }
+            .t-d {
+                color: $p42-default-grey;
+            }
+        }
+        .control-link {
+            @extend %listreset;
+            @include align-reset(top, 12,12);
+
+            li {
+                padding: 0 5px;
+
+                &:nth-child(2n){ background: transparent;}
+
+                a {
+                    text-decoration: none;
+                    color: #b2b3b5;
+
+                    span{
+                        font-size: 21px;
+                        line-height: 1;
+                    }
+                    &:hover{
+                        color: $p42-color;
+                    }
+                }
+            }
+        }
+    }
+}

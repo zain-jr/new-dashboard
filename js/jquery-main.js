@@ -25,15 +25,10 @@ $(document).ready(function() {
 
 // page init
 jQuery(function(){
-	
-	if(screen.width >= 768){
-		initFixedScrollBlock();
-	}
-  	
+	initLightbox();
 	initCarousel();
 	initSlideShow();
 	initAccordion();
-	initLightbox();
 	initAnchors();
 });
 
@@ -139,6 +134,18 @@ function initCarousel() {
 		animSpeed: 600
 	});
 }
+
+// initialize fixed blocks on scroll
+function initFixedScrollBlock() {
+	jQuery('#wrapper').fixedScrollBlock({
+		slideBlock: '#header, #nav'
+	});
+	jQuery('#main').fixedScrollBlock({
+		slideBlock: '#fixed-block',
+		extraTop: 100
+	});
+}
+
 // accordion init
 function initAccordion() {
 	jQuery('.accordion').slideAccordion({
@@ -227,6 +234,10 @@ $(document).on('click', '.propertyImage-slider-btn-next, .propertyImage-slider-b
 	 }
 });
 
+$(document).on('click', '.navigation-toggler', function(){
+	$('html').toggleClass('nav-active');
+});
+
 $(document).on('click', '.filters-links-opener', function(){
 	$(this).closest('li').toggleClass('active');
 
@@ -237,7 +248,6 @@ $(document).on('click', '.filters-links-opener', function(){
 		$(this).closest('li').find('.slide').slideUp();
 	}
 });
-
 $(document).on('click', '.aside-opener-filters', function(){
 	$('#aside').slideToggle('active');
 });

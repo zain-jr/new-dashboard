@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?fvd4s2');
-  src:  url('../fonts/icomoon.eot?fvd4s2#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?fvd4s2') format('truetype'),
-    url('../fonts/icomoon.woff?fvd4s2') format('woff'),
-    url('../fonts/icomoon.svg?fvd4s2#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?96aot9');
+  src:  url('../fonts/icomoon.eot?96aot9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?96aot9') format('truetype'),
+    url('../fonts/icomoon.woff?96aot9') format('woff'),
+    url('../fonts/icomoon.svg?96aot9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,6 +34,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-active-thunder:before {
+  content: "\e936";
+}
+.icon-bin-delete:before {
+  content: "\e937";
+}
+.icon-pencil:before {
+  content: "\e938";
+}
+.icon-reject-thunder:before {
+  content: "\e939";
+}
+.icon-search-doc:before {
+  content: "\e93a";
+}
+.icon-timer:before {
+  content: "\e93b";
+}
 .icon-arrow1-left:before {
   content: "\e932";
 }

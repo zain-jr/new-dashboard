@@ -33,6 +33,7 @@ $media-expressions: (
 @import 'base/forms';
 @import 'add-property-form';
 @import 'register-now';
+@import 'property-listing';
 @import 'fancybox';
 
 .page-loader {
@@ -90,17 +91,7 @@ $media-expressions: (
     }
   }
 }
-html {
-  width: 100%;
-  height: 100%;
-
-  &.nav-active {
-    overflow-y: hidden;
-  }
-}
 body{
-  width: 100%;
-  height: 100%;
   background:#525252 url('../images/bg.jpg') no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
@@ -546,11 +537,6 @@ h1 {
 #wrapper {
   @extend %layout;
   position: relative;
-  width: 100%;
-  height: 100%;
-  display: table;
-  table-layout: fixed;
-  border-collapse: collapse;
 
   &.fancy-overlay {
     filter: blur(15px);
@@ -618,8 +604,14 @@ h1 {
   a { display: block;}
   img { @extend %img-res;}
 }
-
-
+#page-holder,
+#main {
+  @extend %layout;
+  position: relative;
+}
+#page-holder {
+  padding: 87px 0 0;
+}
 
 
 

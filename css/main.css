@@ -395,8 +395,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?fvd4s2");
-  src: url("../fonts/icomoon.eot?fvd4s2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?fvd4s2") format("truetype"), url("../fonts/icomoon.woff?fvd4s2") format("woff"), url("../fonts/icomoon.svg?fvd4s2#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?96aot9");
+  src: url("../fonts/icomoon.eot?96aot9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?96aot9") format("truetype"), url("../fonts/icomoon.woff?96aot9") format("woff"), url("../fonts/icomoon.svg?96aot9#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -422,6 +422,30 @@ th {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-active-thunder:before {
+  content: "\e936";
+}
+
+.icon-bin-delete:before {
+  content: "\e937";
+}
+
+.icon-pencil:before {
+  content: "\e938";
+}
+
+.icon-reject-thunder:before {
+  content: "\e939";
+}
+
+.icon-search-doc:before {
+  content: "\e93a";
+}
+
+.icon-timer:before {
+  content: "\e93b";
 }
 
 .icon-arrow1-left:before {
@@ -752,7 +776,7 @@ th {
 }
 
 .addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .registerNow .packetData-list,
-.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .logout-list, .pager, .quick-links, .public-ui-features, .sumery-list {
+.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, .pager, .quick-links, .public-ui-features, .sumery-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -785,12 +809,12 @@ th {
   overflow: hidden;
 }
 
-.text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .registerNow .role-opener, .page-loader, .global-error,
+.text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .registerNow .role-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .page-loader, .global-error,
 .global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, .public-ui-features li strong, .generic-lightbox {
   text-align: center;
 }
 
-.text-left, .addProperty-form .existingOrNew-member li .slide, .addProperty-form .thankYou-message .layout, .inquiry-email-form, .information {
+.text-left, .addProperty-form .existingOrNew-member li .slide, .addProperty-form .thankYou-message .layout, .property-listing-page .listing-pro li .pro-id, .inquiry-email-form, .information {
   text-align: left;
 }
 
@@ -798,7 +822,7 @@ th {
   text-align: right;
 }
 
-.text-upparcase, .addProperty-form input[type="submit"], .submit-query button[type="submit"], .small-heading, .btn-hollow, .inquiry-email-form button[type="submit"] {
+.text-upparcase, .addProperty-form input[type="submit"], .property-listing-page .property-status-links, .property-listing-page .property-for, .submit-query button[type="submit"], .small-heading, .btn-hollow, .inquiry-email-form button[type="submit"] {
   text-transform: uppercase;
 }
 
@@ -819,7 +843,8 @@ th {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .page-loader, .searchByID, .fake-select, #wrapper, .submit-query, .inquiry-email-form .input-holder {
+.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, #wrapper, #page-holder,
+#main, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
 
@@ -2725,6 +2750,303 @@ input[type='submit'] {
   max-width: 510px;
 }
 
+.property-listing-page {
+  background: #dee1e3;
+}
+
+.property-listing-page .property-status-links {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.property-listing-page .property-status-links > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+
+.property-listing-page .property-status-links li {
+  width: 20%;
+}
+
+.property-listing-page .property-status-links li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  color: #6d6e71;
+  padding: 15px;
+}
+
+.property-listing-page .property-status-links li a:before {
+  font-family: 'icomoon';
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+  padding: 0 5px;
+  margin: -4px 0 0;
+}
+
+.property-listing-page .property-status-links li a.active {
+  background: #dde0e2;
+}
+
+.property-listing-page .property-status-links li a.active:before {
+  content: "\e936";
+}
+
+.property-listing-page .property-status-links li a.pending {
+  background: #d2d6d8;
+}
+
+.property-listing-page .property-status-links li a.pending:before {
+  content: "\e93b";
+}
+
+.property-listing-page .property-status-links li a.rejected {
+  background: #c9cdd0;
+}
+
+.property-listing-page .property-status-links li a.rejected:before {
+  content: "\e939";
+}
+
+.property-listing-page .property-status-links li a.expired {
+  background: #c0c4c7;
+}
+
+.property-listing-page .property-status-links li a.expired:before {
+  content: "\e92e";
+}
+
+.property-listing-page .property-status-links li a.deleted {
+  background: #b7bcbe;
+}
+
+.property-listing-page .property-status-links li a.deleted:before {
+  content: "\e937";
+}
+
+.property-listing-page .property-status-links li a:hover {
+  color: #2092d0;
+}
+
+.property-listing-page .property-status-links li a .number {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  margin: -8px 0 0;
+}
+
+.property-listing-page .sorting-filtering {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0 -10px;
+  padding: 20px 0 0;
+}
+
+.property-listing-page .sorting-filtering > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.property-listing-page .sorting-filtering li {
+  color: #555;
+  width: 25%;
+  padding: 0 10px 15px;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+}
+
+.property-listing-page .sorting-filtering li > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+.property-listing-page .sorting-filtering label {
+  width: 100px;
+}
+
+.property-listing-page .sorting-filtering .input-holder {
+  width: calc(60% - 100px);
+}
+
+.property-listing-page .property-for {
+  display: block;
+  color: #fff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 25px;
+  background: #6c6d70;
+  padding: 5px;
+}
+
+.property-listing-page .listing-pro li {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  font-weight: 700;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #6c6d70;
+}
+
+.property-listing-page .listing-pro li > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0;
+}
+
+.property-listing-page .listing-pro li:nth-child(2n) {
+  background: #fff;
+}
+
+.property-listing-page .listing-pro li.t-h {
+  background: #2092d0;
+  color: #fff;
+}
+
+.property-listing-page .listing-pro li.t-h .customCheckbox {
+  font-size: 14px !important;
+  line-height: 14px !important;
+}
+
+.property-listing-page .listing-pro li.t-h .fake-label {
+  color: #fff;
+}
+
+.property-listing-page .listing-pro li.t-h .fake-checkbox {
+  border-color: #fff;
+}
+
+.property-listing-page .listing-pro li.t-h .fake-checkbox:after {
+  background: #fff;
+}
+
+.property-listing-page .listing-pro li.t-h label {
+  padding: 4px 20px 0 30px;
+}
+
+.property-listing-page .listing-pro li p {
+  margin: 0;
+}
+
+.property-listing-page .listing-pro li .border {
+  position: relative;
+}
+
+.property-listing-page .listing-pro li .border:after {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  bottom: -999px;
+  background: rgba(108, 109, 112, 0.35);
+  width: 1px;
+  content: '';
+}
+
+.property-listing-page .listing-pro li .pro-id {
+  width: 15%;
+  padding: 11px 15px 11px;
+}
+
+.property-listing-page .listing-pro li .pro-id.border:after {
+  display: none;
+}
+
+.property-listing-page .listing-pro li .pro-type {
+  width: 20%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .pro-location {
+  width: 20%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .pro-price {
+  width: 10%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .pro-size {
+  width: 5%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .pro-date {
+  width: 10%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .pro-view {
+  width: 10%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .pro-controls {
+  width: 10%;
+  padding: 15px 15px 13px;
+}
+
+.property-listing-page .listing-pro li .t-d {
+  color: #6c6d70;
+}
+
+.property-listing-page .listing-pro .control-link {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+}
+
+.property-listing-page .listing-pro .control-link > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0;
+}
+
+.property-listing-page .listing-pro .control-link li {
+  padding: 0 5px;
+}
+
+.property-listing-page .listing-pro .control-link li:nth-child(2n) {
+  background: transparent;
+}
+
+.property-listing-page .listing-pro .control-link li a {
+  text-decoration: none;
+  color: #b2b3b5;
+}
+
+.property-listing-page .listing-pro .control-link li a span {
+  font-size: 21px;
+  line-height: 1;
+}
+
+.property-listing-page .listing-pro .control-link li a:hover {
+  color: #2092d0;
+}
+
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
@@ -3056,18 +3378,7 @@ input[type='submit'] {
   }
 }
 
-html {
-  width: 100%;
-  height: 100%;
-}
-
-html.nav-active {
-  overflow-y: hidden;
-}
-
 body {
-  width: 100%;
-  height: 100%;
   background: #525252 url("../images/bg.jpg") no-repeat;
   background-attachment: fixed;
   background-size: 100% auto;
@@ -3693,11 +4004,6 @@ h1 span {
 
 #wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
-  display: table;
-  table-layout: fixed;
-  border-collapse: collapse;
 }
 
 #wrapper.fancy-overlay {
@@ -3763,6 +4069,15 @@ h1 span {
 
 .logo a {
   display: block;
+}
+
+#page-holder,
+#main {
+  position: relative;
+}
+
+#page-holder {
+  padding: 87px 0 0;
 }
 
 @media (max-width: 767px) {
