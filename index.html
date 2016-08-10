@@ -13,7 +13,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,300,500,600,700,800,400italic' rel='stylesheet' type='text/css'>
 </head>
-<body class="loading-page">
+<body class="loading-page sideBar-active">
 	<div class="page-loader">
 		<div class="page-loader-holder">
 			<img src="images/loader.gif" alt="Property42 loading">
@@ -49,20 +49,41 @@
 				</div>
 				<div class="alerts-links">
 					<ul class="alerts">
-						<li><a href="#"><span class="icon-message"></span></a></li>
-						<li><a href="#"><span class="icon-email-alerts"></span></a></li>
+						<li>
+							<a href="#"><span class="icon-message"></span></a>
+							<span class="count">999</span>
+						</li>
+						<li>
+							<a href="#"><span class="icon-email-alerts"></span></a>
+							<span class="count">99</span>
+						</li>
 					</ul>
 				</div>
 				<form class="search-side-links">
 					<input type="search" placeholder="Search Links">
 					<button type="submit"><span class="icon-search"></span></button>
 				</form>
-				<ul class="sideBar-links">
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
+				<div class="scroll-able">
+					<ul class="sideBar-links">
+						<li><a href="#"><span class="icon-home-dash"></span>DASHBOARD</a></li>
+						<li class="active">
+							<a href="#"><span class="icon-list"></span>LISTING<span class="total-tag">117</span></a>
+							<ul class="sub-links">
+								<li><a href="#">For sale<span class="total-tag">117</span></a></li>
+								<li class="active"><a href="#">For Rent<span class="total-tag">117</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#"><span class="icon-star"></span>FAVORITES<span class="total-tag">0</span></a></li>
+						<li><a href="#"><span class="icon-profile2"></span>My Profile</a></li>
+						<li><a href="#"><span class="icon-chabbi"></span>Change Password</a></li>
+					</ul>
+				</div>
+				<ul class="social-icons">
+					<li><a href="#"><span class="icon-facebook"></span></a></li>
+					<li><a href="#"><span class="icon-google-plus-symbol"></span></a></li>
+					<li><a href="#"><span class="icon-linkedin"></span></a></li>
+					<li><a href="#"><span class="icon-twitter"></span></a></li>
+					<li><a href="#"><span class="icon-instagram"></span></a></li>
 				</ul>
 			</aside>
 			<div id="page-holder">
@@ -72,7 +93,7 @@
 						<li><a href="#" class="pending">pending <span class="number">17</span></a></li>
 						<li><a href="#" class="rejected">rejected <span class="number">11</span></a></li>
 						<li><a href="#" class="expired">expired <span class="number">114</span></a></li>
-						<li><a href="#" class="deleted">deleted <span class="number">1174</span></a></li>
+						<li class="active"><a href="#" class="deleted">deleted <span class="number">1174</span></a></li>
 					</ul>
 					<ul class="sorting-filtering">
 						<li>

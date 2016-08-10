@@ -416,9 +416,12 @@ h1 {
     width: 100%;
     background: $white;
     border: 0;
-    padding: 0 10px;
+    padding: 0 30px 0 10px;
     @include font(14, 28);
     height: 28px;
+    @extend %layout;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 .mail {
@@ -537,6 +540,7 @@ h1 {
 #wrapper {
   @extend %layout;
   position: relative;
+  min-height: 100vh;
 
   &.fancy-overlay {
     filter: blur(15px);
@@ -548,7 +552,6 @@ h1 {
 
 #header {
   @extend %clearfix;
-  width: 100%;
   position: fixed;
   left: 0;
   right: 0;
@@ -557,6 +560,13 @@ h1 {
   background: $p42-background;
   padding: 5px 5px 5px 50px;
   box-shadow: 0 0 15px 0 rgba($black,0.25);
+  transition: left 0.5s linear;
+  -webkit-transition: left 0.5s linear;
+  -moz-transition: left 0.5s linear;
+
+  .sideBar-active & {
+    left: 260px;
+  }
 
   .left-header {
     width: 25%;
@@ -591,7 +601,7 @@ h1 {
     }
   }
   .right-header {
-    width: 25%;
+    width: 30%;
     @extend .pull-right;
     @extend %text-right;
   }
@@ -611,16 +621,28 @@ h1 {
 }
 #page-holder {
   padding: 87px 0 0;
+  transition: padding 0.5s linear;
+  -webkit-transition: padding 0.5s linear;
+  -moz-transition: padding 0.5s linear;
+  -ms-transition: padding 0.5s linear;
+
+  .sideBar-active & {
+    padding: 87px 0 0 270px;;
+  }
 }
 .sideBar-opener {
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 15px;
   bottom: 0;
   width: 15px;
   border: 1px solid $p42-default-grey;
   cursor: pointer;
   border-radius: 0 20px 20px 0;
+
+  .sideBar-active & {
+    border-radius: 20px 0 0 20px;
+  }
 
   &:after {
     position: absolute;
@@ -630,8 +652,237 @@ h1 {
     border-left: 5px solid $p42-default-grey;
     content: '';
     margin: -3px 0 0 -2px;
+    
+    .sideBar-active & {
+     border-left: 0; 
+     border-right: 5px solid $p42-default-grey;
+    }
   }
 }
+#sidebar-dashboard {
+  @extend %layout;
+  background: rgba($p42-default-grey, 0.5);
+  width: 270px;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  bottom: 0;
+  z-index: 9999;
+  box-shadow: 1px 0 15px 0 rgba($black,0.4);
+  transition: left 0.5s linear;
+  -webkit-transition: left 0.5s linear;
+  -moz-transition: left 0.5s linear;
+  -ms-transition: left 0.5s linear;
+
+  .sideBar-active & {
+    left: 0;
+  }
+
+  .scroll-able {
+    overflow: auto;
+    height: calc(100vh - 235px);
+  }
+
+  .profile-picture {
+    background: $p42-default-grey;
+    @extend %layout;
+    padding: 14px 10px;
+    box-shadow: 0 0 7px 0 rgba($black,0.4);
+
+    .image-holder {
+      @extend %pull-left;
+      @include squar(60px,60px);
+      border-radius: 100%;
+      @extend %layout;
+
+      img {
+        border-radius: 100%;
+        @extend %img-res;
+        height: 100%;
+      }
+    }
+    .name {
+      @extend %layout;
+      color: $white;
+      padding: 10px 0 0 10px;
+
+      strong, span { display: block;}
+    }
+  }
+  .alerts-links {
+    background: $p42-default-grey;
+    @extend %layout;
+    padding: 10px 10px 5px;
+    box-shadow: 0 0 7px 0 rgba($black,0.4);
+  }
+  .alerts{
+    @extend %listreset;
+    @include align-reset(top, 20,20);
+    @extend %text-right;
+
+    li {
+      padding: 0 10px;
+      position: relative;
+
+      .count {
+        color: $white;
+        @include font(9,11);
+        background: $red;
+        position: absolute;
+        top: -10px;
+        right: -1px;
+        padding: 4px 2px;
+        @extend %text-center;
+        font-family: $open-sans;
+        border-radius: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        @extend %layout;
+        @include squar(20px, 20px);
+      }
+
+      span[class^="icon-email-alerts"],span[class*="icon-email-alerts"]{
+        font-size: 25px;
+      }
+
+      a {
+        color: $dim-grey;
+        text-decoration: none;
+
+        &:hover { color: $white;}
+      }
+    }
+  }
+  .search-side-links {
+    width: 243px;
+    margin: 20px auto 10px;
+    @extend %layout;
+    position: relative;
+
+    input[type="text"], input[type="search"]{
+      @include squar(100%, 33px);
+      background: $p42-default-grey;;
+      border: 1px solid $white;
+      display: block;
+      padding: 7px 20px 7px 7px;
+      color: $white;
+      @include font(12,15);
+
+      @include placeholder{ color: $white;}
+    }
+    button {
+      position: absolute;
+      top: 1px;
+      right: 10px;
+      bottom: 1px;
+      color: $white;
+      background: transparent;
+      border: 0;
+      padding: 9px 2px;
+      @include font(14,17);
+    }
+  }
+  .sideBar-links {
+    @extend %listreset;
+    @extend %layout;
+    font-family: $open-sans;
+    @include font(18,22);
+    font-weight: 600;
+    @extend %text-upparcase;
+
+    li {
+      display: block;
+
+      &.active {
+        > a {
+          background: $p42-color;
+          color: $white;
+        }
+      }
+
+      .total-tag{
+        position: absolute;
+        top:15px;
+        right: 10px;
+      }
+      
+      a {
+        position: relative;
+        display: block;
+        padding: 15px 15px 15px 45px;
+        color: rgba($white, 0.5);
+        text-decoration: none;
+
+        &:hover {
+          background: $p42-color;
+          color: $white;
+        }
+
+        span[class^="icon-"],span[class*="icon-"]{
+          position: absolute;
+          top: 13px;
+          left: 7px;
+          font-size: 25px;
+          line-height: 1;
+          font-weight: 400;
+        }
+      }
+    }
+    .sub-links {
+      @extend %listreset;
+      padding: 0 0 0 45px;
+      @include font(13,16);
+
+      li {
+        &.active {
+          a {
+            background: rgba($p42-color, 0.5) !important;
+          }
+        }
+        a{
+          &:hover {
+            background: rgba($p42-color, 0.5) !important;
+          }
+        }
+      }
+    }
+  }
+  .social-icons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 55;
+
+    li {
+      a {
+        color: $p42-default-grey;
+
+        &:hover { color: $white;}
+      }
+    }
+  }
+}
+.social-icons {
+  @extend %listreset;
+  @include align-reset(top, 12,12);
+  @extend %text-center;
+
+  li {
+    padding: 0 5px 10px;
+
+    a {
+      text-decoration: none;
+
+      span[class^="icon-"],span[class*="icon-"]{
+        font-size: 28px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+
 
 
 

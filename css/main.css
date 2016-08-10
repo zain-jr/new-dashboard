@@ -395,8 +395,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?qnxf36");
-  src: url("../fonts/icomoon.eot?qnxf36#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?qnxf36") format("truetype"), url("../fonts/icomoon.woff?qnxf36") format("woff"), url("../fonts/icomoon.svg?qnxf36#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?9tukeh");
+  src: url("../fonts/icomoon.eot?9tukeh#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?9tukeh") format("truetype"), url("../fonts/icomoon.woff?9tukeh") format("woff"), url("../fonts/icomoon.svg?9tukeh#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -428,21 +428,8 @@ th {
   content: "\e944";
 }
 
-.icon-chabbi .path1:before {
+.icon-chabbi:before {
   content: "\e93e";
-  color: white;
-}
-
-.icon-chabbi .path2:before {
-  content: "\e93f";
-  margin-left: -0.828125em;
-  color: #050505;
-}
-
-.icon-chabbi .path3:before {
-  content: "\e940";
-  margin-left: -0.828125em;
-  color: black;
 }
 
 .icon-home-dash:before {
@@ -817,7 +804,7 @@ th {
 }
 
 .addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .registerNow .packetData-list,
-.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, .pager, .quick-links, .public-ui-features, .sumery-list {
+.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .pager, .quick-links, .public-ui-features, .sumery-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -829,7 +816,7 @@ th {
   clear: both;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder img, .page-loader .page-loader-holder img, .logo img {
+.registerNow .company-logo .logo-holder .picture-holder img, .page-loader .page-loader-holder img, .logo img, #sidebar-dashboard .profile-picture .image-holder img {
   width: 100%;
   height: auto;
   display: block;
@@ -851,7 +838,7 @@ th {
 }
 
 .text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .registerNow .role-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .page-loader, .global-error,
-.global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, .public-ui-features li strong, .generic-lightbox {
+.global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, #sidebar-dashboard .alerts li .count, .social-icons, .public-ui-features li strong, .generic-lightbox {
   text-align: center;
 }
 
@@ -859,11 +846,11 @@ th {
   text-align: left;
 }
 
-.text-right, #header .right-header, .sumery-list li .quantity {
+.text-right, #header .right-header, #sidebar-dashboard .alerts, .sumery-list li .quantity {
   text-align: right;
 }
 
-.text-upparcase, .addProperty-form input[type="submit"], .property-listing-page .property-status-links, .property-listing-page .property-for, .submit-query button[type="submit"], .small-heading, .btn-hollow, .inquiry-email-form button[type="submit"] {
+.text-upparcase, .addProperty-form input[type="submit"], .property-listing-page .property-status-links, .property-listing-page .property-for, #sidebar-dashboard .sideBar-links, .submit-query button[type="submit"], .small-heading, .btn-hollow, .inquiry-email-form button[type="submit"] {
   text-transform: uppercase;
 }
 
@@ -876,7 +863,7 @@ th {
   text-transform: capitalize;
 }
 
-.pull-left, .addProperty-form .tips, #header .left-header, #header .left-header .home, #header .left-header .searchByID {
+.pull-left, .addProperty-form .tips, #header .left-header, #header .left-header .home, #header .left-header .searchByID, #sidebar-dashboard .profile-picture .image-holder {
   float: left !important;
 }
 
@@ -884,8 +871,8 @@ th {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, #wrapper, #page-holder,
-#main, .submit-query, .inquiry-email-form .input-holder {
+.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
+#main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
 
@@ -1110,9 +1097,12 @@ select {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
   outline: none;
   box-shadow: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 textarea {
@@ -2793,6 +2783,7 @@ input[type='submit'] {
 
 .property-listing-page {
   background: #dee1e3;
+  min-height: 100%;
 }
 
 .property-listing-page .property-status-links {
@@ -2813,6 +2804,10 @@ input[type='submit'] {
 
 .property-listing-page .property-status-links li {
   width: 20%;
+}
+
+.property-listing-page .property-status-links li.active a {
+  color: #2092d0;
 }
 
 .property-listing-page .property-status-links li a {
@@ -2925,7 +2920,7 @@ input[type='submit'] {
 }
 
 .property-listing-page .sorting-filtering .input-holder {
-  width: calc(60% - 100px);
+  width: calc(80% - 100px);
 }
 
 .property-listing-page .property-for {
@@ -3009,7 +3004,7 @@ input[type='submit'] {
 }
 
 .property-listing-page .listing-pro li .pro-id {
-  width: 15%;
+  width: 12%;
   padding: 11px 15px 11px;
 }
 
@@ -3033,7 +3028,7 @@ input[type='submit'] {
 }
 
 .property-listing-page .listing-pro li .pro-size {
-  width: 5%;
+  width: 8%;
   padding: 15px 15px 13px;
 }
 
@@ -3893,10 +3888,12 @@ h1 {
   width: 100%;
   background: #fff;
   border: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   font-size: 14px;
   line-height: 28px;
   height: 28px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mail {
@@ -4049,6 +4046,7 @@ h1 span {
 
 #wrapper {
   position: relative;
+  min-height: 100vh;
 }
 
 #wrapper.fancy-overlay {
@@ -4059,7 +4057,6 @@ h1 span {
 }
 
 #header {
-  width: 100%;
   position: fixed;
   left: 0;
   right: 0;
@@ -4068,6 +4065,13 @@ h1 span {
   background: #dee1e3;
   padding: 5px 5px 5px 50px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+  transition: left 0.5s linear;
+  -webkit-transition: left 0.5s linear;
+  -moz-transition: left 0.5s linear;
+}
+
+.sideBar-active #header {
+  left: 260px;
 }
 
 #header .left-header {
@@ -4103,7 +4107,7 @@ h1 span {
 }
 
 #header .right-header {
-  width: 25%;
+  width: 30%;
 }
 
 .logo {
@@ -4123,17 +4127,29 @@ h1 span {
 
 #page-holder {
   padding: 87px 0 0;
+  transition: padding 0.5s linear;
+  -webkit-transition: padding 0.5s linear;
+  -moz-transition: padding 0.5s linear;
+  -ms-transition: padding 0.5s linear;
+}
+
+.sideBar-active #page-holder {
+  padding: 87px 0 0 270px;
 }
 
 .sideBar-opener {
   position: absolute;
   top: 0;
-  left: 5px;
+  left: 15px;
   bottom: 0;
   width: 15px;
   border: 1px solid #6c6d70;
   cursor: pointer;
   border-radius: 0 20px 20px 0;
+}
+
+.sideBar-active .sideBar-opener {
+  border-radius: 20px 0 0 20px;
 }
 
 .sideBar-opener:after {
@@ -4144,6 +4160,269 @@ h1 span {
   border-left: 5px solid #6c6d70;
   content: '';
   margin: -3px 0 0 -2px;
+}
+
+.sideBar-active .sideBar-opener:after {
+  border-left: 0;
+  border-right: 5px solid #6c6d70;
+}
+
+#sidebar-dashboard {
+  background: rgba(108, 109, 112, 0.5);
+  width: 270px;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  bottom: 0;
+  z-index: 9999;
+  box-shadow: 1px 0 15px 0 rgba(0, 0, 0, 0.4);
+  transition: left 0.5s linear;
+  -webkit-transition: left 0.5s linear;
+  -moz-transition: left 0.5s linear;
+  -ms-transition: left 0.5s linear;
+}
+
+.sideBar-active #sidebar-dashboard {
+  left: 0;
+}
+
+#sidebar-dashboard .scroll-able {
+  overflow: auto;
+  height: calc(100vh - 235px);
+}
+
+#sidebar-dashboard .profile-picture {
+  background: #6c6d70;
+  padding: 14px 10px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+}
+
+#sidebar-dashboard .profile-picture .image-holder {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+#sidebar-dashboard .profile-picture .image-holder img {
+  border-radius: 100%;
+  height: 100%;
+}
+
+#sidebar-dashboard .profile-picture .name {
+  color: #fff;
+  padding: 10px 0 0 10px;
+}
+
+#sidebar-dashboard .profile-picture .name strong, #sidebar-dashboard .profile-picture .name span {
+  display: block;
+}
+
+#sidebar-dashboard .alerts-links {
+  background: #6c6d70;
+  padding: 10px 10px 5px;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.4);
+}
+
+#sidebar-dashboard .alerts {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+}
+
+#sidebar-dashboard .alerts > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+#sidebar-dashboard .alerts li {
+  padding: 0 10px;
+  position: relative;
+}
+
+#sidebar-dashboard .alerts li .count {
+  color: #fff;
+  font-size: 9px;
+  line-height: 11px;
+  background: #ce2020;
+  position: absolute;
+  top: -10px;
+  right: -1px;
+  padding: 4px 2px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  border-radius: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 20px;
+  height: 20px;
+}
+
+#sidebar-dashboard .alerts li span[class^="icon-email-alerts"], #sidebar-dashboard .alerts li span[class*="icon-email-alerts"] {
+  font-size: 25px;
+}
+
+#sidebar-dashboard .alerts li a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+#sidebar-dashboard .alerts li a:hover {
+  color: #fff;
+}
+
+#sidebar-dashboard .search-side-links {
+  width: 243px;
+  margin: 20px auto 10px;
+  position: relative;
+}
+
+#sidebar-dashboard .search-side-links input[type="text"], #sidebar-dashboard .search-side-links input[type="search"] {
+  width: 100%;
+  height: 33px;
+  background: #6c6d70;
+  border: 1px solid #fff;
+  display: block;
+  padding: 7px 20px 7px 7px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#sidebar-dashboard .search-side-links input[type="text"]::-webkit-input-placeholder, #sidebar-dashboard .search-side-links input[type="search"]::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#sidebar-dashboard .search-side-links input[type="text"]::-moz-placeholder, #sidebar-dashboard .search-side-links input[type="search"]::-moz-placeholder {
+  opacity: 1;
+  color: #fff;
+}
+
+#sidebar-dashboard .search-side-links input[type="text"]:-moz-placeholder, #sidebar-dashboard .search-side-links input[type="search"]:-moz-placeholder {
+  color: #fff;
+}
+
+#sidebar-dashboard .search-side-links input[type="text"]:-ms-input-placeholder, #sidebar-dashboard .search-side-links input[type="search"]:-ms-input-placeholder {
+  color: #fff;
+}
+
+#sidebar-dashboard .search-side-links input[type="text"].placeholder, #sidebar-dashboard .search-side-links input[type="search"].placeholder {
+  color: #fff;
+}
+
+#sidebar-dashboard .search-side-links button {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  bottom: 1px;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  padding: 9px 2px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+#sidebar-dashboard .sideBar-links {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+#sidebar-dashboard .sideBar-links li {
+  display: block;
+}
+
+#sidebar-dashboard .sideBar-links li.active > a {
+  background: #2092d0;
+  color: #fff;
+}
+
+#sidebar-dashboard .sideBar-links li .total-tag {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+#sidebar-dashboard .sideBar-links li a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 45px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+#sidebar-dashboard .sideBar-links li a:hover {
+  background: #2092d0;
+  color: #fff;
+}
+
+#sidebar-dashboard .sideBar-links li a span[class^="icon-"], #sidebar-dashboard .sideBar-links li a span[class*="icon-"] {
+  position: absolute;
+  top: 13px;
+  left: 7px;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+#sidebar-dashboard .sideBar-links .sub-links {
+  padding: 0 0 0 45px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+#sidebar-dashboard .sideBar-links .sub-links li.active a {
+  background: rgba(32, 146, 208, 0.5) !important;
+}
+
+#sidebar-dashboard .sideBar-links .sub-links li a:hover {
+  background: rgba(32, 146, 208, 0.5) !important;
+}
+
+#sidebar-dashboard .social-icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 55;
+}
+
+#sidebar-dashboard .social-icons li a {
+  color: #6c6d70;
+}
+
+#sidebar-dashboard .social-icons li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+}
+
+.social-icons > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0;
+}
+
+.social-icons li {
+  padding: 0 5px 10px;
+}
+
+.social-icons li a {
+  text-decoration: none;
+}
+
+.social-icons li a span[class^="icon-"], .social-icons li a span[class*="icon-"] {
+  font-size: 28px;
+  line-height: 1;
 }
 
 @media (max-width: 767px) {

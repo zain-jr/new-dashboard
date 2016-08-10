@@ -48,9 +48,11 @@ select {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
   outline: none;
   box-shadow: none; 
+}
+ select::-ms-expand {
+    display: none;
 }
 
 textarea {
