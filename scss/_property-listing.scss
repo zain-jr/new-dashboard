@@ -101,6 +101,7 @@
     }
     .listing-pro {
         @extend %listreset;
+        border-bottom: 1px solid rgba($p42-default-grey, 0.35);;
 
         li {
             display: block;

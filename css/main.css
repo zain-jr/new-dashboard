@@ -395,8 +395,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?96aot9");
-  src: url("../fonts/icomoon.eot?96aot9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?96aot9") format("truetype"), url("../fonts/icomoon.woff?96aot9") format("woff"), url("../fonts/icomoon.svg?96aot9#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?qnxf36");
+  src: url("../fonts/icomoon.eot?qnxf36#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?qnxf36") format("truetype"), url("../fonts/icomoon.woff?qnxf36") format("woff"), url("../fonts/icomoon.svg?qnxf36#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -422,6 +422,47 @@ th {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-list:before {
+  content: "\e944";
+}
+
+.icon-chabbi .path1:before {
+  content: "\e93e";
+  color: white;
+}
+
+.icon-chabbi .path2:before {
+  content: "\e93f";
+  margin-left: -0.828125em;
+  color: #050505;
+}
+
+.icon-chabbi .path3:before {
+  content: "\e940";
+  margin-left: -0.828125em;
+  color: black;
+}
+
+.icon-home-dash:before {
+  content: "\e941";
+}
+
+.icon-profile2:before {
+  content: "\e942";
+}
+
+.icon-star:before {
+  content: "\e943";
+}
+
+.icon-email-alerts:before {
+  content: "\e93c";
+}
+
+.icon-message:before {
+  content: "\e93d";
 }
 
 .icon-active-thunder:before {
@@ -2897,6 +2938,10 @@ input[type='submit'] {
   padding: 5px;
 }
 
+.property-listing-page .listing-pro {
+  border-bottom: 1px solid rgba(108, 109, 112, 0.35);
+}
+
 .property-listing-page .listing-pro li {
   display: block;
   font-size: 0;
@@ -4021,7 +4066,7 @@ h1 span {
   z-index: 9999;
   display: block;
   background: #dee1e3;
-  padding: 5px;
+  padding: 5px 5px 5px 50px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -4078,6 +4123,27 @@ h1 span {
 
 #page-holder {
   padding: 87px 0 0;
+}
+
+.sideBar-opener {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  bottom: 0;
+  width: 15px;
+  border: 1px solid #6c6d70;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+.sideBar-opener:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 5px solid transparent;
+  border-left: 5px solid #6c6d70;
+  content: '';
+  margin: -3px 0 0 -2px;
 }
 
 @media (max-width: 767px) {
