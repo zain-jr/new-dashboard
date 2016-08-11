@@ -1001,6 +1001,8 @@ input[type='password'],
 input[type='url'],
 input[type='date'],
 textarea {
+  box-shadow: none;
+  -webkit-box-shadow: none;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   box-sizing: border-box;
@@ -1124,7 +1126,7 @@ input[type='submit'] {
 }
 
 .addProperty-form {
-  background: rgba(222, 225, 227, 0.8);
+  background: #dee1e3;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.22);
   padding: 20px 10px;
   margin: 0 auto 30px;
@@ -1938,7 +1940,7 @@ input[type='submit'] {
 }
 
 .updatePro {
-  background: rgba(222, 225, 227, 0.8);
+  background: #dee1e3;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.22);
   padding: 20px 10px;
   margin: 0 auto 30px;

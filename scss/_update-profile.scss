@@ -1,5 +1,5 @@
 .updatePro {
-    background: rgba($p42-background, 0.8);
+    background: $p42-background;
     @extend %layout;
     box-shadow: 0 0 7px rgba($black , 0.22);
     padding: 20px 10px;

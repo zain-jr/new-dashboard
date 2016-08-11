@@ -16,6 +16,8 @@ input[type='password'],
 input[type='url'],
 input[type='date'],
 textarea {
+  box-shadow: none;
+  -webkit-box-shadow: none;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   box-sizing: border-box;
