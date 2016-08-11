@@ -803,8 +803,8 @@ th {
   content: "\e907";
 }
 
-.addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .registerNow .packetData-list,
-.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .radio-checks-holder, .pager, .quick-links, .public-ui-features, .sumery-list {
+.addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .updatePro .packetData-list,
+.updatePro .societiesBlock-listing, .updatePro .role-listing, .updatePro .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .radio-checks-holder, .pager, .quick-links, .public-ui-features, .sumery-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -816,7 +816,7 @@ th {
   clear: both;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder img, .page-loader .page-loader-holder img, .logo img, #sidebar-dashboard .profile-picture .image-holder img {
+.updatePro .company-logo .logo-holder .picture-holder img, .page-loader .page-loader-holder img, .logo img, #sidebar-dashboard .profile-picture .image-holder img {
   width: 100%;
   height: auto;
   display: block;
@@ -837,7 +837,7 @@ th {
   overflow: hidden;
 }
 
-.text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .registerNow .role-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .page-loader, .global-error,
+.text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .updatePro .role-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .page-loader, .global-error,
 .global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, #sidebar-dashboard .alerts li .count, .social-icons, .registerNow-heading,
 .add-pro-heading, .public-ui-features li strong, .generic-lightbox {
   text-align: center;
@@ -859,7 +859,7 @@ th {
   text-transform: lowercase;
 }
 
-.text-capital, .addProperty-form .layout label, .addProperty-form .existingOrNew-member, .registerNow .layout label, .global-error,
+.text-capital, .addProperty-form .layout label, .addProperty-form .existingOrNew-member, .updatePro .layout label, .global-error,
 .global-success, .custom-withouChecks .fake-label, .registerNow-heading,
 .add-pro-heading, .views, .inquiry-email-form label {
   text-transform: capitalize;
@@ -873,13 +873,13 @@ th {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
+.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
 #main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .radio-checks-holder, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
 
 .hidden, .paginationCurrent-num-1,
-.current-num, .addProperty-form .list-extraFeatures label:after, .registerNow .company-logo.hover label span[class^="icon-"], .registerNow .company-logo.hover label span[class*="icon-"] {
+.current-num, .addProperty-form .list-extraFeatures label:after, .updatePro .company-logo.hover label span[class^="icon-"], .updatePro .company-logo.hover label span[class*="icon-"] {
   display: none !important;
 }
 
@@ -1937,19 +1937,19 @@ input[type='submit'] {
   }
 }
 
-.registerNow {
+.updatePro {
   background: rgba(222, 225, 227, 0.8);
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.22);
   padding: 20px 10px;
   margin: 0 auto 30px;
 }
 
-.registerNow .registerNow-heading {
+.updatePro .registerNow-heading {
   margin: 0 0 20px;
 }
 
-.registerNow .registration-form textarea,
-.registerNow .registration-form input[type="text"], .registerNow .registration-form input[type="tel"], .registerNow .registration-form input[type="password"], .registerNow .registration-form input[type="number"], .registerNow .registration-form input[type="email"] {
+.updatePro .registration-form textarea,
+.updatePro .registration-form input[type="text"], .updatePro .registration-form input[type="tel"], .updatePro .registration-form input[type="password"], .updatePro .registration-form input[type="number"], .updatePro .registration-form input[type="email"] {
   border: 0;
   width: 100%;
   padding: 6px;
@@ -1960,90 +1960,90 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .registration-form textarea,
-  .registerNow .registration-form input[type="text"], .registerNow .registration-form input[type="tel"], .registerNow .registration-form input[type="password"], .registerNow .registration-form input[type="number"], .registerNow .registration-form input[type="email"] {
+  .updatePro .registration-form textarea,
+  .updatePro .registration-form input[type="text"], .updatePro .registration-form input[type="tel"], .updatePro .registration-form input[type="password"], .updatePro .registration-form input[type="number"], .updatePro .registration-form input[type="email"] {
     font-size: 12px;
     line-height: 16px;
   }
 }
 
-.registerNow .registration-form textarea::-webkit-input-placeholder,
-.registerNow .registration-form input[type="text"]::-webkit-input-placeholder, .registerNow .registration-form input[type="tel"]::-webkit-input-placeholder, .registerNow .registration-form input[type="password"]::-webkit-input-placeholder, .registerNow .registration-form input[type="number"]::-webkit-input-placeholder, .registerNow .registration-form input[type="email"]::-webkit-input-placeholder {
+.updatePro .registration-form textarea::-webkit-input-placeholder,
+.updatePro .registration-form input[type="text"]::-webkit-input-placeholder, .updatePro .registration-form input[type="tel"]::-webkit-input-placeholder, .updatePro .registration-form input[type="password"]::-webkit-input-placeholder, .updatePro .registration-form input[type="number"]::-webkit-input-placeholder, .updatePro .registration-form input[type="email"]::-webkit-input-placeholder {
   color: #555;
   opacity: 0.7;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .registration-form textarea::-webkit-input-placeholder,
-  .registerNow .registration-form input[type="text"]::-webkit-input-placeholder, .registerNow .registration-form input[type="tel"]::-webkit-input-placeholder, .registerNow .registration-form input[type="password"]::-webkit-input-placeholder, .registerNow .registration-form input[type="number"]::-webkit-input-placeholder, .registerNow .registration-form input[type="email"]::-webkit-input-placeholder {
+  .updatePro .registration-form textarea::-webkit-input-placeholder,
+  .updatePro .registration-form input[type="text"]::-webkit-input-placeholder, .updatePro .registration-form input[type="tel"]::-webkit-input-placeholder, .updatePro .registration-form input[type="password"]::-webkit-input-placeholder, .updatePro .registration-form input[type="number"]::-webkit-input-placeholder, .updatePro .registration-form input[type="email"]::-webkit-input-placeholder {
     font-size: 11px;
     line-height: 16px;
   }
 }
 
-.registerNow .registration-form textarea::-moz-placeholder,
-.registerNow .registration-form input[type="text"]::-moz-placeholder, .registerNow .registration-form input[type="tel"]::-moz-placeholder, .registerNow .registration-form input[type="password"]::-moz-placeholder, .registerNow .registration-form input[type="number"]::-moz-placeholder, .registerNow .registration-form input[type="email"]::-moz-placeholder {
+.updatePro .registration-form textarea::-moz-placeholder,
+.updatePro .registration-form input[type="text"]::-moz-placeholder, .updatePro .registration-form input[type="tel"]::-moz-placeholder, .updatePro .registration-form input[type="password"]::-moz-placeholder, .updatePro .registration-form input[type="number"]::-moz-placeholder, .updatePro .registration-form input[type="email"]::-moz-placeholder {
   opacity: 1;
   color: #555;
   opacity: 0.7;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .registration-form textarea::-moz-placeholder,
-  .registerNow .registration-form input[type="text"]::-moz-placeholder, .registerNow .registration-form input[type="tel"]::-moz-placeholder, .registerNow .registration-form input[type="password"]::-moz-placeholder, .registerNow .registration-form input[type="number"]::-moz-placeholder, .registerNow .registration-form input[type="email"]::-moz-placeholder {
+  .updatePro .registration-form textarea::-moz-placeholder,
+  .updatePro .registration-form input[type="text"]::-moz-placeholder, .updatePro .registration-form input[type="tel"]::-moz-placeholder, .updatePro .registration-form input[type="password"]::-moz-placeholder, .updatePro .registration-form input[type="number"]::-moz-placeholder, .updatePro .registration-form input[type="email"]::-moz-placeholder {
     font-size: 11px;
     line-height: 16px;
   }
 }
 
-.registerNow .registration-form textarea:-moz-placeholder,
-.registerNow .registration-form input[type="text"]:-moz-placeholder, .registerNow .registration-form input[type="tel"]:-moz-placeholder, .registerNow .registration-form input[type="password"]:-moz-placeholder, .registerNow .registration-form input[type="number"]:-moz-placeholder, .registerNow .registration-form input[type="email"]:-moz-placeholder {
+.updatePro .registration-form textarea:-moz-placeholder,
+.updatePro .registration-form input[type="text"]:-moz-placeholder, .updatePro .registration-form input[type="tel"]:-moz-placeholder, .updatePro .registration-form input[type="password"]:-moz-placeholder, .updatePro .registration-form input[type="number"]:-moz-placeholder, .updatePro .registration-form input[type="email"]:-moz-placeholder {
   color: #555;
   opacity: 0.7;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .registration-form textarea:-moz-placeholder,
-  .registerNow .registration-form input[type="text"]:-moz-placeholder, .registerNow .registration-form input[type="tel"]:-moz-placeholder, .registerNow .registration-form input[type="password"]:-moz-placeholder, .registerNow .registration-form input[type="number"]:-moz-placeholder, .registerNow .registration-form input[type="email"]:-moz-placeholder {
+  .updatePro .registration-form textarea:-moz-placeholder,
+  .updatePro .registration-form input[type="text"]:-moz-placeholder, .updatePro .registration-form input[type="tel"]:-moz-placeholder, .updatePro .registration-form input[type="password"]:-moz-placeholder, .updatePro .registration-form input[type="number"]:-moz-placeholder, .updatePro .registration-form input[type="email"]:-moz-placeholder {
     font-size: 11px;
     line-height: 16px;
   }
 }
 
-.registerNow .registration-form textarea:-ms-input-placeholder,
-.registerNow .registration-form input[type="text"]:-ms-input-placeholder, .registerNow .registration-form input[type="tel"]:-ms-input-placeholder, .registerNow .registration-form input[type="password"]:-ms-input-placeholder, .registerNow .registration-form input[type="number"]:-ms-input-placeholder, .registerNow .registration-form input[type="email"]:-ms-input-placeholder {
+.updatePro .registration-form textarea:-ms-input-placeholder,
+.updatePro .registration-form input[type="text"]:-ms-input-placeholder, .updatePro .registration-form input[type="tel"]:-ms-input-placeholder, .updatePro .registration-form input[type="password"]:-ms-input-placeholder, .updatePro .registration-form input[type="number"]:-ms-input-placeholder, .updatePro .registration-form input[type="email"]:-ms-input-placeholder {
   color: #555;
   opacity: 0.7;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .registration-form textarea:-ms-input-placeholder,
-  .registerNow .registration-form input[type="text"]:-ms-input-placeholder, .registerNow .registration-form input[type="tel"]:-ms-input-placeholder, .registerNow .registration-form input[type="password"]:-ms-input-placeholder, .registerNow .registration-form input[type="number"]:-ms-input-placeholder, .registerNow .registration-form input[type="email"]:-ms-input-placeholder {
+  .updatePro .registration-form textarea:-ms-input-placeholder,
+  .updatePro .registration-form input[type="text"]:-ms-input-placeholder, .updatePro .registration-form input[type="tel"]:-ms-input-placeholder, .updatePro .registration-form input[type="password"]:-ms-input-placeholder, .updatePro .registration-form input[type="number"]:-ms-input-placeholder, .updatePro .registration-form input[type="email"]:-ms-input-placeholder {
     font-size: 11px;
     line-height: 16px;
   }
 }
 
-.registerNow .registration-form textarea.placeholder,
-.registerNow .registration-form input[type="text"].placeholder, .registerNow .registration-form input[type="tel"].placeholder, .registerNow .registration-form input[type="password"].placeholder, .registerNow .registration-form input[type="number"].placeholder, .registerNow .registration-form input[type="email"].placeholder {
+.updatePro .registration-form textarea.placeholder,
+.updatePro .registration-form input[type="text"].placeholder, .updatePro .registration-form input[type="tel"].placeholder, .updatePro .registration-form input[type="password"].placeholder, .updatePro .registration-form input[type="number"].placeholder, .updatePro .registration-form input[type="email"].placeholder {
   color: #555;
   opacity: 0.7;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .registration-form textarea.placeholder,
-  .registerNow .registration-form input[type="text"].placeholder, .registerNow .registration-form input[type="tel"].placeholder, .registerNow .registration-form input[type="password"].placeholder, .registerNow .registration-form input[type="number"].placeholder, .registerNow .registration-form input[type="email"].placeholder {
+  .updatePro .registration-form textarea.placeholder,
+  .updatePro .registration-form input[type="text"].placeholder, .updatePro .registration-form input[type="tel"].placeholder, .updatePro .registration-form input[type="password"].placeholder, .updatePro .registration-form input[type="number"].placeholder, .updatePro .registration-form input[type="email"].placeholder {
     font-size: 11px;
     line-height: 16px;
   }
 }
 
-.registerNow .registration-form textarea {
+.updatePro .registration-form textarea {
   height: 90px;
   resize: none;
 }
 
-.registerNow .registration-form input[type="submit"] {
+.updatePro .registration-form input[type="submit"] {
   background: #2092d0;
   border: 0;
   color: #fff;
@@ -2061,35 +2061,35 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .registration-form input[type="submit"] {
+  .updatePro .registration-form input[type="submit"] {
     padding: 10px;
     width: 280px;
     margin: 15px auto 0;
   }
 }
 
-.registerNow .registration-form input[type="submit"]:hover {
+.updatePro .registration-form input[type="submit"]:hover {
   background: #30ce20;
 }
 
-.registerNow h1 {
+.updatePro h1 {
   font-size: 60px;
   line-height: 63px;
   font-weight: 100;
 }
 
-.registerNow h1 span {
+.updatePro h1 span {
   font-weight: 300;
 }
 
 @media (max-width: 767px) {
-  .registerNow h1 {
+  .updatePro h1 {
     font-size: 30px;
     line-height: 33px;
   }
 }
 
-.registerNow .layout {
+.updatePro .layout {
   padding: 3px;
   font-size: 0;
   line-height: 0;
@@ -2097,7 +2097,7 @@ input[type='submit'] {
   margin: 0 -10px 10px;
 }
 
-.registerNow .layout > * {
+.updatePro .layout > * {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -2105,123 +2105,123 @@ input[type='submit'] {
   letter-spacing: 0;
 }
 
-.registerNow .layout.two .layout-holder {
+.updatePro .layout.two .layout-holder {
   width: 33.5%;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout.two .layout-holder {
+  .updatePro .layout.two .layout-holder {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout.two .layout-holder {
+  .updatePro .layout.two .layout-holder {
     width: 100%;
     display: block;
   }
 }
 
-.registerNow .layout.two .layout-holder:first-child {
+.updatePro .layout.two .layout-holder:first-child {
   width: 66.5%;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout.two .layout-holder:first-child {
+  .updatePro .layout.two .layout-holder:first-child {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout.two .layout-holder:first-child {
+  .updatePro .layout.two .layout-holder:first-child {
     width: 100%;
     display: block;
   }
 }
 
-.registerNow .layout.two .phone-num {
+.updatePro .layout.two .phone-num {
   width: 33.5% !important;
   float: right;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout.two .phone-num {
+  .updatePro .layout.two .phone-num {
     width: 50% !important;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout.two .phone-num {
+  .updatePro .layout.two .phone-num {
     width: 100% !important;
     display: block;
   }
 }
 
-.registerNow .layout.two .otherRole {
+.updatePro .layout.two .otherRole {
   width: 66.5% !important;
   float: left;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout.two .otherRole {
+  .updatePro .layout.two .otherRole {
     width: 50% !important;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout.two .otherRole {
+  .updatePro .layout.two .otherRole {
     width: 100% !important;
     display: block;
   }
 }
 
-.registerNow .layout.first-small {
+.updatePro .layout.first-small {
   margin: 0;
 }
 
-.registerNow .layout.first-small .layout-holder {
+.updatePro .layout.first-small .layout-holder {
   width: 65%;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout.first-small .layout-holder {
+  .updatePro .layout.first-small .layout-holder {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout.first-small .layout-holder {
+  .updatePro .layout.first-small .layout-holder {
     width: 100%;
     display: block;
   }
 }
 
-.registerNow .layout.first-small .layout-holder:first-child {
+.updatePro .layout.first-small .layout-holder:first-child {
   width: 35%;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout.first-small .layout-holder:first-child {
+  .updatePro .layout.first-small .layout-holder:first-child {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout.first-small .layout-holder:first-child {
+  .updatePro .layout.first-small .layout-holder:first-child {
     width: 100%;
     display: block;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout {
+  .updatePro .layout {
     margin: 0;
     padding: 0;
     font-size: 0;
     line-height: 0;
     letter-spacing: -4px;
   }
-  .registerNow .layout > * {
+  .updatePro .layout > * {
     display: inline-block;
     vertical-align: top;
     font-size: 12px;
@@ -2230,7 +2230,7 @@ input[type='submit'] {
   }
 }
 
-.registerNow .layout .layout-holder {
+.updatePro .layout .layout-holder {
   width: 33.33%;
   padding: 0 10px;
   font-size: 0;
@@ -2238,7 +2238,7 @@ input[type='submit'] {
   letter-spacing: -4px;
 }
 
-.registerNow .layout .layout-holder > * {
+.updatePro .layout .layout-holder > * {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -2247,7 +2247,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout .layout-holder {
+  .updatePro .layout .layout-holder {
     width: 100%;
     display: block;
     margin: 0 0 10px;
@@ -2256,7 +2256,7 @@ input[type='submit'] {
     line-height: 0;
     letter-spacing: -4px;
   }
-  .registerNow .layout .layout-holder > * {
+  .updatePro .layout .layout-holder > * {
     display: inline-block;
     vertical-align: top;
     font-size: 12px;
@@ -2265,14 +2265,14 @@ input[type='submit'] {
   }
 }
 
-.registerNow .layout .layout-holder .full-width {
+.updatePro .layout .layout-holder .full-width {
   font-size: 0;
   line-height: 0;
   letter-spacing: -4px;
   margin: 0 0 20px;
 }
 
-.registerNow .layout .layout-holder .full-width > * {
+.updatePro .layout .layout-holder .full-width > * {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -2280,30 +2280,30 @@ input[type='submit'] {
   letter-spacing: 0;
 }
 
-.registerNow .layout .input-holder {
+.updatePro .layout .input-holder {
   width: calc(100% - 140px);
   padding: 2px;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .layout .input-holder {
+  .updatePro .layout .input-holder {
     width: calc(100% - 140px);
   }
 }
 
 @media (max-width: 1023px) {
-  .registerNow .layout .input-holder {
+  .updatePro .layout .input-holder {
     width: calc(100% - 90px);
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout .input-holder {
+  .updatePro .layout .input-holder {
     width: calc(100% - 80px);
   }
 }
 
-.registerNow .layout label {
+.updatePro .layout label {
   color: #555;
   opacity: 0.80;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -2314,27 +2314,27 @@ input[type='submit'] {
 }
 
 @media (max-width: 1023px) {
-  .registerNow .layout label {
+  .updatePro .layout label {
     width: 90px;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .layout label {
+  .updatePro .layout label {
     font-size: 12px;
     line-height: 15px;
     width: 80px;
   }
 }
 
-.registerNow .layout label.required-field:after {
+.updatePro .layout label.required-field:after {
   display: inline-block;
   vertical-align: top;
   color: #ce2020;
   content: '*';
 }
 
-.registerNow .role-opener {
+.updatePro .role-opener {
   display: block;
   width: 200px;
   height: 28px;
@@ -2350,27 +2350,27 @@ input[type='submit'] {
 }
 
 @media (max-width: 1199px) {
-  .registerNow .role-opener {
+  .updatePro .role-opener {
     font-size: 11px;
     line-height: 28px;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .role-opener {
+  .updatePro .role-opener {
     width: 100%;
   }
 }
 
-.registerNow .role-opener.active:after {
+.updatePro .role-opener.active:after {
   background: #d89429;
 }
 
-.registerNow .role-opener.active:before {
+.updatePro .role-opener.active:before {
   border-top-color: #fff;
 }
 
-.registerNow .role-opener:after {
+.updatePro .role-opener:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -2380,7 +2380,7 @@ input[type='submit'] {
   content: '';
 }
 
-.registerNow .role-opener:before {
+.updatePro .role-opener:before {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -2391,7 +2391,7 @@ input[type='submit'] {
   margin: -2px 0 0;
 }
 
-.registerNow .agent-check {
+.updatePro .agent-check {
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -2400,12 +2400,12 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .agent-check {
+  .updatePro .agent-check {
     margin: 0 3px;
   }
 }
 
-.registerNow .agent-check:after {
+.updatePro .agent-check:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2415,7 +2415,7 @@ input[type='submit'] {
   content: '';
 }
 
-.registerNow .agent-check .hidden-checkfield {
+.updatePro .agent-check .hidden-checkfield {
   visibility: visible;
   top: 0;
   left: 0;
@@ -2423,20 +2423,20 @@ input[type='submit'] {
   position: fixed;
 }
 
-.registerNow .agent-check .hidden-checkfield:checked ~ .fake-checkbox {
+.updatePro .agent-check .hidden-checkfield:checked ~ .fake-checkbox {
   background: #d89429;
   box-shadow: none;
 }
 
-.registerNow .agent-check .hidden-checkfield:checked ~ .fake-checkbox .fake-button {
+.updatePro .agent-check .hidden-checkfield:checked ~ .fake-checkbox .fake-button {
   left: 53%;
 }
 
-.registerNow .agent-check .hidden-checkfield:checked ~ .fake-label {
+.updatePro .agent-check .hidden-checkfield:checked ~ .fake-label {
   color: #000;
 }
 
-.registerNow .agent-check .fake-checkbox {
+.updatePro .agent-check .fake-checkbox {
   width: 40px;
   height: 20px;
   border-radius: 20px;
@@ -2448,7 +2448,7 @@ input[type='submit'] {
   z-index: -1;
 }
 
-.registerNow .agent-check .fake-checkbox .fake-button {
+.updatePro .agent-check .fake-checkbox .fake-button {
   position: absolute;
   top: 2px;
   left: 2px;
@@ -2465,7 +2465,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.registerNow .agent-check .fake-label {
+.updatePro .agent-check .fake-label {
   float: left;
   cursor: pointer;
   max-width: 200px;
@@ -2475,7 +2475,7 @@ input[type='submit'] {
   color: #000;
 }
 
-.registerNow .company-logo {
+.updatePro .company-logo {
   position: relative;
   display: block;
   width: 100%;
@@ -2483,14 +2483,14 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .company-logo {
+  .updatePro .company-logo {
     margin: 0 auto;
     display: block !important;
     max-width: 250px;
   }
 }
 
-.registerNow .company-logo .name-tag {
+.updatePro .company-logo .name-tag {
   float: left;
   font-size: 16px;
   line-height: 19px;
@@ -2500,7 +2500,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .company-logo .name-tag {
+  .updatePro .company-logo .name-tag {
     float: none;
     display: block;
     font-size: 12px;
@@ -2510,7 +2510,7 @@ input[type='submit'] {
   }
 }
 
-.registerNow .company-logo input[type="file"] {
+.updatePro .company-logo input[type="file"] {
   position: fixed;
   top: -999px;
   left: -999px;
@@ -2518,7 +2518,7 @@ input[type='submit'] {
   visibility: hidden;
 }
 
-.registerNow .company-logo .logo-holder {
+.updatePro .company-logo .logo-holder {
   position: relative;
   width: 90px;
   height: 90px;
@@ -2526,7 +2526,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .company-logo .logo-holder {
+  .updatePro .company-logo .logo-holder {
     float: none;
     display: block;
     padding: 0 0 10px;
@@ -2534,7 +2534,7 @@ input[type='submit'] {
   }
 }
 
-.registerNow .company-logo .logo-holder label {
+.updatePro .company-logo .logo-holder label {
   width: 90px;
   height: 90px;
   background: #555;
@@ -2544,7 +2544,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.registerNow .company-logo .logo-holder label span[class^="icon-"], .registerNow .company-logo .logo-holder label span[class*="icon-"] {
+.updatePro .company-logo .logo-holder label span[class^="icon-"], .updatePro .company-logo .logo-holder label span[class*="icon-"] {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2554,11 +2554,11 @@ input[type='submit'] {
   margin: -12px 0 0 -12px;
 }
 
-.registerNow .company-logo .logo-holder label:after {
+.updatePro .company-logo .logo-holder label:after {
   display: none;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder {
+.updatePro .company-logo .logo-holder .picture-holder {
   position: absolute;
   top: 0;
   right: 0;
@@ -2567,7 +2567,7 @@ input[type='submit'] {
   display: none;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder:after {
+.updatePro .company-logo .logo-holder .picture-holder:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2578,15 +2578,15 @@ input[type='submit'] {
   display: none;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder:hover .company-logo-delete, .registerNow .company-logo .logo-holder .picture-holder:hover:after {
+.updatePro .company-logo .logo-holder .picture-holder:hover .company-logo-delete, .updatePro .company-logo .logo-holder .picture-holder:hover:after {
   display: block;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder img {
+.updatePro .company-logo .logo-holder .picture-holder img {
   height: 100%;
 }
 
-.registerNow .company-logo .logo-holder .picture-holder .company-logo-delete {
+.updatePro .company-logo .logo-holder .picture-holder .company-logo-delete {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2599,8 +2599,8 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.registerNow .packetData-list,
-.registerNow .societiesBlock-listing {
+.updatePro .packetData-list,
+.updatePro .societiesBlock-listing {
   font-size: 0;
   line-height: 0;
   letter-spacing: -4px;
@@ -2609,8 +2609,8 @@ input[type='submit'] {
   width: 100%;
 }
 
-.registerNow .packetData-list > *,
-.registerNow .societiesBlock-listing > * {
+.updatePro .packetData-list > *,
+.updatePro .societiesBlock-listing > * {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -2618,20 +2618,20 @@ input[type='submit'] {
   letter-spacing: 0;
 }
 
-.registerNow .packetData-list li,
-.registerNow .societiesBlock-listing li {
+.updatePro .packetData-list li,
+.updatePro .societiesBlock-listing li {
   width: 25%;
   padding: 0 5px 10px;
 }
 
 @media (max-width: 767px) {
-  .registerNow .packetData-list li,
-  .registerNow .societiesBlock-listing li {
+  .updatePro .packetData-list li,
+  .updatePro .societiesBlock-listing li {
     width: 50%;
   }
 }
 
-.registerNow .societiesBlock-listing {
+.updatePro .societiesBlock-listing {
   padding: 20px;
   max-height: 115px;
   overflow-x: hidden;
@@ -2640,41 +2640,41 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
-  .registerNow .societiesBlock-listing {
+  .updatePro .societiesBlock-listing {
     padding: 0;
     margin: 0 0 10px;
   }
 }
 
-.registerNow .packetData-list {
+.updatePro .packetData-list {
   margin: 0 -5px;
 }
 
-.registerNow .packetData-list li {
+.updatePro .packetData-list li {
   width: 20%;
   padding: 0 5px 10px;
 }
 
 @media (max-width: 1199px) {
-  .registerNow .packetData-list li {
+  .updatePro .packetData-list li {
     width: 25%;
     padding: 0 3px 10px;
   }
 }
 
 @media (max-width: 1023px) {
-  .registerNow .packetData-list li {
+  .updatePro .packetData-list li {
     width: 33.33%;
   }
 }
 
 @media (max-width: 767px) {
-  .registerNow .packetData-list li {
+  .updatePro .packetData-list li {
     width: 50%;
   }
 }
 
-.registerNow .packetData {
+.updatePro .packetData {
   display: block;
   color: #fff;
   background: #2092d0;
@@ -2687,13 +2687,13 @@ input[type='submit'] {
 }
 
 @media (max-width: 1023px) {
-  .registerNow .packetData {
+  .updatePro .packetData {
     font-size: 12px;
     line-height: 15px;
   }
 }
 
-.registerNow .packetData .delete {
+.updatePro .packetData .delete {
   cursor: pointer;
   color: #fff;
   position: absolute;
@@ -2706,7 +2706,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.registerNow .role-listing {
+.updatePro .role-listing {
   font-size: 0;
   line-height: 0;
   letter-spacing: -4px;
@@ -2715,7 +2715,7 @@ input[type='submit'] {
   margin: 0 0 20px;
 }
 
-.registerNow .role-listing > * {
+.updatePro .role-listing > * {
   display: inline-block;
   vertical-align: top;
   font-size: 13px;
@@ -2723,63 +2723,63 @@ input[type='submit'] {
   letter-spacing: 0;
 }
 
-.registerNow .role-listing li {
+.updatePro .role-listing li {
   width: 25%;
   padding: 0 0 10px;
 }
 
 @media (max-width: 767px) {
-  .registerNow .role-listing li {
+  .updatePro .role-listing li {
     width: 50%;
   }
 }
 
-.registerNow .agent-information {
+.updatePro .agent-information {
   border: 1px solid rgba(119, 119, 119, 0.5);
   border-radius: 8px;
   margin: 10px 0;
   padding: 5px;
 }
 
-.registerNow .agent-information .registerNow-heading {
+.updatePro .agent-information .registerNow-heading {
   margin: 0 0 20px;
   padding: 0 0 5px;
 }
 
-.registerNow .agree-with-terms {
+.updatePro .agree-with-terms {
   display: block;
   width: 100%;
 }
 
-.registerNow .agree-with-terms li {
+.updatePro .agree-with-terms li {
   display: block;
   position: relative;
   margin: 0 0 10px;
 }
 
-.registerNow .agree-with-terms li .customCheckbox input {
+.updatePro .agree-with-terms li .customCheckbox input {
   top: 0;
   left: 0;
   position: absolute;
 }
 
-.registerNow .agree-with-terms label {
+.updatePro .agree-with-terms label {
   width: 100%;
   padding: 0 20px 0 30px;
 }
 
-.registerNow .agree-with-terms label:after {
+.updatePro .agree-with-terms label:after {
   display: none;
 }
 
-.registerNow .agree-with-terms .fake-checkbox {
+.updatePro .agree-with-terms .fake-checkbox {
   position: absolute;
   top: 50%;
   left: 0;
   margin: -11px 0 0;
 }
 
-.registerNow .agree-with-terms .fake-label {
+.updatePro .agree-with-terms .fake-label {
   max-width: 510px;
 }
 
