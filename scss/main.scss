@@ -881,6 +881,133 @@ h1 {
     }
   }
 }
+.radio-checks-holder {
+  @extend %listreset;
+  @include align-reset(top, 16,20);
+  font: $open-sans;
+  font-weight: 700;
+  margin: 10px 0 0;
+  @extend %layout;
+
+  @include media('<desktop'){
+    @include align-reset(top, 12,15);
+    text-align: center;
+  }
+  
+  &.subtype-links {
+    border-radius: 8px;
+    margin: -2px 0 10px;
+    background: $p42-background;
+
+    @include media('<desktop'){
+      text-align: left;
+
+      li {
+        padding: 5px;
+
+        @include media('<phone'){
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  li {
+    width: 25%;
+    font-weight: 600;
+    padding: 10px 20px;
+
+    @include media('<desktop'){
+      width: 33.33%;
+    }
+
+    @include media('<tablet'){
+      padding: 10px 3px;
+    }
+
+    &.active {
+      border-radius: 8px 8px 0 0;
+      background: $p42-background;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: -1px;
+        right: -1px;
+        background: $p42-background;
+        content: '';
+        height: 5px;
+      }
+    }
+
+    .custom-withouChecks {
+      margin: 0 auto;
+      max-width: 170px;
+      width: 100%;
+    }
+  }
+}
+.registerNow-heading,
+.add-pro-heading {
+    display: block;
+    @extend %text-center;
+    @extend %text-capital;
+    color: $dark-grey;
+    @include font(20,24);
+    font-family: $open-sans;
+    font-weight: 600;
+    overflow: hidden;
+    
+    @include media('<tablet'){
+        @include font(16,19);
+    }
+
+    &.smaller {
+      @include font(16,19);
+
+      @include media('<tablet'){
+        @include font(12,15);
+      }
+
+      b {
+        @include align(middle);
+        @include font(12,15);
+        padding: 0 5px;
+
+        @include media('<tablet'){ display: none;}
+      }
+    }
+
+    > span {
+        @include align(top);
+        padding: 5px;
+        position: relative;
+
+        &:before , &:after {
+            position: absolute;
+            top: 50%;
+            left: -9999px;
+            right: 110%;
+            background: #bec0c2;
+            content: '';
+            height: 3px;
+            margin: -2px 0 0;
+        }
+        &:after{
+            right: -9999px;
+            left: 110%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

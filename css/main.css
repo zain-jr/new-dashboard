@@ -804,7 +804,7 @@ th {
 }
 
 .addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .registerNow .packetData-list,
-.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .pager, .quick-links, .public-ui-features, .sumery-list {
+.registerNow .societiesBlock-listing, .registerNow .role-listing, .registerNow .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .radio-checks-holder, .pager, .quick-links, .public-ui-features, .sumery-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -838,7 +838,8 @@ th {
 }
 
 .text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .registerNow .role-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .page-loader, .global-error,
-.global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, #sidebar-dashboard .alerts li .count, .social-icons, .public-ui-features li strong, .generic-lightbox {
+.global-success, .custom-withouChecks .fake-label, .logout-list li, h1, #header .left-header .home, #sidebar-dashboard .alerts li .count, .social-icons, .registerNow-heading,
+.add-pro-heading, .public-ui-features li strong, .generic-lightbox {
   text-align: center;
 }
 
@@ -859,7 +860,8 @@ th {
 }
 
 .text-capital, .addProperty-form .layout label, .addProperty-form .existingOrNew-member, .registerNow .layout label, .global-error,
-.global-success, .custom-withouChecks .fake-label, .views, .inquiry-email-form label {
+.global-success, .custom-withouChecks .fake-label, .registerNow-heading,
+.add-pro-heading, .views, .inquiry-email-form label {
   text-transform: capitalize;
 }
 
@@ -872,7 +874,7 @@ th {
 }
 
 .layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .registerNow, .registerNow .registration-form, .registerNow .company-logo, .registerNow .company-logo .logo-holder, .registerNow .packetData, .registerNow .role-listing, .registerNow .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
-#main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .submit-query, .inquiry-email-form .input-holder {
+#main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .radio-checks-holder, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
 
@@ -4423,6 +4425,176 @@ h1 span {
 .social-icons li a span[class^="icon-"], .social-icons li a span[class*="icon-"] {
   font-size: 28px;
   line-height: 1;
+}
+
+.radio-checks-holder {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  font: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  margin: 10px 0 0;
+}
+
+.radio-checks-holder > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1023px) {
+  .radio-checks-holder {
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -4px;
+    text-align: center;
+  }
+  .radio-checks-holder > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+}
+
+.radio-checks-holder.subtype-links {
+  border-radius: 8px;
+  margin: -2px 0 10px;
+  background: #dee1e3;
+}
+
+@media (max-width: 1023px) {
+  .radio-checks-holder.subtype-links {
+    text-align: left;
+  }
+  .radio-checks-holder.subtype-links li {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1023px) and (max-width: 479px) {
+  .radio-checks-holder.subtype-links li {
+    width: 50%;
+  }
+}
+
+.radio-checks-holder li {
+  width: 25%;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+@media (max-width: 1023px) {
+  .radio-checks-holder li {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .radio-checks-holder li {
+    padding: 10px 3px;
+  }
+}
+
+.radio-checks-holder li.active {
+  border-radius: 8px 8px 0 0;
+  background: #dee1e3;
+  position: relative;
+}
+
+.radio-checks-holder li.active:after {
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  background: #dee1e3;
+  content: '';
+  height: 5px;
+}
+
+.radio-checks-holder li .custom-withouChecks {
+  margin: 0 auto;
+  max-width: 170px;
+  width: 100%;
+}
+
+.registerNow-heading,
+.add-pro-heading {
+  display: block;
+  color: #555;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .registerNow-heading,
+  .add-pro-heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.registerNow-heading.smaller,
+.add-pro-heading.smaller {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media (max-width: 767px) {
+  .registerNow-heading.smaller,
+  .add-pro-heading.smaller {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.registerNow-heading.smaller b,
+.add-pro-heading.smaller b {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .registerNow-heading.smaller b,
+  .add-pro-heading.smaller b {
+    display: none;
+  }
+}
+
+.registerNow-heading > span,
+.add-pro-heading > span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+  position: relative;
+}
+
+.registerNow-heading > span:before, .registerNow-heading > span:after,
+.add-pro-heading > span:before,
+.add-pro-heading > span:after {
+  position: absolute;
+  top: 50%;
+  left: -9999px;
+  right: 110%;
+  background: #bec0c2;
+  content: '';
+  height: 3px;
+  margin: -2px 0 0;
+}
+
+.registerNow-heading > span:after,
+.add-pro-heading > span:after {
+  right: -9999px;
+  left: 110%;
 }
 
 @media (max-width: 767px) {
