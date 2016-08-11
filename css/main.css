@@ -2053,7 +2053,7 @@ input[type='submit'] {
   line-height: 22px;
   display: block;
   padding: 10px 35px;
-  margin: 15px 0 0 auto;
+  margin: 15px auto 0;
   transition: background 0.5s ease;
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
