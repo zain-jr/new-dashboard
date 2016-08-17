@@ -1,8 +1,65 @@
 .property-listing-page {
     @extend %layout;
     background: $p42-background;
-    min-height: 100%;
+    position: relative;
+    min-height: 830px;
     
+    @include media('<desktop'){
+        min-height: auto;
+    }
+
+    .property-status-links-opener {
+        display: block;
+        @extend %text-center;
+        @extend %text-upparcase;
+        @include font(20,21);
+        font-weight: 700;
+        padding: 10px;
+        cursor: pointer;
+        background: $p42-color;
+        color: $white;
+        position: relative;
+
+        @include media('>=desktop'){ display: none;}
+
+        &.active {
+            .lines{ display: none;}
+            &:after {
+                top: 20px;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+            }
+            &:before {
+                top: 21px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+            }
+        }
+
+        .lines,
+        &:after , &:before {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 0;
+            height: 2px;
+            width: 30px;
+            content: '';
+            background: $white;
+            transform: rotate(0);
+            -webkit-transform: rotate(0);
+            -moz-transform: rotate(0);
+            transition: transform 0.5s ease, top 0.5s ease;
+            -webkit-transition: transform 0.5s ease, top 0.5s ease;
+            -moz-transition: transform 0.5s ease, top 0.5s ease;
+
+        }
+        .lines { top: 20px; }
+        &:before { top: 30px; }
+    }
+
     .property-status-links {
         @extend %listreset;
         @include align-reset(top,18,22);
@@ -11,8 +68,28 @@
         font-family: $open-sans;
         font-weight: 700;
 
+        @include media('<tvscreen'){
+            @include align-reset(top,14,18);
+        }
+        @include media('<widescreen'){
+            @include align-reset(top,12,15);
+        }
+
+        @include media('<desktop'){
+            position: absolute;
+            top: 41px;
+            left: 0;
+            right: 0;
+            z-index: 500;
+        }
+
         li {
             width: 20%;
+
+            @include media('<desktop'){
+                width: 100%;
+                display: block;
+            }
 
             &.active {
                 a {
@@ -70,6 +147,24 @@
                     right: 10px;
                     @include font(14,17);
                     margin: -8px 0 0 ;
+
+                    @include media('<widescreen'){
+                        @include font(12,15);
+                    }
+                    @include media('<desktop'){
+                        position: static;
+                        @include align(middle);
+                        margin: -2px 5px 0;
+
+                        &:before,
+                        &:after{
+                            @include align(top);
+                            content: '(';
+                        }
+                        &:after {
+                            content: ')';
+                        }
+                    }
                 }
             }
         }
@@ -82,18 +177,27 @@
         @extend %text-center;
         padding: 20px 0 0;
 
+        @include media('<widescreen'){
+            margin: 0;
+        }
+
         li {
             color: $dark-grey;
-            width: 25%;
+            width: 33.33%;
             padding: 0 10px 15px;
             @extend %layout;
             @include align-reset(top, 13,16);
         }
         label {
             width: 100px;
+            margin: 5px 0 0;
         }
         .input-holder {
             width: calc(80% - 100px);
+
+            @include media('<widescreen'){
+                width: calc(100% - 100px);
+            }
         }
     }
     .property-for {
@@ -108,7 +212,11 @@
     }
     .listing-pro {
         @extend %listreset;
-        border-bottom: 1px solid rgba($p42-default-grey, 0.35);;
+        border-bottom: 1px solid rgba($p42-default-grey, 0.35);
+
+        @include media('<widescreen'){
+            width: 1125px;
+        }
 
         li {
             display: block;
@@ -175,19 +283,15 @@
                 padding: 15px 15px 13px;
             }
             .pro-size {
-                width: 8%;
+                width: 13%;
                 padding: 15px 15px 13px;
             }
             .pro-date {
                 width: 10%;
                 padding: 15px 15px 13px;
             }
-            .pro-view {
-                width: 10%;
-                padding: 15px 15px 13px;
-            }
             .pro-controls {
-                width: 10%;
+                width: 15%;
                 padding: 15px 15px 13px;
             }
             .t-d {

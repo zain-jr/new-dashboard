@@ -252,8 +252,8 @@ h1 {
   @extend %layout;
   position: relative;
 
-  @include media('<desktop'){
-    @include squar(150px, 37px);
+  @include media('<widescreen'){
+    @include squar(150px, 45px);
   }
 
   input[type="text"],input[type="search"]{
@@ -268,7 +268,7 @@ h1 {
     border: 1px solid $p42-default-grey;
     
     @include media('<widescreen'){
-      @include squar(100%, 37px);
+      @include squar(100%, 45px);
       padding: 8px 35px 8px 8px;
     }
 
@@ -324,10 +324,7 @@ h1 {
       line-height: 45px;
 
       @include media('<widescreen'){
-        line-height: 15px;
-      }
-      @include media('<desktop'){
-        line-height: 37px;
+        line-height: 45px;
       }
     }
   }
@@ -472,6 +469,10 @@ h1 {
         background: $p42-default-grey;
         padding: 10px;
 
+        @include media('<widescreen'){
+          text-align: center;
+        }
+
         @include media('<tablet'){ padding: 5px;}
 
         .hidden{
@@ -486,7 +487,7 @@ h1 {
     a {
       display: block;
       text-decoration: none;
-      padding: 10px 25px 10px 5px;
+      padding: 10px 25px 10px 3px;
       color: $white;
       background: $p42-color;
       border-radius: 3px;
@@ -501,9 +502,15 @@ h1 {
         padding: 10px 20px 10px 5px;
       }
 
+      @include media('<widescreen'){
+        text-align: left;
+        padding: 10px 20px 10px 8px;
+      }
+
       @include media('<tablet'){
         padding:5px;
         min-height: 40px;
+        text-align: center;
       }
 
       span[class^="icon-"],span[class*="icon-"]{
@@ -564,8 +571,19 @@ h1 {
   -webkit-transition: left 0.5s linear;
   -moz-transition: left 0.5s linear;
 
+  @include media('<tvscreen'){
+    padding: 10px 5px 10px 50px;
+  }
+  @include media('<widescreen'){
+    padding:10px 5px 10px 35px;
+  }
+
   .sideBar-active & {
     left: 260px;
+
+    @include media('<desktop'){
+      left: 0;
+    }
   }
 
   .left-header {
@@ -573,6 +591,10 @@ h1 {
     margin: 17px 0 0;
     position: relative;
     @extend .pull-left;
+
+    @include media('<tvscreen'){
+      width: 30%;
+    }
 
     .home {
       @extend .pull-left;
@@ -604,6 +626,13 @@ h1 {
     width: 30%;
     @extend .pull-right;
     @extend %text-right;
+
+    @include media('<tvscreen'){
+      width: 40%;
+    }
+    @include media('<widescreen'){
+      width: 37%;
+    }
   }
 }
 .logo {
@@ -611,6 +640,18 @@ h1 {
   max-width: 215px;
   margin: 0 auto;
   
+  @include media('<tvscreen'){
+    position: absolute; 
+    top: 6px;
+    left: 50%;
+    margin: 0 0 0 -87px;
+  }
+  @include media('<widescreen'){
+    max-width: 175px;
+    margin: 0 0 0 -110px;
+    top: 15px;
+  }
+
   a { display: block;}
   img { @extend %img-res;}
 }
@@ -626,14 +667,29 @@ h1 {
   -moz-transition: padding 0.5s linear;
   -ms-transition: padding 0.5s linear;
 
-  .sideBar-active & {
-    padding: 87px 0 0 270px;;
+  @include media('<tvscreen'){
+    padding: 89px 0 0;
   }
+
+  .sideBar-active & {
+    padding: 87px 0 0 270px;
+
+    @include media('<tvscreen'){
+      padding: 89px 0 0 270px;
+    }
+    @include media('<desktop'){
+      padding: 89px 0 0;
+    }
+  }
+}
+.table-responsive {
+  overflow-x: auto;
+  display: block;
 }
 .sideBar-opener {
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 10px;
   bottom: 0;
   width: 15px;
   border: 1px solid $p42-default-grey;
@@ -665,6 +721,12 @@ h1 {
   -moz-transition: left 0.5s linear;
   -ms-transition: left 0.5s linear;
 
+  @include media('<desktop'){
+    width: 100%;
+    left: -100%;
+    background: darken($p42-background, 20%);
+  }
+
   .sideBar-active & {
     left: 0;
   }
@@ -672,6 +734,29 @@ h1 {
   .scroll-able {
     overflow: auto;
     height: calc(100vh - 235px);
+  }
+
+  .sideBar-opener {
+    border: 2px solid $white;
+    border-radius: 0;
+    width: auto;
+    bottom: auto;
+    left: auto;
+    right: 20px;
+    top: 20px;
+    color: $white;
+    text-decoration: none;
+    border-radius: 100%;
+
+    @include media('>=desktop'){ display: none;}
+
+    &:after { @extend %hidden;}
+
+    span {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+    }
   }
 
   .profile-picture {
@@ -801,7 +886,7 @@ h1 {
         position: relative;
         display: block;
         padding: 15px 15px 15px 45px;
-        color: rgba($white, 0.5);
+        color: rgba($white, 0.8);
         text-decoration: none;
 
         &:hover {
@@ -1215,7 +1300,7 @@ h1 {
   @include font(16,20);
   color: $white;
   text-decoration: none;
-  background: $p42-color;
+  background: $orange;
   position: relative;
   font-weight: 700;
   padding: 3px 34px 3px 15px;
@@ -1620,7 +1705,7 @@ h1 {
   @include align(top);
   color: $p42-default-grey;
 }
-.please-wait{
+.loading-content{
   position: relative;
 
   &:after {
