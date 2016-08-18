@@ -860,7 +860,7 @@ th {
   text-transform: lowercase;
 }
 
-.text-capital, .addProperty-form .layout label, .addProperty-form .existingOrNew-member, .updatePro .layout label, .global-error,
+.text-capital, .addProperty-form .layout label, .addProperty-form .existingOrNew-member, .updatePro .layout label, .changePassword .layout label, .global-error,
 .global-success, .custom-withouChecks .fake-label, .registerNow-heading,
 .add-pro-heading, .views, .inquiry-email-form label {
   text-transform: capitalize;
@@ -875,7 +875,7 @@ th {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
+.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
 #main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .radio-checks-holder, .submit-query, .inquiry-email-form .input-holder {
   overflow: hidden;
 }
@@ -3256,6 +3256,214 @@ input[type='submit'] {
 
 .property-listing-page .listing-pro .control-link li a:hover {
   color: #2092d0;
+}
+
+.changePassword {
+  max-width: 800px;
+  background: rgba(222, 225, 227, 0.7);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.22);
+  margin: 100px auto;
+  padding: 10px 15px 20px;
+}
+
+.changePassword .global-error,
+.changePassword .global-success {
+  margin: 0 -15px;
+}
+
+.changePassword h1 {
+  font-size: 60px;
+  line-height: 63px;
+  font-weight: 100;
+}
+
+.changePassword h1 span {
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .changePassword h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
+
+.changePassword input[type="text"], .changePassword input[type="password"] {
+  border: 0;
+  width: 100%;
+  padding: 6px;
+  font-size: 13px;
+  line-height: 16px;
+  height: 28px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .changePassword input[type="text"], .changePassword input[type="password"] {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.changePassword input[type="text"]::-webkit-input-placeholder, .changePassword input[type="password"]::-webkit-input-placeholder {
+  color: #555;
+  opacity: 0.7;
+}
+
+@media (max-width: 1199px) {
+  .changePassword input[type="text"]::-webkit-input-placeholder, .changePassword input[type="password"]::-webkit-input-placeholder {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.changePassword input[type="text"]::-moz-placeholder, .changePassword input[type="password"]::-moz-placeholder {
+  opacity: 1;
+  color: #555;
+  opacity: 0.7;
+}
+
+@media (max-width: 1199px) {
+  .changePassword input[type="text"]::-moz-placeholder, .changePassword input[type="password"]::-moz-placeholder {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.changePassword input[type="text"]:-moz-placeholder, .changePassword input[type="password"]:-moz-placeholder {
+  color: #555;
+  opacity: 0.7;
+}
+
+@media (max-width: 1199px) {
+  .changePassword input[type="text"]:-moz-placeholder, .changePassword input[type="password"]:-moz-placeholder {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.changePassword input[type="text"]:-ms-input-placeholder, .changePassword input[type="password"]:-ms-input-placeholder {
+  color: #555;
+  opacity: 0.7;
+}
+
+@media (max-width: 1199px) {
+  .changePassword input[type="text"]:-ms-input-placeholder, .changePassword input[type="password"]:-ms-input-placeholder {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.changePassword input[type="text"].placeholder, .changePassword input[type="password"].placeholder {
+  color: #555;
+  opacity: 0.7;
+}
+
+@media (max-width: 1199px) {
+  .changePassword input[type="text"].placeholder, .changePassword input[type="password"].placeholder {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.changePassword .layout {
+  padding: 3px;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  margin: 0 0 20px;
+}
+
+.changePassword .layout > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 767px) {
+  .changePassword .layout {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -4px;
+  }
+  .changePassword .layout > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0;
+  }
+}
+
+.changePassword .layout .input-holder {
+  width: calc(100% - 200px);
+  padding: 2px;
+}
+
+@media (max-width: 767px) {
+  .changePassword .layout .input-holder {
+    width: calc(95% - 90px);
+  }
+}
+
+.changePassword .layout label {
+  color: #555;
+  font-weight: 700;
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 200px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 7px 5px 0 0;
+}
+
+@media (max-width: 767px) {
+  .changePassword .layout label {
+    font-size: 12px;
+    line-height: 15px;
+    width: 90px;
+  }
+}
+
+.changePassword .layout label:after {
+  display: inline-block;
+  vertical-align: top;
+  color: #ce2020;
+  content: '*';
+}
+
+.changePassword input[type="submit"] {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: #2092d0;
+  color: #fff;
+  font-size: 22px;
+  line-height: 25px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .changePassword input[type="submit"] {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 5px;
+  }
+}
+
+.changePassword input[type="submit"] span[class^="icon-"], .changePassword input[type="submit"] span[class*="icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0;
+  padding: 0 5px;
+}
+
+.changePassword input[type="submit"]:hover {
+  background: #30ce20;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
