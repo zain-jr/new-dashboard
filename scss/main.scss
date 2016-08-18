@@ -34,6 +34,7 @@ $media-expressions: (
 @import 'add-property-form';
 @import 'update-profile';
 @import 'property-listing';
+@import 'change-password';
 @import 'fancybox';
 
 .page-loader {
@@ -248,12 +249,25 @@ h1 {
   }
 }
 .searchByID {
+  @extend .pull-left;
   @include squar(200px, 45px);
   @extend %layout;
   position: relative;
-
+  margin: 0 0 0 5px;
+  
   @include media('<widescreen'){
     @include squar(150px, 45px);
+  }
+  @include media('<tablet'){
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 991;
+    background: $p42-default-grey;
+    @include squar(100%, 45px);
+    display: none;
   }
 
   input[type="text"],input[type="search"]{
@@ -274,7 +288,6 @@ h1 {
 
     @include media('<tablet'){
       color: $white;
-      border: 1px solid $white;
     }
 
     &:focus {
@@ -282,17 +295,23 @@ h1 {
       color: $p42-color;
 
       @include media('<tablet'){
-        border-color: $white;
+        border-color: $p42-default-grey;
         color: $white;
       }
       
       ~ button {
           color: $p42-color;
-          @include media('<tablet'){ color: $white;}
+
+          @include media('<tablet'){
+            color: $white;
+          }
       }
       @include placeholder{
         color: $p42-color;
-        @include media('<tablet'){ color: $white;}
+
+        @include media('<tablet'){
+          color: $white;
+        }
       }
     }
 
@@ -314,10 +333,6 @@ h1 {
     background: transparent;
     color: $p42-default-grey;
     padding: 0;
-    
-    @include media('<tablet'){
-      color: $white;
-    }
 
     span[class^="icon-"],span[class*="icon-"]{
       font-size: 20px;
@@ -325,6 +340,9 @@ h1 {
 
       @include media('<widescreen'){
         line-height: 45px;
+      }
+      @include media('<tablet'){
+        color: $white;
       }
     }
   }
@@ -509,7 +527,6 @@ h1 {
 
       @include media('<tablet'){
         padding:5px;
-        min-height: 40px;
         text-align: center;
       }
 
@@ -523,7 +540,7 @@ h1 {
 
         @include media('<tablet'){
           position: static;
-          @include font(25,30);
+          @include font(18px,23);
           margin: 0;
         }
       }
@@ -567,15 +584,18 @@ h1 {
   background: $p42-background;
   padding: 5px 5px 5px 50px;
   box-shadow: 0 0 15px 0 rgba($black,0.25);
-  transition: left 0.5s linear;
-  -webkit-transition: left 0.5s linear;
-  -moz-transition: left 0.5s linear;
+  transition: left 0.5s ease;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
 
   @include media('<tvscreen'){
     padding: 10px 5px 10px 50px;
   }
   @include media('<widescreen'){
     padding:10px 5px 10px 35px;
+  }
+  @include media('<tablet'){
+    padding:8px 5px 7px 35px;
   }
 
   .sideBar-active & {
@@ -595,7 +615,12 @@ h1 {
     @include media('<tvscreen'){
       width: 30%;
     }
+    @include media('<tablet'){
+      position: static;
+      margin:0;
+    }
 
+    .searchOpener-Mobile,
     .home {
       @extend .pull-left;
       background: $p42-default-grey;
@@ -606,7 +631,13 @@ h1 {
       font-size: 30px;
       line-height: 1;
       border-radius: 2px;
+      cursor: pointer;
       
+      @include media('<tablet'){
+        @include squar(36px, 33px);
+        font-size: 18px;
+      }
+
       &:hover {
         background: $orange;
         color: $white;
@@ -615,11 +646,17 @@ h1 {
       span{
         @include align(top);
         margin: 6px 0 0;
+
+        @include media('<tablet'){
+          margin: 7px 0 0;
+        }
       }
     }
-    .searchByID {
-      @extend .pull-left;
-      margin: 0 0 0 5px;
+    .searchOpener-Mobile {
+      margin: 0 3px;
+      @include media('>=tablet'){
+        display: none;
+      }
     }
   }
   .right-header {
@@ -633,6 +670,9 @@ h1 {
     @include media('<widescreen'){
       width: 37%;
     }
+    @include media('<tablet'){
+      width: 30%;
+    }
   }
 }
 .logo {
@@ -644,12 +684,18 @@ h1 {
     position: absolute; 
     top: 6px;
     left: 50%;
-    margin: 0 0 0 -87px;
+    margin: 0 0 0 -135px;
   }
   @include media('<widescreen'){
     max-width: 175px;
     margin: 0 0 0 -110px;
     top: 15px;
+  }
+
+  @include media('<tablet'){
+    max-width: 100px;
+    margin:  0 0 0 -40px;
+    top: 6px;
   }
 
   a { display: block;}
@@ -662,13 +708,17 @@ h1 {
 }
 #page-holder {
   padding: 87px 0 0;
-  transition: padding 0.5s linear;
-  -webkit-transition: padding 0.5s linear;
-  -moz-transition: padding 0.5s linear;
-  -ms-transition: padding 0.5s linear;
+  transition: padding 0.5s ease;
+  -webkit-transition: padding 0.5s ease;
+  -moz-transition: padding 0.5s ease;
+  -ms-transition: padding 0.5s ease;
 
   @include media('<tvscreen'){
     padding: 89px 0 0;
+  }
+
+  @include media('<tablet'){
+    padding: 53px 0 0;
   }
 
   .sideBar-active & {
@@ -679,6 +729,9 @@ h1 {
     }
     @include media('<desktop'){
       padding: 89px 0 0;
+    }
+    @include media('<tablet'){
+      padding: 53px 0 0;
     }
   }
 }
@@ -716,10 +769,10 @@ h1 {
   bottom: 0;
   z-index: 9999;
   box-shadow: 1px 0 15px 0 rgba($black,0.4);
-  transition: left 0.5s linear;
-  -webkit-transition: left 0.5s linear;
-  -moz-transition: left 0.5s linear;
-  -ms-transition: left 0.5s linear;
+  transition: left 0.5s ease;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
 
   @include media('<desktop'){
     width: 100%;
@@ -993,6 +1046,10 @@ h1 {
     font-weight: 600;
     padding: 10px 20px;
 
+    @include media('<widescreen'){
+      padding: 10px;
+    }
+
     @include media('<desktop'){
       width: 33.33%;
     }
@@ -1017,6 +1074,10 @@ h1 {
       }
     }
 
+    .customCheckbox, .customRadio{
+      padding: 0 0 0 30px;
+    }
+    
     .custom-withouChecks {
       margin: 0 auto;
       max-width: 170px;
@@ -1528,7 +1589,7 @@ h1 {
     width: 410px;
   }
   @include media('<phone'){
-    width: 320px;
+    width: 245px;
   }
 
   .lighbox-heading{

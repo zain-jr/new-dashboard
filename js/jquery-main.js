@@ -286,3 +286,8 @@ $(document).on('click', '.property-status-links>li>a', function(){
 $(document).on('click', '.sub-links>li>a', function(){
 	$('.property-for').text($(this).text());
 });
+$(document).on('click', '.searchOpener-Mobile', function(){
+	if (screen.width < 1024){
+		$('.searchByID').slideToggle();
+	}
+});

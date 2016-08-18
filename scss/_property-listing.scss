@@ -181,22 +181,39 @@
             margin: 0;
         }
 
+        @include media('<tablet'){
+            text-align: left;
+        }
+
         li {
             color: $dark-grey;
             width: 33.33%;
             padding: 0 10px 15px;
             @extend %layout;
             @include align-reset(top, 13,16);
+
+            @include media('<tablet'){
+                padding: 0 5px 5px;
+                width: 50%;
+                @include align-reset(top, 12,15);
+            }
         }
         label {
             width: 100px;
             margin: 5px 0 0;
+
+            @include media('<tablet'){
+                width: 50px;
+            }
         }
         .input-holder {
             width: calc(80% - 100px);
 
             @include media('<widescreen'){
                 width: calc(100% - 100px);
+            }
+            @include media('<tablet'){
+                width: calc(100% - 50px);
             }
         }
     }

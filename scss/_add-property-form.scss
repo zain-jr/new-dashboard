@@ -57,10 +57,10 @@
     
     .main-form {
         @extend %layout;
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
 
-        @include media('<desktop'){
+        @include media('<widescreen'){
             width: 100%;
         }
     }
@@ -149,10 +149,6 @@
                 
                 @include media('<tablet'){
                     @include squar(100%, 90px);
-                }
-
-                &:hover{
-                    &:after{ color: $green;}
                 }
                 
                 &:after{
@@ -288,23 +284,6 @@
                 padding: 0;
                 @extend %full-width;
             }
-            label {
-                width: 12.2%;
-
-                @include media('<tablet'){
-                    width: 35%;
-                }
-            }
-            .input-holder {
-                width: 80.5%;
-
-                @include media('<desktop'){
-                    width: 87.5%;
-                }
-                @include media('<tablet'){
-                    width: 65%;
-                }
-            }
         }
 
         .layout-holder {
@@ -325,13 +304,13 @@
             opacity: 0.80;
             font-family: $open-sans;
             @extend %text-capital;
-            width: 25%;
+            width: 120px;
             @include font(13,16);
             padding: 7px 0 0;
 
             @include media('<tablet'){
                 @include font(12,15);
-                width: 35%;
+                width: 90px;
             }
 
             &.required-field {
@@ -344,11 +323,11 @@
         }
     }
     .input-holder {
-        width: 60%;
+        width: calc(90% - 120px);
         padding: 2px;
 
-        @include media('<desktop'){
-            width: 65%;
+        @include media('<tablet'){
+            width: calc(95% - 90px);
         }
     }
     .fake-select {
@@ -518,10 +497,15 @@
             }
 
             .layout { margin: 0 -5px 10px;}
-            .layout-holder { padding: 0 5px;}
+            .layout-holder {
+                padding: 0 5px;
+
+                @include media('<widescreen'){
+                    width: 100%;
+                }
+            }
         }
         label {
-            width: 50%;
             padding: 5px;
 
             &:after { @extend %hidden;}
@@ -532,7 +516,6 @@
             height: 28px;
         }
         .input-holder {
-            width: 50%;
             
             input[type="radio"],input[type="checkbox"]{
                 margin: 6px 0 0;

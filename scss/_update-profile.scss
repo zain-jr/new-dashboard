@@ -191,7 +191,7 @@
             padding: 2px;
 
             @include media('<widescreen'){
-                width: calc(100% - 140px);
+                width: calc(100% - 100px);
             }
 
             @include media('<desktop'){
@@ -199,7 +199,7 @@
             }
 
             @include media('<tablet'){
-                width: calc(100% - 80px);
+                width: calc(95% - 80px);
             }
         }
         label {
@@ -210,6 +210,10 @@
             width: 140px;
             @include font(13,16);
             padding: 7px 5px 0 0;
+
+            @include media('<widescreen'){
+                width: 100px;
+            }
 
             @include media('<desktop'){
                 width: 90px;
