@@ -1213,7 +1213,7 @@ input[type='submit'] {
 }
 
 .addProperty-form .main-form {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -3433,6 +3433,7 @@ input[type='submit'] {
   vertical-align: top;
   color: #ce2020;
   content: '*';
+  padding: 0 4px;
 }
 
 .changePassword input[type="submit"] {
