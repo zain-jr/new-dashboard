@@ -4,6 +4,11 @@
     box-shadow: 0 0 7px rgba($black , 0.22);
     padding: 20px 10px;
     margin: 0 auto 30px;
+    width: 85%;
+
+    @include media('<widescreen'){
+        width: 100%;
+    }
 
     .registerNow-heading {
         margin: 0 0 20px;

@@ -35,6 +35,7 @@ $media-expressions: (
 @import 'update-profile';
 @import 'property-listing';
 @import 'change-password';
+@import 'property-detail';
 @import 'fancybox';
 
 .page-loader {
@@ -786,7 +787,11 @@ h1 {
 
   .scroll-able {
     overflow: auto;
-    height: calc(100vh - 235px);
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    bottom: 45px;
   }
 
   .sideBar-opener {
@@ -1515,6 +1520,10 @@ h1 {
     @include align-reset(top, 17, 20);
     font-family: $open-sans;
     padding: 5px;
+
+    @include media('<widescreen'){
+      @include align-reset(top, 14, 20);
+    }
 
     span {
       width: 50%;
