@@ -3750,7 +3750,7 @@ input[type='submit'] {
 
 .changePassword .global-error,
 .changePassword .global-success {
-  margin: 0 -15px;
+  margin: -10px -15px 10px;
 }
 
 .changePassword h1 {
@@ -3920,7 +3920,7 @@ input[type='submit'] {
 
 .changePassword input[type="submit"] {
   display: block;
-  width: 100%;
+  width: 50%;
   border: 0;
   background: #2092d0;
   color: #fff;
@@ -3928,6 +3928,7 @@ input[type='submit'] {
   line-height: 25px;
   padding: 15px;
   font-weight: 500;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
