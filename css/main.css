@@ -803,7 +803,10 @@ th {
   content: "\e907";
 }
 
-.addProperty-form .error, .addProperty-form .image-uploading-area, .addProperty-form .existingOrNew-member, .updatePro .packetData-list,
+.UpdateProperty-form .error,
+.addProperty-form .error, .UpdateProperty-form .image-uploading-area,
+.addProperty-form .image-uploading-area, .UpdateProperty-form .existingOrNew-member,
+.addProperty-form .existingOrNew-member, .updatePro .packetData-list,
 .updatePro .societiesBlock-listing, .updatePro .role-listing, .updatePro .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .propertyDetail-page .feature-list, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .radio-checks-holder, .pager, .quick-links, .public-ui-features, .sumery-list {
   margin: 0;
   padding: 0;
@@ -840,7 +843,12 @@ th {
   overflow: hidden;
 }
 
-.text-center, .addProperty-form .extra-features, .addProperty-form .existingOrNew-member li, .addProperty-form .list-extraFeatures .feature-heading, .addProperty-form .thankYou-message, .addProperty-form .thankYou-message .left, .updatePro .role-opener, .property-listing-page .property-status-links-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .propertyDetail-page .info-blockProperty .price, .propertyDetail-page .info-blockProperty .heading, .propertyDetail-page .info-blockProperty .small-heading, .propertyDetail-page .propertyImage-pagination .propertyImage-slide a,
+.text-center, .UpdateProperty-form .extra-features,
+.addProperty-form .extra-features, .UpdateProperty-form .existingOrNew-member li,
+.addProperty-form .existingOrNew-member li, .UpdateProperty-form .list-extraFeatures .feature-heading,
+.addProperty-form .list-extraFeatures .feature-heading, .UpdateProperty-form .thankYou-message,
+.addProperty-form .thankYou-message, .UpdateProperty-form .thankYou-message .left,
+.addProperty-form .thankYou-message .left, .updatePro .role-opener, .property-listing-page .property-status-links-opener, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .property-for, .propertyDetail-page .info-blockProperty .price, .propertyDetail-page .info-blockProperty .heading, .propertyDetail-page .info-blockProperty .small-heading, .propertyDetail-page .propertyImage-pagination .propertyImage-slide a,
 .propertyDetail-page .propertyImage-pagination .slide a,
 .propertyDetail-page .propertyImage-slider .propertyImage-slide a,
 .propertyDetail-page .propertyImage-slider .slide a, .propertyDetail-page .extra-feature-section .small-heading, .propertyDetail-page .agent-societies .agent-slide a, .propertyDetail-page .agent-picture, .page-loader, .global-error,
@@ -850,7 +858,9 @@ th {
   text-align: center;
 }
 
-.text-left, .addProperty-form .existingOrNew-member li .slide, .addProperty-form .thankYou-message .layout, .property-listing-page .listing-pro li .pro-id, .propertyDetail-page .property-picture-holder h1, .propertyDetail-page .overview-section, .propertyDetail-page .overview-section .small-heading, .propertyDetail-page .feature .small-heading, .inquiry-email-form, .information {
+.text-left, .UpdateProperty-form .existingOrNew-member li .slide,
+.addProperty-form .existingOrNew-member li .slide, .UpdateProperty-form .thankYou-message .layout,
+.addProperty-form .thankYou-message .layout, .property-listing-page .listing-pro li .pro-id, .propertyDetail-page .property-picture-holder h1, .propertyDetail-page .overview-section, .propertyDetail-page .overview-section .small-heading, .propertyDetail-page .feature .small-heading, .inquiry-email-form, .information {
   text-align: left;
 }
 
@@ -858,7 +868,8 @@ th {
   text-align: right;
 }
 
-.text-upparcase, .addProperty-form input[type="submit"], .property-listing-page .property-status-links-opener, .property-listing-page .property-status-links, .property-listing-page .property-for, #sidebar-dashboard .sideBar-links, .submit-query button[type="submit"], .small-heading, .btn-hollow, .inquiry-email-form button[type="submit"] {
+.text-upparcase, .UpdateProperty-form input[type="submit"],
+.addProperty-form input[type="submit"], .property-listing-page .property-status-links-opener, .property-listing-page .property-status-links, .property-listing-page .property-for, #sidebar-dashboard .sideBar-links, .submit-query button[type="submit"], .small-heading, .btn-hollow, .inquiry-email-form button[type="submit"] {
   text-transform: uppercase;
 }
 
@@ -866,13 +877,16 @@ th {
   text-transform: lowercase;
 }
 
-.text-capital, .addProperty-form .layout label, .addProperty-form .existingOrNew-member, .updatePro .layout label, .changePassword .layout label, .propertyDetail-page .agent-societies .agent-slide .image-description, .global-error,
+.text-capital, .UpdateProperty-form .layout label,
+.addProperty-form .layout label, .UpdateProperty-form .existingOrNew-member,
+.addProperty-form .existingOrNew-member, .updatePro .layout label, .changePassword .layout label, .propertyDetail-page .agent-societies .agent-slide .image-description, .global-error,
 .global-success, .custom-withouChecks .fake-label, .registerNow-heading,
 .add-pro-heading, .views, .inquiry-email-form label {
   text-transform: capitalize;
 }
 
-.pull-left, .addProperty-form .tips, .propertyDetail-page .overview-section .small-heading, .propertyDetail-page .agent-picture, .propertyDetail-page .agent-description .left-side, .searchByID, #header .left-header, #header .left-header .searchOpener-Mobile,
+.pull-left, .UpdateProperty-form .tips,
+.addProperty-form .tips, .propertyDetail-page .overview-section .small-heading, .propertyDetail-page .agent-picture, .propertyDetail-page .agent-description .left-side, .searchByID, #header .left-header, #header .left-header .searchOpener-Mobile,
 #header .left-header .home, #sidebar-dashboard .profile-picture .image-holder {
   float: left !important;
 }
@@ -881,7 +895,12 @@ th {
   float: right !important;
 }
 
-.layout, .addProperty-form, .addProperty-form .add-form-holder, .addProperty-form .main-form, .addProperty-form .tips, .addProperty-form .list-extraFeatures, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .propertyDetail-page, .propertyDetail-page .detail-holder, .propertyDetail-page .info-blockProperty .pictureHolder, .propertyDetail-page .propertyImage-pagination,
+.layout, .UpdateProperty-form,
+.addProperty-form, .UpdateProperty-form .add-form-holder,
+.addProperty-form .add-form-holder, .UpdateProperty-form .main-form,
+.addProperty-form .main-form, .UpdateProperty-form .tips,
+.addProperty-form .tips, .UpdateProperty-form .list-extraFeatures,
+.addProperty-form .list-extraFeatures, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .propertyDetail-page, .propertyDetail-page .detail-holder, .propertyDetail-page .info-blockProperty .pictureHolder, .propertyDetail-page .propertyImage-pagination,
 .propertyDetail-page .propertyImage-slider, .propertyDetail-page .propertyImage-pagination .propertyImage-mask,
 .propertyDetail-page .propertyImage-pagination .mask,
 .propertyDetail-page .propertyImage-slider .propertyImage-mask,
@@ -891,7 +910,8 @@ th {
 }
 
 .hidden, .propertyDetail-page .propertyImage-slide.active a:after, .paginationCurrent-num-1,
-.current-num, .addProperty-form .list-extraFeatures label:after, .updatePro .company-logo.hover label span[class^="icon-"], .updatePro .company-logo.hover label span[class*="icon-"], #sidebar-dashboard .sideBar-opener:after {
+.current-num, .UpdateProperty-form .list-extraFeatures label:after,
+.addProperty-form .list-extraFeatures label:after, .updatePro .company-logo.hover label span[class^="icon-"], .updatePro .company-logo.hover label span[class*="icon-"], #sidebar-dashboard .sideBar-opener:after {
   display: none !important;
 }
 
@@ -901,7 +921,8 @@ th {
   }
 }
 
-.full-width, .addProperty-form .layout.full-width .layout-holder, .submit-query .input-holder.full-width {
+.full-width, .UpdateProperty-form .layout.full-width .layout-holder,
+.addProperty-form .layout.full-width .layout-holder, .submit-query .input-holder.full-width {
   width: 100% !important;
   display: block !important;
   clear: both !important;
@@ -1137,6 +1158,7 @@ input[type='submit'] {
   outline: none;
 }
 
+.UpdateProperty-form,
 .addProperty-form {
   background: #dee1e3;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.22);
@@ -1144,6 +1166,7 @@ input[type='submit'] {
   margin: 0 auto 30px;
 }
 
+.UpdateProperty-form .error,
 .addProperty-form .error {
   font-size: 0;
   line-height: 0;
@@ -1151,6 +1174,7 @@ input[type='submit'] {
   margin: 0 0 10px;
 }
 
+.UpdateProperty-form .error > *,
 .addProperty-form .error > * {
   display: inline-block;
   vertical-align: top;
@@ -1160,11 +1184,13 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .error,
   .addProperty-form .error {
     font-size: 0;
     line-height: 0;
     letter-spacing: -4px;
   }
+  .UpdateProperty-form .error > *,
   .addProperty-form .error > * {
     display: inline-block;
     vertical-align: top;
@@ -1174,17 +1200,20 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .error li,
 .addProperty-form .error li {
   width: 33.33%;
   padding: 0 3px 5px;
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .error li,
   .addProperty-form .error li {
     width: 50%;
   }
 }
 
+.UpdateProperty-form .error span,
 .addProperty-form .error span {
   display: block;
   padding: 5px 5px 5px 25px;
@@ -1193,6 +1222,7 @@ input[type='submit'] {
   position: relative;
 }
 
+.UpdateProperty-form .error span:after,
 .addProperty-form .error span:after {
   position: absolute;
   top: 4px;
@@ -1201,43 +1231,51 @@ input[type='submit'] {
   font-family: 'icomoon';
 }
 
+.UpdateProperty-form .select2-container,
 .addProperty-form .select2-container {
   width: 100% !important;
 }
 
+.UpdateProperty-form h1,
 .addProperty-form h1 {
   font-size: 60px;
   line-height: 63px;
   font-weight: 100;
 }
 
+.UpdateProperty-form h1 span,
 .addProperty-form h1 span {
   font-weight: 300;
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form h1,
   .addProperty-form h1 {
     font-size: 30px;
     line-height: 33px;
   }
 }
 
+.UpdateProperty-form .main-form,
 .addProperty-form .main-form {
   width: 90%;
   margin: 0 auto;
 }
 
 @media (max-width: 1199px) {
+  .UpdateProperty-form .main-form,
   .addProperty-form .main-form {
     width: 100%;
   }
 }
 
+.UpdateProperty-form .tips,
 .addProperty-form .tips {
   width: 25%;
   display: none;
 }
 
+.UpdateProperty-form .image-uploading-area,
 .addProperty-form .image-uploading-area {
   font-size: 0;
   line-height: 0;
@@ -1247,6 +1285,7 @@ input[type='submit'] {
   max-width: 1024px;
 }
 
+.UpdateProperty-form .image-uploading-area > *,
 .addProperty-form .image-uploading-area > * {
   display: inline-block;
   vertical-align: top;
@@ -1256,12 +1295,14 @@ input[type='submit'] {
 }
 
 @media (max-width: 1023px) {
+  .UpdateProperty-form .image-uploading-area,
   .addProperty-form .image-uploading-area {
     max-width: 480px;
     margin: 10px auto;
   }
 }
 
+.UpdateProperty-form .image-uploading-area li,
 .addProperty-form .image-uploading-area li {
   width: 16.66%;
   position: relative;
@@ -1269,37 +1310,44 @@ input[type='submit'] {
 }
 
 @media (max-width: 1199px) {
+  .UpdateProperty-form .image-uploading-area li,
   .addProperty-form .image-uploading-area li {
     padding: 0 5px 10px;
   }
 }
 
 @media (max-width: 1023px) {
+  .UpdateProperty-form .image-uploading-area li,
   .addProperty-form .image-uploading-area li {
     width: 33.33%;
     padding: 0 5px 10px;
   }
 }
 
+.UpdateProperty-form .image-uploading-area li.error .error-text,
 .addProperty-form .image-uploading-area li.error .error-text {
   display: block;
   padding: 3px;
   text-align: left;
 }
 
+.UpdateProperty-form .image-uploading-area li.image-loaded .image-holder,
 .addProperty-form .image-uploading-area li.image-loaded .image-holder {
   opacity: 1;
   z-index: 9;
 }
 
+.UpdateProperty-form .image-uploading-area li.image-loaded .picture-name,
 .addProperty-form .image-uploading-area li.image-loaded .picture-name {
   pointer-events: inherit;
 }
 
+.UpdateProperty-form .image-uploading-area li.image-loaded .file-uploader:after,
 .addProperty-form .image-uploading-area li.image-loaded .file-uploader:after {
   display: none;
 }
 
+.UpdateProperty-form .image-uploading-area li:first-child .file-uploader:before,
 .addProperty-form .image-uploading-area li:first-child .file-uploader:before {
   position: absolute;
   top: 15px;
@@ -1317,6 +1365,7 @@ input[type='submit'] {
   background: #d89429;
 }
 
+.UpdateProperty-form .image-uploading-area li .file-uploader,
 .addProperty-form .image-uploading-area li .file-uploader {
   width: 100%;
   height: 110px;
@@ -1328,12 +1377,14 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .image-uploading-area li .file-uploader,
   .addProperty-form .image-uploading-area li .file-uploader {
     width: 100%;
     height: 90px;
   }
 }
 
+.UpdateProperty-form .image-uploading-area li .file-uploader:after,
 .addProperty-form .image-uploading-area li .file-uploader:after {
   position: absolute;
   top: 50%;
@@ -1352,6 +1403,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 1023px) {
+  .UpdateProperty-form .image-uploading-area li .file-uploader:after,
   .addProperty-form .image-uploading-area li .file-uploader:after {
     font-size: 60px;
     margin: -30px 0 0 -30px;
@@ -1359,12 +1411,14 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .image-uploading-area li .file-uploader:after,
   .addProperty-form .image-uploading-area li .file-uploader:after {
     font-size: 30px;
     margin: -15px 0 0 -15px;
   }
 }
 
+.UpdateProperty-form .image-uploading-area li .file-uploader input[type="file"],
 .addProperty-form .image-uploading-area li .file-uploader input[type="file"] {
   display: block;
   overflow: hidden;
@@ -1375,6 +1429,7 @@ input[type='submit'] {
   height: 100% !important;
 }
 
+.UpdateProperty-form .image-uploading-area li .picture-name,
 .addProperty-form .image-uploading-area li .picture-name {
   border: 0;
   display: block;
@@ -1388,6 +1443,7 @@ input[type='submit'] {
   pointer-events: none;
 }
 
+.UpdateProperty-form .image-uploading-area li .image-holder,
 .addProperty-form .image-uploading-area li .image-holder {
   position: absolute;
   top: 0;
@@ -1405,6 +1461,7 @@ input[type='submit'] {
   -ms-transition: z-index 0.9s ease, opacity 0.9s ease;
 }
 
+.UpdateProperty-form .image-uploading-area li .image-holder:after,
 .addProperty-form .image-uploading-area li .image-holder:after {
   position: absolute;
   top: 0;
@@ -1420,6 +1477,7 @@ input[type='submit'] {
   -ms-transition: opacity 0.4s ease;
 }
 
+.UpdateProperty-form .image-uploading-area li .image-holder .propertyDocumentCloseBtn,
 .addProperty-form .image-uploading-area li .image-holder .propertyDocumentCloseBtn {
   position: absolute;
   top: 50%;
@@ -1440,12 +1498,14 @@ input[type='submit'] {
 }
 
 @media (max-width: 1424px) {
+  .UpdateProperty-form .image-uploading-area li .image-holder .propertyDocumentCloseBtn,
   .addProperty-form .image-uploading-area li .image-holder .propertyDocumentCloseBtn {
     font-size: 50px;
     line-height: 50px;
   }
 }
 
+.UpdateProperty-form .image-uploading-area li .image-holder img,
 .addProperty-form .image-uploading-area li .image-holder img {
   width: 100%;
   display: block;
@@ -1453,15 +1513,18 @@ input[type='submit'] {
   border: 0;
 }
 
+.UpdateProperty-form .image-uploading-area li .image-holder:hover:after,
 .addProperty-form .image-uploading-area li .image-holder:hover:after {
   opacity: 1;
 }
 
+.UpdateProperty-form .image-uploading-area li .image-holder:hover .propertyDocumentCloseBtn,
 .addProperty-form .image-uploading-area li .image-holder:hover .propertyDocumentCloseBtn {
   opacity: 1;
   visibility: visible;
 }
 
+.UpdateProperty-form .layout,
 .addProperty-form .layout {
   padding: 3px;
   font-size: 0;
@@ -1470,6 +1533,7 @@ input[type='submit'] {
   margin: 0 -10px 10px;
 }
 
+.UpdateProperty-form .layout > *,
 .addProperty-form .layout > * {
   display: inline-block;
   vertical-align: top;
@@ -1479,6 +1543,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .layout,
   .addProperty-form .layout {
     margin: 0;
     padding: 0;
@@ -1486,6 +1551,7 @@ input[type='submit'] {
     line-height: 0;
     letter-spacing: -4px;
   }
+  .UpdateProperty-form .layout > *,
   .addProperty-form .layout > * {
     display: inline-block;
     vertical-align: top;
@@ -1495,14 +1561,17 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .layout.full-width,
 .addProperty-form .layout.full-width {
   margin: 0;
 }
 
+.UpdateProperty-form .layout.full-width .layout-holder,
 .addProperty-form .layout.full-width .layout-holder {
   padding: 0;
 }
 
+.UpdateProperty-form .layout .layout-holder,
 .addProperty-form .layout .layout-holder {
   width: 50%;
   padding: 0 10px;
@@ -1511,6 +1580,7 @@ input[type='submit'] {
   letter-spacing: -4px;
 }
 
+.UpdateProperty-form .layout .layout-holder > *,
 .addProperty-form .layout .layout-holder > * {
   display: inline-block;
   vertical-align: top;
@@ -1520,6 +1590,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .layout .layout-holder,
   .addProperty-form .layout .layout-holder {
     width: 100%;
     display: block;
@@ -1529,6 +1600,7 @@ input[type='submit'] {
     line-height: 0;
     letter-spacing: -4px;
   }
+  .UpdateProperty-form .layout .layout-holder > *,
   .addProperty-form .layout .layout-holder > * {
     display: inline-block;
     vertical-align: top;
@@ -1538,6 +1610,7 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .layout label,
 .addProperty-form .layout label {
   color: #555;
   opacity: 0.80;
@@ -1549,6 +1622,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .layout label,
   .addProperty-form .layout label {
     font-size: 12px;
     line-height: 15px;
@@ -1556,6 +1630,7 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .layout label.required-field:after,
 .addProperty-form .layout label.required-field:after {
   display: inline-block;
   vertical-align: top;
@@ -1563,17 +1638,20 @@ input[type='submit'] {
   content: '*';
 }
 
+.UpdateProperty-form .input-holder,
 .addProperty-form .input-holder {
   width: calc(90% - 120px);
   padding: 2px;
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .input-holder,
   .addProperty-form .input-holder {
     width: calc(95% - 90px);
   }
 }
 
+.UpdateProperty-form .fake-select select,
 .addProperty-form .fake-select select {
   font-size: 13px;
   line-height: 16px;
@@ -1581,8 +1659,14 @@ input[type='submit'] {
   padding: 6px;
 }
 
+.UpdateProperty-form textarea,
+.UpdateProperty-form input[type="text"], .UpdateProperty-form input[type="tel"], .UpdateProperty-form input[type="password"], .UpdateProperty-form input[type="number"], .UpdateProperty-form input[type="email"],
 .addProperty-form textarea,
-.addProperty-form input[type="text"], .addProperty-form input[type="tel"], .addProperty-form input[type="password"], .addProperty-form input[type="number"], .addProperty-form input[type="email"] {
+.addProperty-form input[type="text"],
+.addProperty-form input[type="tel"],
+.addProperty-form input[type="password"],
+.addProperty-form input[type="number"],
+.addProperty-form input[type="email"] {
   border: 0;
   width: 100%;
   padding: 6px;
@@ -1593,49 +1677,87 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form textarea,
+  .UpdateProperty-form input[type="text"], .UpdateProperty-form input[type="tel"], .UpdateProperty-form input[type="password"], .UpdateProperty-form input[type="number"], .UpdateProperty-form input[type="email"],
   .addProperty-form textarea,
-  .addProperty-form input[type="text"], .addProperty-form input[type="tel"], .addProperty-form input[type="password"], .addProperty-form input[type="number"], .addProperty-form input[type="email"] {
+  .addProperty-form input[type="text"],
+  .addProperty-form input[type="tel"],
+  .addProperty-form input[type="password"],
+  .addProperty-form input[type="number"],
+  .addProperty-form input[type="email"] {
     font-size: 12px;
     line-height: 16px;
   }
 }
 
+.UpdateProperty-form textarea::-webkit-input-placeholder,
+.UpdateProperty-form input[type="text"]::-webkit-input-placeholder, .UpdateProperty-form input[type="tel"]::-webkit-input-placeholder, .UpdateProperty-form input[type="password"]::-webkit-input-placeholder, .UpdateProperty-form input[type="number"]::-webkit-input-placeholder, .UpdateProperty-form input[type="email"]::-webkit-input-placeholder,
 .addProperty-form textarea::-webkit-input-placeholder,
-.addProperty-form input[type="text"]::-webkit-input-placeholder, .addProperty-form input[type="tel"]::-webkit-input-placeholder, .addProperty-form input[type="password"]::-webkit-input-placeholder, .addProperty-form input[type="number"]::-webkit-input-placeholder, .addProperty-form input[type="email"]::-webkit-input-placeholder {
+.addProperty-form input[type="text"]::-webkit-input-placeholder,
+.addProperty-form input[type="tel"]::-webkit-input-placeholder,
+.addProperty-form input[type="password"]::-webkit-input-placeholder,
+.addProperty-form input[type="number"]::-webkit-input-placeholder,
+.addProperty-form input[type="email"]::-webkit-input-placeholder {
   color: #555;
   opacity: 0.7;
 }
 
+.UpdateProperty-form textarea::-moz-placeholder,
+.UpdateProperty-form input[type="text"]::-moz-placeholder, .UpdateProperty-form input[type="tel"]::-moz-placeholder, .UpdateProperty-form input[type="password"]::-moz-placeholder, .UpdateProperty-form input[type="number"]::-moz-placeholder, .UpdateProperty-form input[type="email"]::-moz-placeholder,
 .addProperty-form textarea::-moz-placeholder,
-.addProperty-form input[type="text"]::-moz-placeholder, .addProperty-form input[type="tel"]::-moz-placeholder, .addProperty-form input[type="password"]::-moz-placeholder, .addProperty-form input[type="number"]::-moz-placeholder, .addProperty-form input[type="email"]::-moz-placeholder {
+.addProperty-form input[type="text"]::-moz-placeholder,
+.addProperty-form input[type="tel"]::-moz-placeholder,
+.addProperty-form input[type="password"]::-moz-placeholder,
+.addProperty-form input[type="number"]::-moz-placeholder,
+.addProperty-form input[type="email"]::-moz-placeholder {
   opacity: 1;
   color: #555;
   opacity: 0.7;
 }
 
+.UpdateProperty-form textarea:-moz-placeholder,
+.UpdateProperty-form input[type="text"]:-moz-placeholder, .UpdateProperty-form input[type="tel"]:-moz-placeholder, .UpdateProperty-form input[type="password"]:-moz-placeholder, .UpdateProperty-form input[type="number"]:-moz-placeholder, .UpdateProperty-form input[type="email"]:-moz-placeholder,
 .addProperty-form textarea:-moz-placeholder,
-.addProperty-form input[type="text"]:-moz-placeholder, .addProperty-form input[type="tel"]:-moz-placeholder, .addProperty-form input[type="password"]:-moz-placeholder, .addProperty-form input[type="number"]:-moz-placeholder, .addProperty-form input[type="email"]:-moz-placeholder {
+.addProperty-form input[type="text"]:-moz-placeholder,
+.addProperty-form input[type="tel"]:-moz-placeholder,
+.addProperty-form input[type="password"]:-moz-placeholder,
+.addProperty-form input[type="number"]:-moz-placeholder,
+.addProperty-form input[type="email"]:-moz-placeholder {
   color: #555;
   opacity: 0.7;
 }
 
+.UpdateProperty-form textarea:-ms-input-placeholder,
+.UpdateProperty-form input[type="text"]:-ms-input-placeholder, .UpdateProperty-form input[type="tel"]:-ms-input-placeholder, .UpdateProperty-form input[type="password"]:-ms-input-placeholder, .UpdateProperty-form input[type="number"]:-ms-input-placeholder, .UpdateProperty-form input[type="email"]:-ms-input-placeholder,
 .addProperty-form textarea:-ms-input-placeholder,
-.addProperty-form input[type="text"]:-ms-input-placeholder, .addProperty-form input[type="tel"]:-ms-input-placeholder, .addProperty-form input[type="password"]:-ms-input-placeholder, .addProperty-form input[type="number"]:-ms-input-placeholder, .addProperty-form input[type="email"]:-ms-input-placeholder {
+.addProperty-form input[type="text"]:-ms-input-placeholder,
+.addProperty-form input[type="tel"]:-ms-input-placeholder,
+.addProperty-form input[type="password"]:-ms-input-placeholder,
+.addProperty-form input[type="number"]:-ms-input-placeholder,
+.addProperty-form input[type="email"]:-ms-input-placeholder {
   color: #555;
   opacity: 0.7;
 }
 
+.UpdateProperty-form textarea.placeholder,
+.UpdateProperty-form input[type="text"].placeholder, .UpdateProperty-form input[type="tel"].placeholder, .UpdateProperty-form input[type="password"].placeholder, .UpdateProperty-form input[type="number"].placeholder, .UpdateProperty-form input[type="email"].placeholder,
 .addProperty-form textarea.placeholder,
-.addProperty-form input[type="text"].placeholder, .addProperty-form input[type="tel"].placeholder, .addProperty-form input[type="password"].placeholder, .addProperty-form input[type="number"].placeholder, .addProperty-form input[type="email"].placeholder {
+.addProperty-form input[type="text"].placeholder,
+.addProperty-form input[type="tel"].placeholder,
+.addProperty-form input[type="password"].placeholder,
+.addProperty-form input[type="number"].placeholder,
+.addProperty-form input[type="email"].placeholder {
   color: #555;
   opacity: 0.7;
 }
 
+.UpdateProperty-form textarea,
 .addProperty-form textarea {
   height: 90px;
   resize: none;
 }
 
+.UpdateProperty-form input[type="submit"],
 .addProperty-form input[type="submit"] {
   display: block;
   width: 245px;
@@ -1653,10 +1775,12 @@ input[type='submit'] {
   -ms-transition: background 0.5s ease;
 }
 
+.UpdateProperty-form input[type="submit"]:hover,
 .addProperty-form input[type="submit"]:hover {
   background: #30ce20;
 }
 
+.UpdateProperty-form .extra-features,
 .addProperty-form .extra-features {
   font-size: 16px;
   line-height: 18px;
@@ -1671,6 +1795,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .extra-features,
   .addProperty-form .extra-features {
     font-size: 12px;
     line-height: 15px;
@@ -1678,10 +1803,13 @@ input[type='submit'] {
   }
 }
 
-.addProperty-form .extra-features.active, .addProperty-form .extra-features:hover {
+.UpdateProperty-form .extra-features.active, .UpdateProperty-form .extra-features:hover,
+.addProperty-form .extra-features.active,
+.addProperty-form .extra-features:hover {
   background: #d89429;
 }
 
+.UpdateProperty-form .existingOrNew-member,
 .addProperty-form .existingOrNew-member {
   max-width: 520px;
   margin: 30px auto 10px;
@@ -1691,6 +1819,7 @@ input[type='submit'] {
   letter-spacing: -4px;
 }
 
+.UpdateProperty-form .existingOrNew-member > *,
 .addProperty-form .existingOrNew-member > * {
   display: inline-block;
   vertical-align: top;
@@ -1700,12 +1829,14 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .existingOrNew-member,
   .addProperty-form .existingOrNew-member {
     max-width: 300px;
     font-size: 0;
     line-height: 0;
     letter-spacing: -4px;
   }
+  .UpdateProperty-form .existingOrNew-member > *,
   .addProperty-form .existingOrNew-member > * {
     display: inline-block;
     vertical-align: top;
@@ -1715,27 +1846,32 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .existingOrNew-member li,
 .addProperty-form .existingOrNew-member li {
   width: 50%;
   padding: 0 20px;
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .existingOrNew-member li,
   .addProperty-form .existingOrNew-member li {
     padding: 0 5px;
   }
 }
 
+.UpdateProperty-form .existingOrNew-member li:nth-child(2) .slide,
 .addProperty-form .existingOrNew-member li:nth-child(2) .slide {
   margin: 0 0 0 -210px;
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .existingOrNew-member li:nth-child(2) .slide,
   .addProperty-form .existingOrNew-member li:nth-child(2) .slide {
     margin: 0 0 0 -145px;
   }
 }
 
+.UpdateProperty-form .existingOrNew-member li input[type="radio"],
 .addProperty-form .existingOrNew-member li input[type="radio"] {
   opacity: 0;
   position: fixed;
@@ -1743,14 +1879,17 @@ input[type='submit'] {
   left: -999px;
 }
 
+.UpdateProperty-form .existingOrNew-member li input[type="radio"]:checked ~ label,
 .addProperty-form .existingOrNew-member li input[type="radio"]:checked ~ label {
   background: #d89429;
 }
 
+.UpdateProperty-form .existingOrNew-member li input[type="radio"]:checked ~ .slide,
 .addProperty-form .existingOrNew-member li input[type="radio"]:checked ~ .slide {
   display: block;
 }
 
+.UpdateProperty-form .existingOrNew-member li label,
 .addProperty-form .existingOrNew-member li label {
   font-weight: 700;
   display: block;
@@ -1760,11 +1899,13 @@ input[type='submit'] {
   padding: 5px 20px;
 }
 
+.UpdateProperty-form .existingOrNew-member li .layout,
 .addProperty-form .existingOrNew-member li .layout {
   margin: 0 0 10px;
   padding: 0;
 }
 
+.UpdateProperty-form .existingOrNew-member li .layout label,
 .addProperty-form .existingOrNew-member li .layout label {
   display: inline-block;
   vertical-align: top;
@@ -1775,6 +1916,7 @@ input[type='submit'] {
   cursor: default;
 }
 
+.UpdateProperty-form .existingOrNew-member li .slide,
 .addProperty-form .existingOrNew-member li .slide {
   padding: 20px 5px;
   display: none;
@@ -1782,11 +1924,13 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .existingOrNew-member li .slide,
   .addProperty-form .existingOrNew-member li .slide {
     margin: 0 -145px 0 0;
   }
 }
 
+.UpdateProperty-form .list-extraFeatures,
 .addProperty-form .list-extraFeatures {
   background: #dee1e3;
   font-size: 0;
@@ -1794,6 +1938,7 @@ input[type='submit'] {
   letter-spacing: -4px;
 }
 
+.UpdateProperty-form .list-extraFeatures > *,
 .addProperty-form .list-extraFeatures > * {
   display: inline-block;
   vertical-align: top;
@@ -1802,6 +1947,7 @@ input[type='submit'] {
   letter-spacing: 0;
 }
 
+.UpdateProperty-form .list-extraFeatures .col,
 .addProperty-form .list-extraFeatures .col {
   width: 50%;
   padding: 0 5px;
@@ -1809,6 +1955,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .list-extraFeatures .col,
   .addProperty-form .list-extraFeatures .col {
     width: 100%;
     display: block;
@@ -1817,34 +1964,42 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .list-extraFeatures .col .layout,
 .addProperty-form .list-extraFeatures .col .layout {
   margin: 0 -5px 10px;
 }
 
+.UpdateProperty-form .list-extraFeatures .col .layout-holder,
 .addProperty-form .list-extraFeatures .col .layout-holder {
   padding: 0 5px;
 }
 
 @media (max-width: 1199px) {
+  .UpdateProperty-form .list-extraFeatures .col .layout-holder,
   .addProperty-form .list-extraFeatures .col .layout-holder {
     width: 100%;
   }
 }
 
+.UpdateProperty-form .list-extraFeatures label,
 .addProperty-form .list-extraFeatures label {
   padding: 5px;
 }
 
+.UpdateProperty-form .list-extraFeatures select,
 .addProperty-form .list-extraFeatures select {
   width: 100%;
   border: 0;
   height: 28px;
 }
 
-.addProperty-form .list-extraFeatures .input-holder input[type="radio"], .addProperty-form .list-extraFeatures .input-holder input[type="checkbox"] {
+.UpdateProperty-form .list-extraFeatures .input-holder input[type="radio"], .UpdateProperty-form .list-extraFeatures .input-holder input[type="checkbox"],
+.addProperty-form .list-extraFeatures .input-holder input[type="radio"],
+.addProperty-form .list-extraFeatures .input-holder input[type="checkbox"] {
   margin: 6px 0 0;
 }
 
+.UpdateProperty-form .list-extraFeatures .feature-heading,
 .addProperty-form .list-extraFeatures .feature-heading {
   display: block;
   padding: 5px;
@@ -1853,6 +2008,7 @@ input[type='submit'] {
   margin: 0 0 10px;
 }
 
+.UpdateProperty-form .calculatedPrice,
 .addProperty-form .calculatedPrice {
   background: transparent;
   color: #555;
@@ -1861,6 +2017,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .calculatedPrice,
   .addProperty-form .calculatedPrice {
     margin: 0;
     text-align: center;
@@ -1868,22 +2025,45 @@ input[type='submit'] {
   }
 }
 
+.UpdateProperty-form .thankYou-message,
+.addProperty-form .thankYou-message {
+  margin: 200px 0;
+}
+
+@media (max-width: 1199px) {
+  .UpdateProperty-form .thankYou-message,
+  .addProperty-form .thankYou-message {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .UpdateProperty-form .thankYou-message,
+  .addProperty-form .thankYou-message {
+    margin: 0;
+  }
+}
+
+.UpdateProperty-form .thankYou-message .layout,
 .addProperty-form .thankYou-message .layout {
   margin: 0;
   padding: 0;
 }
 
+.UpdateProperty-form .thankYou-message .left,
 .addProperty-form .thankYou-message .left {
   width: 30%;
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .thankYou-message .left,
   .addProperty-form .thankYou-message .left {
     width: 100%;
     display: block;
   }
 }
 
+.UpdateProperty-form .thankYou-message .left span,
 .addProperty-form .thankYou-message .left span {
   color: #2092d0;
   display: block;
@@ -1892,11 +2072,13 @@ input[type='submit'] {
 }
 
 @media (max-width: 1023px) {
+  .UpdateProperty-form .thankYou-message .left span,
   .addProperty-form .thankYou-message .left span {
     font-size: 150px;
   }
 }
 
+.UpdateProperty-form .thankYou-message .right,
 .addProperty-form .thankYou-message .right {
   width: 70%;
   font-size: 16px;
@@ -1905,6 +2087,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 1023px) {
+  .UpdateProperty-form .thankYou-message .right,
   .addProperty-form .thankYou-message .right {
     font-size: 14px;
     line-height: 17px;
@@ -1913,6 +2096,7 @@ input[type='submit'] {
 }
 
 @media (max-width: 767px) {
+  .UpdateProperty-form .thankYou-message .right,
   .addProperty-form .thankYou-message .right {
     width: 100%;
     display: block;
@@ -3542,7 +3726,9 @@ input[type='submit'] {
   }
 }
 
-.propertyDetail-page .info-blockProperty .pull-left, .propertyDetail-page .info-blockProperty .addProperty-form .tips, .addProperty-form .propertyDetail-page .info-blockProperty .tips, .propertyDetail-page .info-blockProperty .overview-section .small-heading, .propertyDetail-page .overview-section .info-blockProperty .small-heading, .propertyDetail-page .info-blockProperty .agent-picture, .propertyDetail-page .info-blockProperty .agent-description .left-side, .propertyDetail-page .agent-description .info-blockProperty .left-side, .propertyDetail-page .info-blockProperty .searchByID, .propertyDetail-page .info-blockProperty #header .left-header, #header .propertyDetail-page .info-blockProperty .left-header, .propertyDetail-page .info-blockProperty #header .left-header .searchOpener-Mobile, #header .left-header .propertyDetail-page .info-blockProperty .searchOpener-Mobile, .propertyDetail-page .info-blockProperty
+.propertyDetail-page .info-blockProperty .pull-left, .propertyDetail-page .info-blockProperty .UpdateProperty-form .tips, .UpdateProperty-form .propertyDetail-page .info-blockProperty .tips, .propertyDetail-page .info-blockProperty
+.addProperty-form .tips,
+.addProperty-form .propertyDetail-page .info-blockProperty .tips, .propertyDetail-page .info-blockProperty .overview-section .small-heading, .propertyDetail-page .overview-section .info-blockProperty .small-heading, .propertyDetail-page .info-blockProperty .agent-picture, .propertyDetail-page .info-blockProperty .agent-description .left-side, .propertyDetail-page .agent-description .info-blockProperty .left-side, .propertyDetail-page .info-blockProperty .searchByID, .propertyDetail-page .info-blockProperty #header .left-header, #header .propertyDetail-page .info-blockProperty .left-header, .propertyDetail-page .info-blockProperty #header .left-header .searchOpener-Mobile, #header .left-header .propertyDetail-page .info-blockProperty .searchOpener-Mobile, .propertyDetail-page .info-blockProperty
 #header .left-header .home,
 #header .left-header .propertyDetail-page .info-blockProperty .home, .propertyDetail-page .info-blockProperty .pull-right, .propertyDetail-page .info-blockProperty .overview-section .btn-hollow, .propertyDetail-page .overview-section .info-blockProperty .btn-hollow, .propertyDetail-page .info-blockProperty .agent-description .right-side, .propertyDetail-page .agent-description .info-blockProperty .right-side, .propertyDetail-page .info-blockProperty #header .right-header, #header .propertyDetail-page .info-blockProperty .right-header {
   width: 50%;

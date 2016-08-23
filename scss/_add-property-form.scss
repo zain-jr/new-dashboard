@@ -1,3 +1,4 @@
+.UpdateProperty-form,
 .addProperty-form {
     background:$p42-background;
     @extend %layout;
@@ -543,7 +544,16 @@
         }
     }
     .thankYou-message {
+        margin: 200px 0;
         @extend %text-center;
+
+        @include media('<widescreen'){
+            margin: 100px 0;
+        }
+
+        @include media('<desktop'){
+            margin: 0;
+        }
 
         .layout {
             margin: 0;
