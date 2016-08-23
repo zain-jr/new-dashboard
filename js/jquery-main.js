@@ -337,9 +337,11 @@ $(Document).on('click', '.property-status-links-opener', function(){
 	$('.property-status-links').slideToggle();
 });
 $(document).on('click', '.property-status-links>li>a', function(){
-	$('.property-status-links-opener>.text-container').text($(this).text());
-	$('.property-status-links').slideUp();
-	$('.property-status-links-opener').removeClass('active');
+	if (screen.width < 1024){
+		$('.property-status-links-opener>.text-container').text($(this).text());
+		$('.property-status-links').slideUp();
+		$('.property-status-links-opener').removeClass('active');
+	}
 });
 $(document).on('click', '.sub-links>li>a', function(){
 	$('.property-for').text($(this).text());

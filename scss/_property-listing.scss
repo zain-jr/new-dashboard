@@ -3,7 +3,7 @@
     background: $p42-background;
     position: relative;
     min-height: 830px;
-    
+
     @include media('<desktop'){
         min-height: auto;
     }
@@ -93,7 +93,10 @@
 
             &.active {
                 a {
+                    background: #dde0e2 !important;
                     color: $p42-color;
+
+                    &:after { display: block;}
                 }
             }
 
@@ -104,6 +107,9 @@
                 position: relative;
                 color: #6d6e71;
                 padding: 15px;
+                border-left: 1px solid $dim-grey;
+
+                @include media('<desktop'){ border: 0;}
 
                 &:before {
                     font-family: 'icomoon';
@@ -112,34 +118,59 @@
                     padding: 0 5px;
                     margin: -4px 0 0;
                 }
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    content: '';
+                    display: none;
 
-                &.active {
-                    background: #dde0e2;
+                    @include media('<desktop'){
 
-                    &:before { content: "\e936";}
+                        height: auto;
+                        right: auto;
+                        bottom: 0;
+                        width: 3px;
+                    }
                 }
+
+
+                &.active,
+                &.deleted,
+                &.expired,
+                &.rejected,
                 &.pending {
                     background: #d2d6d8;
+                }
 
+                &.active {
+                    &:before { content: "\e936";}
+                    &:after { background: $green;}
+                }
+                &.pending {
                     &:before { content: "\e93b";}
+                    &:after { background: $p42-color;}
                 }
                 &.rejected {
-                    background: #c9cdd0;
-
                     &:before { content: "\e939";}
+                    &:after { background: lighten($red, 30%);}
                 }
                 &.expired {
-                    background: #c0c4c7;
-                    
                     &:before { content: "\e92e";}
+                    &:after { background: #cf8511;}
                 }
                 &.deleted {
-                    background: #b7bcbe;
-
                     &:before { content: "\e937";}
+                    &:after { background: #e14646;}
                 }
 
-                &:hover{ color: $p42-color;}
+                &:hover{
+                    color: $p42-color;
+
+                    &:after { display: block;}
+                }
 
                 .number {
                     position: absolute;
@@ -242,6 +273,7 @@
             font-family: $open-sans;
             color: $p42-default-grey;
             @extend %layout;
+            position: relative;
 
             &:nth-child(2n){
                 background: $white;
@@ -264,6 +296,7 @@
                 }
                 label { padding: 4px 20px 0 30px;}
             }
+
             p{ margin: 0;}
             .border {
                 position: relative;
@@ -311,8 +344,31 @@
                 width: 15%;
                 padding: 15px 15px 13px;
             }
-            .t-d {
+
+            &.t-d {
                 color: $p42-default-grey;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: $red;
+                    z-index: 54;
+                    content: '';
+                    color: $white;
+                }
+                &:before {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    content: 'Deleting...';
+                    color: $white;
+                    z-index: 55;
+                    width: 100px;
+                    height: 200px;
+                }
             }
         }
         .control-link {

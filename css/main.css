@@ -3106,7 +3106,12 @@ input[type='submit'] {
 }
 
 .property-listing-page .property-status-links li.active a {
+  background: #dde0e2 !important;
   color: #2092d0;
+}
+
+.property-listing-page .property-status-links li.active a:after {
+  display: block;
 }
 
 .property-listing-page .property-status-links li a {
@@ -3116,6 +3121,13 @@ input[type='submit'] {
   position: relative;
   color: #6d6e71;
   padding: 15px;
+  border-left: 1px solid #aaa;
+}
+
+@media (max-width: 1023px) {
+  .property-listing-page .property-status-links li a {
+    border: 0;
+  }
 }
 
 .property-listing-page .property-status-links li a:before {
@@ -3127,48 +3139,75 @@ input[type='submit'] {
   margin: -4px 0 0;
 }
 
-.property-listing-page .property-status-links li a.active {
-  background: #dde0e2;
+.property-listing-page .property-status-links li a:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  content: '';
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .property-listing-page .property-status-links li a:after {
+    height: auto;
+    right: auto;
+    bottom: 0;
+    width: 3px;
+  }
+}
+
+.property-listing-page .property-status-links li a.active, .property-listing-page .property-status-links li a.deleted, .property-listing-page .property-status-links li a.expired, .property-listing-page .property-status-links li a.rejected, .property-listing-page .property-status-links li a.pending {
+  background: #d2d6d8;
 }
 
 .property-listing-page .property-status-links li a.active:before {
   content: "\e936";
 }
 
-.property-listing-page .property-status-links li a.pending {
-  background: #d2d6d8;
+.property-listing-page .property-status-links li a.active:after {
+  background: #30ce20;
 }
 
 .property-listing-page .property-status-links li a.pending:before {
   content: "\e93b";
 }
 
-.property-listing-page .property-status-links li a.rejected {
-  background: #c9cdd0;
+.property-listing-page .property-status-links li a.pending:after {
+  background: #2092d0;
 }
 
 .property-listing-page .property-status-links li a.rejected:before {
   content: "\e939";
 }
 
-.property-listing-page .property-status-links li a.expired {
-  background: #c0c4c7;
+.property-listing-page .property-status-links li a.rejected:after {
+  background: #ef9898;
 }
 
 .property-listing-page .property-status-links li a.expired:before {
   content: "\e92e";
 }
 
-.property-listing-page .property-status-links li a.deleted {
-  background: #b7bcbe;
+.property-listing-page .property-status-links li a.expired:after {
+  background: #cf8511;
 }
 
 .property-listing-page .property-status-links li a.deleted:before {
   content: "\e937";
 }
 
+.property-listing-page .property-status-links li a.deleted:after {
+  background: #e14646;
+}
+
 .property-listing-page .property-status-links li a:hover {
   color: #2092d0;
+}
+
+.property-listing-page .property-status-links li a:hover:after {
+  display: block;
 }
 
 .property-listing-page .property-status-links li a .number {
@@ -3322,6 +3361,7 @@ input[type='submit'] {
   font-weight: 700;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #6c6d70;
+  position: relative;
 }
 
 .property-listing-page .listing-pro li > * {
@@ -3419,8 +3459,31 @@ input[type='submit'] {
   padding: 15px 15px 13px;
 }
 
-.property-listing-page .listing-pro li .t-d {
+.property-listing-page .listing-pro li.t-d {
   color: #6c6d70;
+}
+
+.property-listing-page .listing-pro li.t-d:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ce2020;
+  z-index: 54;
+  content: '';
+  color: #fff;
+}
+
+.property-listing-page .listing-pro li.t-d:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: 'Deleting...';
+  color: #fff;
+  z-index: 55;
+  width: 100px;
+  height: 200px;
 }
 
 .property-listing-page .listing-pro .control-link {
@@ -4779,17 +4842,10 @@ input[type='submit'] {
 }
 
 .page-loader .page-loader-holder img {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 150px;
+  max-height: 150px;
   margin: 0 auto;
   pointer-events: none;
-}
-
-@media (max-width: 767px) {
-  .page-loader .page-loader-holder img {
-    max-width: 200px;
-    max-height: 200px;
-  }
 }
 
 body {
