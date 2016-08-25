@@ -23,7 +23,6 @@ $(document).ready(function() {
 	}
 	if (screen.width < 1024){
 		$('body').removeClass('sideBar-active');
-		$('.property-status-links').slideUp();
 		$(document).on('click', '.sideBar-links li', function(){
 			$('body').removeClass('sideBar-active');
 		});
