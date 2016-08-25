@@ -332,7 +332,7 @@ $(document).on('click', '.packetData>.delete', function(){
 $(document).on('click', '.sideBar-opener', function(){
 	$('body').toggleClass('sideBar-active');
 });
-$(Document).on('click', '.property-status-links-opener', function(){
+$(document).on('click', '.property-status-links-opener', function(){
 	$(this).toggleClass('active');
 	$('.property-status-links').slideToggle();
 });

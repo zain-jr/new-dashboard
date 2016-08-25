@@ -5,7 +5,7 @@
     min-height: 830px;
 
     @include media('<desktop'){
-        min-height: auto;
+        min-height: 500px;
     }
 
     .property-status-links-opener {
@@ -412,6 +412,7 @@
                 &:nth-child(2n){ background: transparent;}
 
                 a {
+                    cursor: pointer;
                     text-decoration: none;
                     color: #b2b3b5;
 

@@ -2998,7 +2998,7 @@ input[type='submit'] {
 
 @media (max-width: 1023px) {
   .property-listing-page {
-    min-height: auto;
+    min-height: 500px;
   }
 }
 
@@ -3565,6 +3565,7 @@ input[type='submit'] {
 }
 
 .property-listing-page .listing-pro .control-link li a {
+  cursor: pointer;
   text-decoration: none;
   color: #b2b3b5;
 }
@@ -5919,6 +5920,7 @@ h1 span {
 @media (max-width: 767px) {
   #page-holder {
     padding: 53px 0 0;
+    min-height: 500px;
   }
 }
 

@@ -715,6 +715,7 @@ h1 {
 
   @include media('<tablet'){
     padding: 53px 0 0;
+    min-height: 500px;
   }
 
   .sideBar-active & {
