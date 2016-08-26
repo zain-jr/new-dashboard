@@ -934,7 +934,7 @@ th {
 
 .hidden, .propertyDetail-page .propertyImage-slide.active a:after, .paginationCurrent-num-1,
 .current-num, .UpdateProperty-form .list-extraFeatures label:after,
-.addProperty-form .list-extraFeatures label:after, .updatePro .company-logo.hover label span[class^="icon-"], .updatePro .company-logo.hover label span[class*="icon-"], #sidebar-dashboard .sideBar-opener:after {
+.addProperty-form .list-extraFeatures label:after, .updatePro .company-logo.image-loaded label span[class^="icon-"], .updatePro .company-logo.image-loaded label span[class*="icon-"], .updatePro .company-logo.hover label span[class^="icon-"], .updatePro .company-logo.hover label span[class*="icon-"], #sidebar-dashboard .sideBar-opener:after {
   display: none !important;
 }
 
@@ -2713,6 +2713,10 @@ input[type='submit'] {
     display: block !important;
     max-width: 250px;
   }
+}
+
+.updatePro .company-logo.image-loaded .picture-holder {
+  display: block !important;
 }
 
 .updatePro .company-logo .name-tag {

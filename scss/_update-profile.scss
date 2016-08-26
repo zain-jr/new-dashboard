@@ -376,9 +376,15 @@
             max-width: 250px;
         }
 
+        &.image-loaded,
         &.hover {
             label {
              span[class^="icon-"],span[class*="icon-"]{ @extend %hidden;}   
+            }
+        }
+        &.image-loaded {
+            .picture-holder {
+                display: block !important;
             }
         }
 
