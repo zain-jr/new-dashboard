@@ -1849,6 +1849,7 @@ h1 {
   @include align-reset(top, 20, 25);
   padding: 0  10px;
   @extend %layout;
+  min-height: 40px;
 
   @include media('<desktop'){ padding: 0;}
 

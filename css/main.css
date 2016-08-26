@@ -7409,6 +7409,7 @@ h1 span {
   line-height: 0;
   letter-spacing: -4px;
   padding: 0  10px;
+  min-height: 40px;
 }
 
 .multipal-actions > * {
