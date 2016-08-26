@@ -52,6 +52,7 @@ $media-expressions: (
   @extend %text-center;
   height: 100vh;
   white-space:nowrap;
+  display: none;
 
   &:before {
     position: fixed;
@@ -474,6 +475,8 @@ h1 {
     @extend %text-center;
     position: relative;
 
+    @include media('<tablet'){ margin: 5px 0 0;}
+
     &:hover {
       .dropDown { display: block;}
     }
@@ -591,7 +594,7 @@ h1 {
     padding:10px 5px 10px 35px;
   }
   @include media('<tablet'){
-    padding:8px 5px 7px 35px;
+    padding:8px 5px 7px 55px;
   }
 
   .sideBar-active & {
@@ -649,7 +652,7 @@ h1 {
       }
     }
     .searchOpener-Mobile {
-      margin: 0 3px;
+      margin: 5px 3px 0;
       @include media('>=tablet'){
         display: none;
       }
@@ -689,9 +692,9 @@ h1 {
   }
 
   @include media('<tablet'){
-    max-width: 100px;
+    max-width: 130px;
     margin:  0 0 0 -40px;
-    top: 6px;
+    top: 2px;
   }
 
   a { display: block;}
@@ -745,6 +748,32 @@ h1 {
   border: 1px solid $p42-default-grey;
   cursor: pointer;
   border-radius: 0 20px 20px 0;
+
+  &.Main {
+    @include media('<tablet'){
+      left: 6px;
+      @include squar(40px, 40px);
+      border: 0;
+      border-radius: 0;
+      top: 6px;
+      bottom: auto;
+      border: 2px solid $p42-color;
+      border-radius: 4px;
+
+      text-align: center;
+
+      &:after {
+        display: none;
+      }
+      &:before {
+        content: "\e944";
+        font-family: 'icomoon';
+        font-size: 25px;
+        line-height: 37px;
+        margin: -1px 0 0;
+      }
+    }
+  }
 
   &:after {
     position: absolute;
@@ -942,6 +971,7 @@ h1 {
         padding: 15px 15px 15px 45px;
         color: rgba($white, 0.8);
         text-decoration: none;
+        cursor: pointer;
 
         &:hover {
           background: $p42-color;
@@ -1781,21 +1811,19 @@ h1 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba($white, 0.7);
+    background: rgba($white, 0.9);
     z-index: 789;
     content: '';
   }
   &:before {
-    background: url('../images/ring1.gif') no-repeat 50% 0;
-    background-size: 100% 100%;
+    background: url('../images/ring1.gif') no-repeat;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     z-index: 790;
-    @include squar(150px,150px);
-    content: 'Please wait...';
+    content: '';
+    @include squar(50px,50px);
     color: $black;
-    margin: -75px  0 0 -75px;
     padding: 140px 0 0 30px;
   }
 }

@@ -23,41 +23,7 @@
         @include media('>=desktop'){ display: none;}
 
         &.active {
-            .lines{ display: none;}
-            &:after {
-                top: 20px;
-                transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-            }
-            &:before {
-                top: 21px;
-                transform: rotate(-45deg);
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-            }
         }
-
-        .lines,
-        &:after , &:before {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: 0;
-            height: 2px;
-            width: 30px;
-            content: '';
-            background: $white;
-            transform: rotate(0);
-            -webkit-transform: rotate(0);
-            -moz-transform: rotate(0);
-            transition: transform 0.5s ease, top 0.5s ease;
-            -webkit-transition: transform 0.5s ease, top 0.5s ease;
-            -moz-transition: transform 0.5s ease, top 0.5s ease;
-
-        }
-        .lines { top: 20px; }
-        &:before { top: 30px; }
     }
 
     .property-status-links {
@@ -95,7 +61,21 @@
             &.active {
                 a {
                     background: #dde0e2 !important;
-                    color: $p42-color;
+                    &.active {
+                        color: $green;
+                    }
+                    &.pending {
+                        color: $p42-color;
+                    }
+                    &.rejected {
+                        color: lighten($red, 30%);
+                    }
+                    &.expired {
+                        color: #cf8511;
+                    }
+                    &.deleted {
+                        color: #e14646;
+                    }
 
                     &:after { display: block;}
                 }
@@ -168,9 +148,23 @@
                 }
 
                 &:hover{
-                    color: $p42-color;
-
                     &:after { display: block;}
+
+                    &.active {
+                        color: $green;
+                    }
+                    &.pending {
+                        color: $p42-color;
+                    }
+                    &.rejected {
+                        color: lighten($red, 30%);
+                    }
+                    &.expired {
+                        color: #cf8511;
+                    }
+                    &.deleted {
+                        color: #e14646;
+                    }
                 }
 
                 .number {

@@ -4,7 +4,7 @@
     @extend %layout;
     box-shadow: 0 0 7px rgba($black , 0.22);
     padding: 20px 10px;
-    margin: 0 auto 30px;
+    margin: 42px auto;
 
     .error {
         @extend %listreset;
@@ -547,7 +547,7 @@
         }
     }
     .thankYou-message {
-        margin: 200px 0;
+        margin: 50px 0;
         @extend %text-center;
 
         @include media('<widescreen'){
