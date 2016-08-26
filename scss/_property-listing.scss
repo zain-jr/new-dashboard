@@ -359,6 +359,9 @@
                     &:after {
                         background: $red;
                         content: 'Deleting...';
+                        @include media('<widescreen'){
+                            content: '';
+                        }
                     }
                     &:before {
                         margin: 10px 0 0 -70px;
@@ -367,12 +370,19 @@
                         -moz-animation: deleting 1.5s ease infinite;
                         -webkit-moz-animation: deleting 1.5s ease infinite;
                         animation: deleting 1.5s ease infinite;
+
+                        @include media('<widescreen'){
+                            left: 100%;
+                        }
                     }
                 }
                 &.restoring {
                     &:after {
                         background: $green;
                         content: 'Restoring...';
+                        @include media('<widescreen'){
+                            content: '';
+                        }
                     }
                     &:before {
                         content: "\e93f";
@@ -381,6 +391,10 @@
                         -moz-animation: restoring 1.5s ease infinite;
                         -webkit-moz-animation: restoring 1.5s ease infinite;
                         animation: restoring 1.5s ease infinite;
+
+                        @include media('<widescreen'){
+                            left: 100%;
+                        }
                     }
                 }
                 
