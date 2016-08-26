@@ -395,8 +395,8 @@ th {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?69oytf");
-  src: url("../fonts/icomoon.eot?69oytf#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?69oytf") format("truetype"), url("../fonts/icomoon.woff?69oytf") format("woff"), url("../fonts/icomoon.svg?69oytf#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?7n91xp");
+  src: url("../fonts/icomoon.eot?7n91xp#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?7n91xp") format("truetype"), url("../fonts/icomoon.woff?7n91xp") format("woff"), url("../fonts/icomoon.svg?7n91xp#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -424,172 +424,8 @@ th {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-loop:before {
-  content: "\e93f";
-}
-
-.icon-refresh:before {
-  content: "\e93f";
-}
-
-.icon-reload:before {
-  content: "\e93f";
-}
-
-.icon-reset:before {
-  content: "\e93f";
-}
-
-.icon-arrows:before {
-  content: "\e93f";
-}
-
-.icon-arrow-right:before {
-  content: "\e931";
-}
-
-.icon-right:before {
-  content: "\e931";
-}
-
-.icon-next:before {
-  content: "\e931";
-}
-
-.icon-warning:before {
-  content: "\e92e";
-}
-
-.icon-alert:before {
-  content: "\e92e";
-}
-
-.icon-bug:before {
-  content: "\e999";
-}
-
-.icon-mobile:before {
-  content: "\e929";
-}
-
-.icon-phone:before {
-  content: "\e929";
-}
-
-.icon-cellular:before {
-  content: "\e929";
-}
-
-.icon-eye:before {
-  content: "\e921";
-}
-
-.icon-views:before {
-  content: "\e921";
-}
-
-.icon-search:before {
-  content: "\e902";
-}
-
-.icon-location:before {
-  content: "\e92a";
-}
-
-.icon-map-marker:before {
-  content: "\e92a";
-}
-
-.icon-pin:before {
-  content: "\e92a";
-}
-
-.icon-user:before {
-  content: "\e92b";
-}
-
-.icon-profile:before {
-  content: "\e92b";
-}
-
-.icon-avatar:before {
-  content: "\e92b";
-}
-
-.icon-person:before {
-  content: "\e92b";
-}
-
-.icon-member:before {
-  content: "\e92b";
-}
-
-.icon-home2:before {
-  content: "\e92c";
-}
-
-.icon-house:before {
-  content: "\e92c";
-}
-
-.icon-info:before {
-  content: "\e923";
-}
-
-.icon-information:before {
-  content: "\e923";
-}
-
-.icon-instagram:before {
-  content: "\e903";
-}
-
-.icon-brand:before {
-  content: "\e903";
-}
-
-.icon-social:before {
-  content: "\e903";
-}
-
-.icon-twitter:before {
-  content: "\e904";
-}
-
-.icon-brand2:before {
-  content: "\e904";
-}
-
-.icon-tweet:before {
-  content: "\e904";
-}
-
-.icon-social2:before {
-  content: "\e904";
-}
-
-.icon-linkedin:before {
-  content: "\e905";
-}
-
-.icon-brand3:before {
-  content: "\e905";
-}
-
-.icon-social3:before {
-  content: "\e905";
-}
-
-.icon-facebook:before {
-  content: "\e906";
-}
-
-.icon-brand4:before {
-  content: "\e906";
-}
-
-.icon-social4:before {
-  content: "\e906";
+.icon-key:before {
+  content: "\e940";
 }
 
 .icon-list:before {
@@ -791,6 +627,174 @@ th {
   content: "\e908";
 }
 
+.icon-loop:before {
+  content: "\e93f";
+}
+
+.icon-refresh:before {
+  content: "\e93f";
+}
+
+.icon-reload:before {
+  content: "\e93f";
+}
+
+.icon-reset:before {
+  content: "\e93f";
+}
+
+.icon-arrows:before {
+  content: "\e93f";
+}
+
+.icon-arrow-right:before {
+  content: "\e931";
+}
+
+.icon-right:before {
+  content: "\e931";
+}
+
+.icon-next:before {
+  content: "\e931";
+}
+
+.icon-warning:before {
+  content: "\e92e";
+}
+
+.icon-alert:before {
+  content: "\e92e";
+}
+
+.icon-bug:before {
+  content: "\e999";
+}
+
+.icon-mobile:before {
+  content: "\e929";
+}
+
+.icon-phone:before {
+  content: "\e929";
+}
+
+.icon-cellular:before {
+  content: "\e929";
+}
+
+.icon-eye:before {
+  content: "\e921";
+}
+
+.icon-views:before {
+  content: "\e921";
+}
+
+.icon-search:before {
+  content: "\e902";
+}
+
+.icon-location:before {
+  content: "\e92a";
+}
+
+.icon-map-marker:before {
+  content: "\e92a";
+}
+
+.icon-pin:before {
+  content: "\e92a";
+}
+
+.icon-user:before {
+  content: "\e92b";
+}
+
+.icon-profile:before {
+  content: "\e92b";
+}
+
+.icon-avatar:before {
+  content: "\e92b";
+}
+
+.icon-person:before {
+  content: "\e92b";
+}
+
+.icon-member:before {
+  content: "\e92b";
+}
+
+.icon-home2:before {
+  content: "\e92c";
+}
+
+.icon-house:before {
+  content: "\e92c";
+}
+
+.icon-info:before {
+  content: "\e923";
+}
+
+.icon-information:before {
+  content: "\e923";
+}
+
+.icon-instagram:before {
+  content: "\e903";
+}
+
+.icon-brand:before {
+  content: "\e903";
+}
+
+.icon-social:before {
+  content: "\e903";
+}
+
+.icon-twitter:before {
+  content: "\e904";
+}
+
+.icon-brand2:before {
+  content: "\e904";
+}
+
+.icon-tweet:before {
+  content: "\e904";
+}
+
+.icon-social2:before {
+  content: "\e904";
+}
+
+.icon-linkedin:before {
+  content: "\e905";
+}
+
+.icon-brand3:before {
+  content: "\e905";
+}
+
+.icon-social3:before {
+  content: "\e905";
+}
+
+.icon-facebook:before {
+  content: "\e906";
+}
+
+.icon-brand4:before {
+  content: "\e906";
+}
+
+.icon-social4:before {
+  content: "\e906";
+}
+
 .icon-thumbs-up:before {
   content: "\e92f";
 }
@@ -919,8 +923,7 @@ th {
 .addProperty-form, .UpdateProperty-form .add-form-holder,
 .addProperty-form .add-form-holder, .UpdateProperty-form .main-form,
 .addProperty-form .main-form, .UpdateProperty-form .tips,
-.addProperty-form .tips, .UpdateProperty-form .list-extraFeatures,
-.addProperty-form .list-extraFeatures, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .propertyDetail-page, .propertyDetail-page .detail-holder, .propertyDetail-page .info-blockProperty .pictureHolder, .propertyDetail-page .propertyImage-pagination,
+.addProperty-form .tips, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .propertyDetail-page, .propertyDetail-page .detail-holder, .propertyDetail-page .info-blockProperty .pictureHolder, .propertyDetail-page .propertyImage-pagination,
 .propertyDetail-page .propertyImage-slider, .propertyDetail-page .propertyImage-pagination .propertyImage-mask,
 .propertyDetail-page .propertyImage-pagination .mask,
 .propertyDetail-page .propertyImage-slider .propertyImage-mask,
@@ -1961,6 +1964,11 @@ input[type='submit'] {
   font-size: 0;
   line-height: 0;
   letter-spacing: -4px;
+  border: 1px solid rgba(32, 146, 208, 0.5);
+  padding: 5px 0;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0 0;
 }
 
 .UpdateProperty-form .list-extraFeatures > *,
@@ -1970,6 +1978,16 @@ input[type='submit'] {
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0;
+}
+
+.UpdateProperty-form .list-extraFeatures:after,
+.addProperty-form .list-extraFeatures:after {
+  position: absolute;
+  top: -10px;
+  left: 80px;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #2092d0;
+  content: '';
 }
 
 .UpdateProperty-form .list-extraFeatures .col,
@@ -2028,7 +2046,7 @@ input[type='submit'] {
 .addProperty-form .list-extraFeatures .feature-heading {
   display: block;
   padding: 5px;
-  background: #777;
+  background: rgba(32, 146, 208, 0.5);
   color: #fff;
   margin: 0 0 10px;
 }
@@ -2135,7 +2153,7 @@ input[type='submit'] {
   background: #dee1e3;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.22);
   padding: 20px 10px;
-  margin: 0 auto 30px;
+  margin: 42px auto;
   width: 85%;
 }
 
@@ -3946,6 +3964,7 @@ input[type='submit'] {
 
 .propertyDetail-page {
   padding: 5px;
+  margin: 42px 0 0;
 }
 
 .propertyDetail-page .detail-holder {
@@ -5971,19 +5990,25 @@ h1 span {
     border-radius: 0;
     top: 6px;
     bottom: auto;
-    border: 2px solid #2092d0;
     border-radius: 4px;
     text-align: center;
   }
-  .sideBar-opener.Main:after {
-    display: none;
+  .sideBar-opener.Main span, .sideBar-opener.Main:before, .sideBar-opener.Main:after {
+    border: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #2092d0;
+    border: 0;
+    margin: 0;
+  }
+  .sideBar-opener.Main span {
+    top: 50%;
   }
   .sideBar-opener.Main:before {
-    content: "\e944";
-    font-family: 'icomoon';
-    font-size: 25px;
-    line-height: 37px;
-    margin: -1px 0 0;
+    top: auto;
+    bottom: 0;
   }
 }
 
@@ -7343,6 +7368,7 @@ h1 span {
   position: absolute;
   top: 15%;
   left: 50%;
+  margin: 0 0 0 -25px;
   z-index: 790;
   content: '';
   width: 50px;

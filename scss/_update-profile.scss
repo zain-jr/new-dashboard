@@ -3,7 +3,7 @@
     @extend %layout;
     box-shadow: 0 0 7px rgba($black , 0.22);
     padding: 20px 10px;
-    margin: 0 auto 30px;
+    margin: 42px auto;
     width: 85%;
 
     @include media('<widescreen'){

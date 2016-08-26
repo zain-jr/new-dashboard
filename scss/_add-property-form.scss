@@ -485,8 +485,21 @@
     }
     .list-extraFeatures {
         background: $p42-background;
-        @extend %layout;
         @include align-reset(top, 13, 16);
+        border: 1px solid rgba($p42-color, 0.5);
+        padding: 5px 0;
+        border-radius: 4px;
+        position: relative;
+        margin: 10px 0 0;
+
+        &:after {
+            position: absolute;
+            top: -10px;
+            left: 80px;
+            border: 5px solid transparent;
+            border-bottom: 5px solid $p42-color;
+            content: '';
+        }
 
         .col {
             width: 50%;
@@ -529,7 +542,7 @@
             display: block;
             padding: 5px;
             @extend %text-center;
-            background: $darken-grey;
+            background: rgba($p42-color, 0.5);
             color: $white;
             margin: 0 0 10px;
         }

@@ -1,6 +1,7 @@
 .propertyDetail-page {
   @extend %layout;
   padding: 5px;
+  margin: 42px 0 0;
 
   .detail-holder {
     box-shadow: 0 5px 13px rgba($black , 0.5);

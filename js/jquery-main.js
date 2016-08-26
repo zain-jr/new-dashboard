@@ -244,7 +244,6 @@ $('.hidden-checkfield').change(function(){
 		
     } else {
         $('.registration-form').removeClass("agent-info");
-		$('.company-logo').removeClass('hover');
 		$('.agent-information').slideUp();
 		$('.picture-holder').css({
 			'display':'none'
@@ -294,7 +293,7 @@ $(document).on('change', '.agent-brokerCheckbox', function(){
 function companyLogoUploader(file, target)
  {
 	previewFile(file, target);
-	$(file).closest('.company-logo').find('.picture-holder').css({
+	$(file).closest('.company-logo').find('.picture-holder, .image-loaded').css({
 		 'display':'block'
 	});
 	$(file).closest('.company-logo').addClass('hover');
@@ -304,7 +303,7 @@ function companyLogoUploader(file, target)
 	 $(this).closest('.company-logo').find('.company-profileP').attr('src', '');
 	 $(this).closest('.company-logo').find('.company-profileP').attr('alt', '');
 	 $(this).closest('.company-logo').removeClass('hover');
-	 $(this).closest('.company-logo').find('.picture-holder').css({
+	 $(this).closest('.company-logo').find('.picture-holder, .image-loaded').css({
 		 'display':'none'
 	 });
  });
