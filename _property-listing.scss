@@ -23,18 +23,6 @@
         @include media('>=desktop'){ display: none;}
 
         &.active {
-            background: darken($p42-color, 20%);
-        }
-        &:after {
-            position: absolute;
-            top: 50%;
-            left: 10px;
-            content: "\e934";
-            font-family: 'icomoon';
-            transform: rotate(90deg);
-            -webkit-transform: rotate(90deg);
-            -moz-transform: rotate(90deg);
-            margin: -10px 0 0;
         }
     }
 

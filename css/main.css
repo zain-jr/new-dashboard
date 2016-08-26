@@ -831,7 +831,7 @@ th {
 .addProperty-form .error, .UpdateProperty-form .image-uploading-area,
 .addProperty-form .image-uploading-area, .UpdateProperty-form .existingOrNew-member,
 .addProperty-form .existingOrNew-member, .updatePro .packetData-list,
-.updatePro .societiesBlock-listing, .updatePro .role-listing, .updatePro .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .propertyDetail-page .feature-list, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .radio-checks-holder, .pager, .quick-links, .public-ui-features, .sumery-list {
+.updatePro .societiesBlock-listing, .updatePro .role-listing, .updatePro .agree-with-terms, .property-listing-page .property-status-links, .property-listing-page .sorting-filtering, .property-listing-page .listing-pro, .property-listing-page .listing-pro .control-link, .propertyDetail-page .feature-list, .logout-list, #sidebar-dashboard .alerts, #sidebar-dashboard .sideBar-links, #sidebar-dashboard .sideBar-links .sub-links, .social-icons, .radio-checks-holder, .pager, .quick-links, .public-ui-features, .sumery-list, .multipal-actions {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -928,7 +928,7 @@ th {
 .propertyDetail-page .propertyImage-pagination .mask,
 .propertyDetail-page .propertyImage-slider .propertyImage-mask,
 .propertyDetail-page .propertyImage-slider .mask, .propertyDetail-page .overview-section, .propertyDetail-page .extra-feature-section, .propertyDetail-page .feature, .propertyDetail-page .agent-picture, .propertyDetail-page .agent-description, .page-loader, .searchByID, .fake-select, .fake-select select, #wrapper, #page-holder,
-#main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .radio-checks-holder, .submit-query, .inquiry-email-form .input-holder {
+#main, #sidebar-dashboard, #sidebar-dashboard .profile-picture, #sidebar-dashboard .profile-picture .image-holder, #sidebar-dashboard .profile-picture .name, #sidebar-dashboard .alerts-links, #sidebar-dashboard .alerts li .count, #sidebar-dashboard .search-side-links, #sidebar-dashboard .sideBar-links, .radio-checks-holder, .submit-query, .inquiry-email-form .input-holder, .multipal-actions {
   overflow: hidden;
 }
 
@@ -3036,6 +3036,22 @@ input[type='submit'] {
   .property-listing-page .property-status-links-opener {
     display: none;
   }
+}
+
+.property-listing-page .property-status-links-opener.active {
+  background: #125478;
+}
+
+.property-listing-page .property-status-links-opener:after {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  content: "\e934";
+  font-family: 'icomoon';
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  margin: -10px 0 0;
 }
 
 .property-listing-page .property-status-links {
@@ -5983,17 +5999,22 @@ h1 span {
 
 @media (max-width: 767px) {
   .sideBar-opener.Main {
-    left: 6px;
-    width: 40px;
-    height: 40px;
+    left: 10px;
+    width: 30px;
+    height: 20px;
     border: 0;
     border-radius: 0;
-    top: 6px;
+    top: 20px;
     bottom: auto;
-    border-radius: 4px;
     text-align: center;
   }
+  .sideBar-active .sideBar-opener.Main span {
+    right: 0;
+  }
   .sideBar-opener.Main span, .sideBar-opener.Main:before, .sideBar-opener.Main:after {
+    position: absolute;
+    content: '';
+    bottom: auto;
     border: 0;
     top: 0;
     left: 0;
@@ -6005,6 +6026,8 @@ h1 span {
   }
   .sideBar-opener.Main span {
     top: 50%;
+    margin: -1px 0 0;
+    right: 25%;
   }
   .sideBar-opener.Main:before {
     top: auto;
@@ -7375,4 +7398,44 @@ h1 span {
   height: 50px;
   color: #000;
   padding: 140px 0 0 30px;
+}
+
+.multipal-actions {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -4px;
+  padding: 0  10px;
+}
+
+.multipal-actions > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1023px) {
+  .multipal-actions {
+    padding: 0;
+  }
+}
+
+.multipal-actions li {
+  padding: 5px;
+}
+
+.multipal-actions li a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  padding: 2px 7px 1px;
+  border-radius: 4px;
+}
+
+.multipal-actions li a.multipal-delete {
+  color: #ce2020;
+  background: rgba(206, 32, 32, 0.3);
+  border: 1px solid #ce2020;
 }
