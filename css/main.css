@@ -5360,6 +5360,12 @@ h1 {
   }
 }
 
+@media (max-width: 1023px) {
+  .searchByID {
+    margin: 0 0 0 30px;
+  }
+}
+
 @media (max-width: 767px) {
   .searchByID {
     margin: 0;
@@ -5922,6 +5928,12 @@ h1 span {
   }
 }
 
+@media (max-width: 1023px) {
+  #header .left-header .home.hidden-xs {
+    display: none;
+  }
+}
+
 #header .left-header .searchOpener-Mobile {
   margin: 5px 3px 0;
 }
@@ -6055,14 +6067,14 @@ h1 span {
   border-radius: 0 20px 20px 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .sideBar-opener.Main {
     left: 10px;
     width: 30px;
     height: 20px;
     border: 0;
     border-radius: 0;
-    top: 20px;
+    top: 40px;
     bottom: auto;
     text-align: center;
   }
@@ -6093,6 +6105,12 @@ h1 span {
   }
 }
 
+@media (max-width: 767px) {
+  .sideBar-opener.Main {
+    top: 20px;
+  }
+}
+
 .sideBar-opener:after {
   position: absolute;
   top: 50%;
@@ -6120,9 +6138,14 @@ h1 span {
 
 @media (max-width: 1023px) {
   #sidebar-dashboard {
+    background: #a7afb4;
+  }
+}
+
+@media (max-width: 767px) {
+  #sidebar-dashboard {
     width: 100%;
     left: -100%;
-    background: #a7afb4;
   }
 }
 
