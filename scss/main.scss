@@ -695,6 +695,7 @@ h1 {
     position: absolute; 
     top: 6px;
     left: 50%;
+    right: auto;
     margin: 0 0 0 -135px;
   }
   @include media('<widescreen'){
@@ -705,7 +706,7 @@ h1 {
 
   @include media('<tablet'){
     max-width: 130px;
-    margin:  0 0 0 -40px;
+    margin:  0 0 0 -50px;
     top: 2px;
   }
 

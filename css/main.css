@@ -5979,6 +5979,7 @@ h1 span {
     position: absolute;
     top: 6px;
     left: 50%;
+    right: auto;
     margin: 0 0 0 -135px;
   }
 }
@@ -5994,7 +5995,7 @@ h1 span {
 @media (max-width: 767px) {
   .logo {
     max-width: 130px;
-    margin: 0 0 0 -40px;
+    margin: 0 0 0 -50px;
     top: 2px;
   }
 }
