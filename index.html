@@ -90,357 +90,109 @@
 				</ul>
 			</aside>
 			<div id="page-holder">
-				<div class="addProperty-form">
-					<div class="add-form-holder">
-						<h1>Add <span>Property</span></h1>
-						<div class="main-form">
-							<ul class="error">
-								<li><span>This is error</span></li>
-								<li><span>This is error</span></li>
-								<li><span>This is error</span></li>
-								<li><span>This is error</span></li>
-								<li><span>This is error</span></li>
-							</ul>
-							<form class="add-a-property">
-								<strong class="add-pro-heading"><span>property for</span></strong>
-								<ul class="radio-checks-holder text-center">
-									<li>
-										<label for="for-sale" class="custom-withouChecks transparent">
-											<input type="radio" name="add-for" id="for-sale" checked>
-											<span class="fake-label">For Sale</span>
-										</label>
-									</li>
-									<li>
-										<label for="for-rent" class="custom-withouChecks transparent">
-											<input type="radio" name="add-for" id="for-rent">
-											<span class="fake-label">For Rent</span>
-										</label>
-									</li>
-								</ul>
-								<strong class="add-pro-heading"><span>Property Type</span></strong>
-								<ul class="radio-checks-holder">
-									<li>
-										<label for="add-home" class="custom-withouChecks transparent">
-											<input type="radio" name="subtype" id="add-home" class="addPro-type">
-											<span class="fake-label">Home</span>
-										</label>
-									</li>
-									<li>
-										<label for="add-plot" class="custom-withouChecks transparent">
-											<input type="radio" name="subtype" id="add-plot" class="addPro-type" checked>
-											<span class="fake-label">plot</span>
-										</label>
-									</li>
-									<li>
-										<label for="add-commercial" class="custom-withouChecks transparent">
-											<input type="radio" name="subtype" id="add-commercial" class="addPro-type">
-											<span class="fake-label">commercial</span>
-										</label>
-									</li>
-								</ul>
-								<ul class="radio-checks-holder subtype-links hidden">
-									<li>
-										<label for="subtype-radio" class="customRadio">
-											<input type="radio" name="subtype-feature" id="subtype-radio">
-											<span class="fake-radio"></span>
-											<span class="fake-label">House</span>
-										</label>
-									</li>
-									<li>
-										<label for="subtype-radio1" class="customRadio">
-											<input type="radio" name="subtype-feature" id="subtype-radio1">
-											<span class="fake-radio"></span>
-											<span class="fake-label">House</span>
-										</label>
-									</li>
-									<li>
-										<label for="subtype-radio2" class="customRadio">
-											<input type="radio" name="subtype-feature" id="subtype-radio2">
-											<span class="fake-radio"></span>
-											<span class="fake-label">House</span>
-										</label>
-									</li>
-									<li>
-										<label for="subtype-radio3" class="customRadio">
-											<input type="radio" name="subtype-feature" id="subtype-radio3">
-											<span class="fake-radio"></span>
-											<span class="fake-label">House</span>
-										</label>
-									</li>
-								</ul>
-								<strong class="add-pro-heading"><span>Property Location</span></strong>
-								<div class="layout clearfix">
-									<div class="layout-holder">
-										<label for="society">Socity</label>
-										<div class="input-holder">
-											<select class="js-example-basic-single" id="society">
-												<option>1</option>
-												<option>1</option>
-												<option>1</option>
-												<option>1</option>
-											</select>
-										</div>
-									</div>
-									<div class="layout-holder">
-										<label for="block">Block</label>
-										<div class="input-holder">
-											<select class="js-example-basic-single" id="block">
-												<option>1</option>
-												<option>1</option>
-												<option>1</option>
-												<option>1</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="property-title">Property Title</label>
-										<div class="input-holder">
-											<input type="text" id="property-title" placeholder="Please add property title">
-										</div>
-									</div>
-								</div>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="area">Area</label>
-										<div class="input-holder">
-											<input type="text" id="area" placeholder="Area of property">
-										</div>
-									</div>
-									<div class="layout-holder">
-										<label for="unit">Unit</label>
-										<div class="input-holder">
-											<span class="fake-select">
-												<select>
-													<option>Marla</option>
-													<option>Kanal</option>
-													<option>Squar Yard</option>
-													<option>Squar Feet</option>
-												</select>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="price">Price</label>
-										<div class="input-holder">
-											<input type="text" id="price" placeholder="Please enter the price">
-										</div>
-									</div>
-									<div class="layout-holder">
-										<span class="calculatedPrice">Price must contain numbers only</span>
-									</div>
-								</div>
-								<div class="layout full-width">
-									<div class="layout-holder">
-										<label for="description">Description</label>
-										<div class="input-holder">
-											<textarea placeholder="Please enter the description" id="description"></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="bedrooms">bedrooms</label>
-										<div class="input-holder">
-											<input type="number" id="bedrooms" placeholder="Total Bedrooms">
-										</div>
-									</div>
-									<div class="layout-holder">
-										<label for="bathroom">bathroom</label>
-										<div class="input-holder">
-											<input type="number" id="bathroom" placeholder="Total Bathroom">
-										</div>
-									</div>
-								</div>
-								<div class="layout full-width">
-									<div class="input-holder">
-										<a class="extra-features">Extra Feature</a>
-									</div>
-								</div>
-								<div class="list-extraFeatures">
-									<div class="col">
-										<span class="feature-heading">Healthcare Recreational</span>
-										<div class="layout">
-											<div class="layout-holder">
-												<label for="bedrooms1">bedrooms</label>
-												<div class="input-holder">
-													<input type="number" id="bedrooms1">
-												</div>
-											</div>
-											<div class="layout-holder">
-												<label for="bathroom1">bathroom</label>
-												<div class="input-holder">
-													<input type="number" id="bathroom1">
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col">
-										<span class="feature-heading">Healthcare Recreational</span>
-										<div class="layout">
-											<div class="layout-holder">
-												<label for="bedrooms15">bedrooms</label>
-												<div class="input-holder">
-													<input type="checkbox" id="bedrooms15">
-												</div>
-											</div>
-											<div class="layout-holder">
-												<label for="bathroom12">bathroom</label>
-												<div class="input-holder">
-													<input type="radio" id="bathroom12">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<strong class="add-pro-heading"><span>Attachments</span></strong>
-								<ul class="image-uploading-area">
-									<li>
-										<progress value="10" max="100"></progress>
-										<div class="file-uploader">
-											<input type="file" ngf-select ng-model="form.data.files.mainFile.file" onchange="previewAddPropertyImg(this , '.img-thumb1')" class="upload-img">
-											<div class="image-holder">
-												<img src="#" class="img-thumb1" alt="image Description">
-												<span class="propertyDocumentCloseBtn" ng-click="cancelFile(0)"><span class="icon-cross"></span></span>
-											</div>
-										</div>
-										<input type="text" ng-model="form.data.files.mainFile.title" class="picture-name" placeholder="Title">
-										<span class="error-text">This is error</span>
-									</li>
-									<li>
-										<div class="file-uploader">
-											<input type="file" ngf-select ng-model="form.data.files.twoFile.file" onchange="previewAddPropertyImg(this , '.img-thumb2')" class="upload-img">
-											<div class="image-holder">
-												<img src="#" class="img-thumb2" alt="image Description">
-												<span class="propertyDocumentCloseBtn" ng-click="cancelFile(1)"><span class="icon-cross"></span></span>
-											</div>
-										</div>
-										<input type="text" ng-model="form.data.files.twoFile.title" class="picture-name" placeholder="Title">
-										<span class="error-text">This is error</span>
-									</li>
-									<li>
-										<div class="file-uploader">
-											<input type="file" ngf-select ng-model="form.data.files.threeFile.file" onchange="previewAddPropertyImg(this , '.img-thumb3')" class="upload-img">
-											<div class="image-holder">
-												<img src="#" class="img-thumb3" alt="image Description">
-												<span class="propertyDocumentCloseBtn" ng-click="cancelFile(2)"><span class="icon-cross"></span></span>
-											</div>
-										</div>
-										<input type="text" ng-model="form.data.files.threeFile.title" class="picture-name" placeholder="Title">
-										<span class="error-text">This is error</span>
-									</li>
-									<li>
-										<div class="file-uploader">
-											<input type="file" ng-model="form.data.files.fourFile.file" onchange="previewAddPropertyImg(this , '.img-thumb4')" class="upload-img">
-											<div class="image-holder">
-												<img src="#" class="img-thumb4" alt="image Description">
-												<span class="propertyDocumentCloseBtn"><span class="icon-cross"></span></span>
-											</div>
-										</div>
-										<input type="text" ng-model="form.data.files.fourFile.title" class="picture-name" placeholder="Title">
-										<span class="error-text">This is error</span>
-									</li>
-									<li>
-										<div class="file-uploader">
-											<input type="file" ng-model="form.data.files.fiveFile.file" onchange="previewAddPropertyImg(this , '.img-thumb5')" class="upload-img">
-											<div class="image-holder">
-												<img src="#" class="img-thumb5" alt="image Description">
-												<span class="propertyDocumentCloseBtn"><span class="icon-cross"></span></span>
-											</div>
-										</div>
-										<input type="text" ng-model="form.data.files.fiveFile.title" class="picture-name" placeholder="Title">
-										<span class="error-text">This is error</span>
-									</li>
-									<li>
-										<div class="file-uploader">
-											<input type="file" ng-model="form.data.files.sixFile.file" onchange="previewAddPropertyImg(this , '.img-thumb6')" class="upload-img">
-											<div class="image-holder">
-												<img src="#" class="img-thumb6" alt="image Description">
-												<span class="propertyDocumentCloseBtn"><span class="icon-cross"></span></span>
-											</div>
-										</div>
-										<input type="text" ng-model="form.data.files.sixFile.title" class="picture-name" placeholder="Title">
-										<span class="error-text">This is error</span>
-									</li>
-								</ul>
-								<strong class="add-pro-heading"><span>contact info</span></strong>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="owner">owner</label>
-										<div class="input-holder">
-											<span class="fake-select">
-												<select id="owner">
-													<option>1</option>
-													<option>1</option>
-													<option>1</option>
-													<option>1</option>
-												</select>
-											</span>
-										</div>
-									</div>
-									<div class="layout-holder">
-										<label for="contact-person">contact person</label>
-										<div class="input-holder">
-											<span class="fake-select">
-												<select id="contact-person">
-													<option>1</option>
-													<option>1</option>
-													<option>1</option>
-													<option>1</option>
-												</select>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="phone">phone</label>
-										<div class="input-holder">
-											<input type="tel" id="phone" placeholder="Enter Phone">
-										</div>
-									</div>
-									<div class="layout-holder">
-										<label for="block">cell</label>
-										<div class="input-holder">
-											<input type="tel" id="cell" placeholder="Enter Cell">
-										</div>
-									</div>
-								</div>
-								<div class="layout">
-									<div class="layout-holder">
-										<label for="phone">fax</label>
-										<div class="input-holder">
-											<input type="text" id="fax" placeholder="Enter Fax">
-										</div>
-									</div>
-									<div class="layout-holder">
-										<label for="email">email</label>
-										<div class="input-holder">
-											<input type="email" id="email" placeholder="Enter Email">
-										</div>
-									</div>
-								</div>
-								<input type="submit" value="SUBMIT PROPERTY">
-							</form>
-						</div>
-					</div>
-					<!--<div class="thankYou-message">
-						<h1>Safe <span>successfully</span></h1>
-						<div class="layout">
-							<div class="left"><span class="icon-check"></span></div>
-							<div class="right">
-								<p>Your property details have been received</p>
-								<p>Property type: <b>Free Listing</b></p>
-								<p>Property status: <b>Pending</b></p>
-								<p>Your property details have been received. It will be reviewed by our staff within 24 hours.</p>
-								<p>You will receive confirmation by email as soon as it gets approved</p>
+				<div class="property-listing-page">
+					<a class="property-status-links-opener"><span class="text-container">active</span><span class="lines"></span></a>
+					<ul class="property-status-links">
+						<li><a href="#" class="active">ACTIVE <span class="number">117</span></a></li>
+						<li><a href="#" class="pending">pending <span class="number">17</span></a></li>
+						<li><a href="#" class="rejected">rejected <span class="number">11</span></a></li>
+						<li><a href="#" class="expired">expired <span class="number">114</span></a></li>
+						<li class="active"><a href="#" class="deleted">deleted <span class="number">1174</span></a></li>
+					</ul>
+					<ul class="sorting-filtering">
+						<li>
+							<label for="sort-by">Sort By</label>
+							<div class="input-holder">
+								<span class="fake-select">
+									<select id="sort-by">
+										<option>ID</option>
+										<option>ID</option>
+										<option>ID</option>
+										<option>ID</option>
+									</select>
+								</span>
 							</div>
-						</div>
-						<a href="#" class="btn-default">Got it !</a>
-					</div>-->
+						</li>
+						<li>
+							<label for="order-by">Order</label>
+							<div class="input-holder">
+								<span class="fake-select">
+									<select id="order-by">
+										<option>Ascending</option>
+									</select>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label for="view-by">View</label>
+							<div class="input-holder">
+								<span class="fake-select">
+									<select id="view-by">
+										<option>20</option>
+										<option>20</option>
+										<option>20</option>
+									</select>
+								</span>
+							</div>
+						</li>
+					</ul>
+					<strong class="property-for">For sale</strong>
+					<ul class="multipal-actions">
+						<li><a href="#" class="multipal-delete"><span class="icon-bin-delete"></span></a></li>
+					</ul>
+					<div class="table-responsive">
+						<ul class="listing-pro">
+							<li class="t-h text-upparcase text-center">
+								<div class="pro-id border">
+									<label for="property-id" class="customCheckbox">
+										<input type="checkbox" id="property-id">
+										<span class="fake-checkbox"></span>
+										<span class="fake-label">ID</span>
+									</label>
+								</div>
+								<div class="pro-type border"><p>TYPE</p></div>
+								<div class="pro-location border"><p>LOCATION</p></div>
+								<div class="pro-price border"><p>PRICE (Pkr)</p></div>
+								<div class="pro-size border"><p>Size</p></div>
+								<div class="pro-date border"><p>Date</p></div>
+								<div class="pro-controls border"><p>Controls</p></div>
+							</li>
+							<li class="t-d text-center">
+								<div class="pro-id border">
+									<label for="property-id-td" class="customCheckbox">
+										<input type="checkbox" id="property-id-td">
+										<span class="fake-checkbox"></span>
+										<span class="fake-label">8787</span>
+									</label>
+								</div>
+								<div class="pro-type border"><p>Plots. Residential Plot 1 Kanal</p></div>
+								<div class="pro-location border"><p>DHA Phase 9 Prism - C Block</p></div>
+								<div class="pro-price border"><p>12300000</p></div>
+								<div class="pro-size border"><p>12300000</p></div>
+								<div class="pro-date border"><p>18 Apr 2016</p></div>
+								<div class="pro-controls border">
+									<ul class="control-link">
+										<li><a href="#"><span class="icon-search-doc"></span></a></li>
+										<li><a href="#"><span class="icon-pencil"></span></a></li>
+										<li><a href="#"><span class="icon-bin-delete"></span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<ul class="pager">
+						<li><a href="#" class="first"><span class="icon-arrow1-left"></span></a></li>
+						<li><a href="#" class="previous"><span class="icon-bold-arrow-left"></span></a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li><a href="#">7</a></li>
+						<li><a href="#" class="next"><span class="icon-bold-arrow-right"></span></a></li>
+						<li><a href="#" class="last"><span class="icon-arrow1-right"></span></a></li>
+					</ul>
 				</div>
 			</div>
 		</main>

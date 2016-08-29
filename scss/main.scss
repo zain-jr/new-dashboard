@@ -607,7 +607,7 @@ h1 {
 
   .left-header {
     width: 25%;
-    margin: 17px 0 0;
+    margin: 21px 0 0;
     position: relative;
     @extend .pull-left;
 
@@ -678,6 +678,8 @@ h1 {
   width: 100%;
   max-width: 215px;
   margin: 0 auto;
+  position: relative;
+  right: 70px;
   
   @include media('<tvscreen'){
     position: absolute; 
