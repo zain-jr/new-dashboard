@@ -359,7 +359,12 @@
                     &:after {
                         background: $red;
                         content: 'Deleting...';
+
                         @include media('<widescreen'){
+                            text-align: right;
+                            padding: 15px 40px 0;
+                        }
+                        @include media('<tablet'){
                             content: '';
                         }
                     }
@@ -373,14 +378,22 @@
 
                         @include media('<widescreen'){
                             left: 100%;
+                            margin: 13px 0 0 -180px;
                         }
+                        @include media('<tablet'){ margin: 13px 0 0 -100px; }
                     }
                 }
                 &.restoring {
                     &:after {
                         background: $green;
                         content: 'Restoring...';
+                        
                         @include media('<widescreen'){
+                            text-align: right;
+                            padding: 15px 40px 0;
+                        }
+
+                        @include media('<tablet'){
                             content: '';
                         }
                     }
@@ -394,7 +407,9 @@
 
                         @include media('<widescreen'){
                             left: 100%;
+                            margin: 13px 0 0 -180px;
                         }
+                        @include media('<tablet'){ margin: 13px 0 0 -100px; }
                     }
                 }
                 

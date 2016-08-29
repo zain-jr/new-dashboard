@@ -3526,6 +3526,13 @@ input[type='submit'] {
 
 @media (max-width: 1199px) {
   .property-listing-page .listing-pro li.t-d.deleting:after {
+    text-align: right;
+    padding: 15px 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .property-listing-page .listing-pro li.t-d.deleting:after {
     content: '';
   }
 }
@@ -3542,6 +3549,13 @@ input[type='submit'] {
 @media (max-width: 1199px) {
   .property-listing-page .listing-pro li.t-d.deleting:before {
     left: 100%;
+    margin: 13px 0 0 -180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .property-listing-page .listing-pro li.t-d.deleting:before {
+    margin: 13px 0 0 -100px;
   }
 }
 
@@ -3551,6 +3565,13 @@ input[type='submit'] {
 }
 
 @media (max-width: 1199px) {
+  .property-listing-page .listing-pro li.t-d.restoring:after {
+    text-align: right;
+    padding: 15px 40px 0;
+  }
+}
+
+@media (max-width: 767px) {
   .property-listing-page .listing-pro li.t-d.restoring:after {
     content: '';
   }
@@ -3568,6 +3589,13 @@ input[type='submit'] {
 @media (max-width: 1199px) {
   .property-listing-page .listing-pro li.t-d.restoring:before {
     left: 100%;
+    margin: 13px 0 0 -180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .property-listing-page .listing-pro li.t-d.restoring:before {
+    margin: 13px 0 0 -100px;
   }
 }
 
