@@ -52,7 +52,6 @@ $media-expressions: (
   @extend %text-center;
   height: 100vh;
   white-space:nowrap;
-  display: none;
 
   &:before {
     position: fixed;

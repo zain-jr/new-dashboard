@@ -5114,7 +5114,6 @@ input[type='submit'] {
   z-index: 2147483647;
   height: 100vh;
   white-space: nowrap;
-  display: none;
 }
 
 .page-loader:before {
