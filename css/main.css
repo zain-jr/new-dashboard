@@ -852,7 +852,8 @@ th {
   display: block;
 }
 
-.container {
+.container, .UpdateProperty-form .thankYou-message,
+.addProperty-form .thankYou-message {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
@@ -923,7 +924,8 @@ th {
 .addProperty-form, .UpdateProperty-form .add-form-holder,
 .addProperty-form .add-form-holder, .UpdateProperty-form .main-form,
 .addProperty-form .main-form, .UpdateProperty-form .tips,
-.addProperty-form .tips, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .propertyDetail-page, .propertyDetail-page .detail-holder, .propertyDetail-page .info-blockProperty .pictureHolder, .propertyDetail-page .propertyImage-pagination,
+.addProperty-form .tips, .UpdateProperty-form .thankYou-message .right,
+.addProperty-form .thankYou-message .right, .updatePro, .updatePro .registration-form, .updatePro .company-logo, .updatePro .company-logo .logo-holder, .updatePro .packetData, .updatePro .role-listing, .updatePro .agent-information, .property-listing-page, .property-listing-page .sorting-filtering li, .property-listing-page .listing-pro li, .changePassword, .propertyDetail-page, .propertyDetail-page .detail-holder, .propertyDetail-page .info-blockProperty .pictureHolder, .propertyDetail-page .propertyImage-pagination,
 .propertyDetail-page .propertyImage-slider, .propertyDetail-page .propertyImage-pagination .propertyImage-mask,
 .propertyDetail-page .propertyImage-pagination .mask,
 .propertyDetail-page .propertyImage-slider .propertyImage-mask,
@@ -2070,32 +2072,30 @@ input[type='submit'] {
 
 .UpdateProperty-form .thankYou-message,
 .addProperty-form .thankYou-message {
-  margin: 50px 0;
-}
-
-@media (max-width: 1199px) {
-  .UpdateProperty-form .thankYou-message,
-  .addProperty-form .thankYou-message {
-    margin: 100px 0;
-  }
-}
-
-@media (max-width: 1023px) {
-  .UpdateProperty-form .thankYou-message,
-  .addProperty-form .thankYou-message {
-    margin: 0;
-  }
+  padding: 15px 10px;
 }
 
 .UpdateProperty-form .thankYou-message .layout,
 .addProperty-form .thankYou-message .layout {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .UpdateProperty-form .thankYou-message .left,
 .addProperty-form .thankYou-message .left {
-  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  margin: -100px 0 0;
+}
+
+@media (max-width: 1023px) {
+  .UpdateProperty-form .thankYou-message .left,
+  .addProperty-form .thankYou-message .left {
+    margin: -50px 0 0;
+    left: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2103,6 +2103,8 @@ input[type='submit'] {
   .addProperty-form .thankYou-message .left {
     width: 100%;
     display: block;
+    position: static;
+    margin: 0;
   }
 }
 
@@ -2117,16 +2119,16 @@ input[type='submit'] {
 @media (max-width: 1023px) {
   .UpdateProperty-form .thankYou-message .left span,
   .addProperty-form .thankYou-message .left span {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 
 .UpdateProperty-form .thankYou-message .right,
 .addProperty-form .thankYou-message .right {
-  width: 70%;
   font-size: 16px;
   line-height: 20px;
   color: #555;
+  padding: 10px 0 40px 340px;
 }
 
 @media (max-width: 1023px) {
@@ -2134,7 +2136,7 @@ input[type='submit'] {
   .addProperty-form .thankYou-message .right {
     font-size: 14px;
     line-height: 17px;
-    padding: 0 30px 0 0;
+    padding: 10px 0 10px 160px;
   }
 }
 
@@ -2155,6 +2157,10 @@ input[type='submit'] {
   padding: 20px 10px;
   margin: 42px auto;
   width: 85%;
+}
+
+.updatePro .global-success {
+  margin: -20px -10px 0;
 }
 
 @media (max-width: 1199px) {
@@ -4020,6 +4026,7 @@ input[type='submit'] {
     font-size: 14px;
     line-height: 17px;
     padding: 10px 5px;
+    width: 80%;
   }
 }
 
@@ -5160,11 +5167,6 @@ body {
   position: relative;
 }
 
-body.loading-page {
-  height: 100vh;
-  overflow: hidden;
-}
-
 @media (max-width: 767px) {
   body {
     background-size: 100% cover;
@@ -6209,6 +6211,12 @@ h1 span {
   padding: 10px 0 0 10px;
 }
 
+@media (max-width: 1023px) {
+  #sidebar-dashboard .profile-picture .name {
+    padding: 10px 50px 0 10px;
+  }
+}
+
 #sidebar-dashboard .profile-picture .name strong, #sidebar-dashboard .profile-picture .name span {
   display: block;
 }
@@ -6911,6 +6919,7 @@ h1 span {
 }
 
 .feedBack {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   font-size: 16px;
   line-height: 20px;
   color: #fff;

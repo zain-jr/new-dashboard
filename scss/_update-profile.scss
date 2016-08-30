@@ -6,6 +6,10 @@
     margin: 42px auto;
     width: 85%;
 
+    .global-success {
+        margin: -20px -10px 0;
+    }
+
     @include media('<widescreen'){
         width: 100%;
     }
